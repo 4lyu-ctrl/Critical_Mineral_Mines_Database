@@ -4,7 +4,9 @@ var map = new ol.Map({
     renderer: 'canvas',
     layers: layersList,
     view: new ol.View({
-         maxZoom: 28, minZoom: 1
+         maxZoom: 8, 
+         minZoom: 4, 
+         projection: 'EPSG:3857'
     })
 });
 
@@ -92,7 +94,7 @@ function getPopupFields(layerList, layer) {
     return popupLayers[idx];
 }
 
-//highligth collection
+//highlight collection
 var collection = new ol.Collection();
 var featureOverlay = new ol.layer.Vector({
     map: map,

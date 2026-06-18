@@ -30,6 +30,16 @@ case 'Nickel':
                               labelFill, placement, bufferColor,
                               bufferWidth)
     })];
+                    break;
+
+case 'Rare Earth Elements':
+                    return [ new ol.style.Style({
+        image: new ol.style.Circle({radius: 12.0 + size,
+            displacement: [0, 0], stroke: new ol.style.Stroke({color: 'rgba(35,35,35,1.0)', lineDash: null, lineCap: 'butt', lineJoin: 'miter', width: 2.28}), fill: new ol.style.Fill({color: 'rgba(155,89,182,1.0)'})}),
+        text: createTextStyle(feature, resolution, labelText, labelFont,
+                              labelFill, placement, bufferColor,
+                              bufferWidth)
+    })];
                     break;}};
 
 var style_ActiveMinesJune2025_3 = function(feature, resolution){
