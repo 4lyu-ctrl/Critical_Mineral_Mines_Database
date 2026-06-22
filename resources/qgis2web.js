@@ -151,6 +151,16 @@ function createPopupField(currentFeature, currentFeatureKeys, layer) {
 
 var highlight;
 var autolinker = new Autolinker({truncate: {length: 30, location: 'smart'}});
+var SLIDE_GROUPS = [
+    { title: 'Mine Info', fields: ['Name', 'Operator', 'State', 'County', 'Commodity'] },
+    { title: 'Production', fields: ['Primary Product', 'Primary  Production (kt)', 'Secondary Product', 'Secondary Production (kt)'] },
+    { title: 'Air Emissions', fields: ['Total Air Emissions (kg)', 'TRI Total Air Emissions (kg)', 'NEI Total Air Emissions (kg)'] },
+    { title: 'Land & Water', fields: ['Total Water Emissions (kg)', 'Total Land Emissions (kg)', 'Total OffSite Emissions (kg)'] },
+    { title: 'Totals', fields: ['TRI Total Emissions (kg)', 'Total All Emissions (kg)'] }
+];
+var currentSlideIndex = 0;
+var currentSlideFeature = null;
+var currentSlideLayer = null;
 
 function onPointerMove(evt) {
     if (!doHover && !doHighlight) {
@@ -275,6 +285,50 @@ function onPointerMove(evt) {
     }
 };
 
+function createSlidePopup(feature, layer, slideIndex) {
+    var group = SLIDE_GROUPS[slideIndex];
+    var html = '<div class="slider-popup">';
+    html += '<div class="slider-title">' + group.title + '</div>';
+    html += '<table class="slider-table">';
+    for (var i = 0; i < group.fields.length; i++) {
+        var fieldName = group.fields[i];
+        var value = feature.get(fieldName);
+        var alias = layer.get('fieldAliases')[fieldName] || fieldName;
+        var displayValue = (value === null || value === undefined || value === "None reported" || value === "Not reported") ? "—" : value.toLocaleString();
+        html += '<tr><th>' + alias + '</th><td>' + displayValue + '</td></tr>';
+    }
+    html += '</table>';
+    html += '<div class="slider-controls">';
+    html += '<a href="#" class="slider-prev">‹</a>';
+    html += '<span class="slider-dots">';
+    for (var d = 0; d < SLIDE_GROUPS.length; d++) {
+        html += '<span class="slider-dot' + (d === slideIndex ? ' active' : '') + '"></span>';
+    }
+    html += '</span>';
+    html += '<a href="#" class="slider-next">›</a>';
+    html += '</div>';
+    html += '</div>';
+    return html;
+}
+
+function renderSlide() {
+    if (!currentSlideFeature) return;
+    content.innerHTML = createSlidePopup(currentSlideFeature, currentSlideLayer, currentSlideIndex);
+    container.style.display = 'block';
+    overlayPopup.setPosition(popupCoord);
+
+    content.querySelector('.slider-prev').onclick = function(e) {
+        e.preventDefault();
+        currentSlideIndex = (currentSlideIndex - 1 + SLIDE_GROUPS.length) % SLIDE_GROUPS.length;
+        renderSlide();
+    };
+    content.querySelector('.slider-next').onclick = function(e) {
+        e.preventDefault();
+        currentSlideIndex = (currentSlideIndex + 1) % SLIDE_GROUPS.length;
+        renderSlide();
+    };
+}
+
 map.on('pointermove', onPointerMove);
 
 var popupContent = '';
@@ -291,62 +345,32 @@ function updatePopup() {
         closer.blur();
     }
 }
-
 function onSingleClickFeatures(evt) {
     if (doHover || sketch) {
         return;
     }
-    if (!featuresPopupActive) {
-        featuresPopupActive = true;
-    }
     var pixel = map.getEventPixel(evt.originalEvent);
     var coord = evt.coordinate;
-    var currentFeature;
-    var currentFeatureKeys;
-    var clusteredFeatures;
-    var popupText = '<ul>';
+    var found = false;
 
     map.forEachFeatureAtPixel(pixel, function(feature, layer) {
-        if (layer && feature instanceof ol.Feature && (layer.get("interactive") || layer.get("interactive") === undefined)) {
-            var doPopup = false;
-            for (var k in layer.get('fieldImages')) {
-                if (layer.get('fieldImages')[k] !== "Hidden") {
-                    doPopup = true;
-                }
-            }
-            currentFeature = feature;
-            clusteredFeatures = feature.get("features");
-            if (typeof clusteredFeatures !== "undefined") {
-                if (doPopup) {
-                    for(var n = 0; n < clusteredFeatures.length; n++) {
-                        currentFeature = clusteredFeatures[n];
-                        currentFeatureKeys = currentFeature.getKeys();
-                        popupText += '<li><table>';
-                        popupText += '<a><b>' + layer.get('popuplayertitle') + '</b></a>';
-                        popupText += createPopupField(currentFeature, currentFeatureKeys, layer);
-                        popupText += '</table></li>';
-                    }
-                }
-            } else {
-                currentFeatureKeys = currentFeature.getKeys();
-                if (doPopup) {
-                    popupText += '<li><table>';
-                    popupText += '<a><b>' + layer.get('popuplayertitle') + '</b></a>';
-                    popupText += createPopupField(currentFeature, currentFeatureKeys, layer);
-                    popupText += '</table>';
-                }
-            }
+        if (layer && feature instanceof ol.Feature && layer.get("popuplayertitle") === "Active Mines June 2025") {
+            currentSlideFeature = feature;
+            currentSlideLayer = layer;
+            currentSlideIndex = 0;
+            popupCoord = coord;
+            found = true;
+            return true;
         }
     });
-    if (popupText === '<ul>') {
-        popupText = '';
-    } else {
-        popupText += '</ul>';
-    }
 
-	popupContent = popupText;
-    popupCoord = coord;
-    updatePopup();
+    if (found) {
+        renderSlide();
+    } else {
+        container.style.display = 'none';
+        closer.blur();
+        currentSlideFeature = null;
+    }
 }
 
 function onSingleClickWMS(evt) {
