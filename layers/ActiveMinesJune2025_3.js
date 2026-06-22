@@ -16,7 +16,7 @@ var json_ActiveMinesJune2025_3 = {
         "State": "Arizona",
         "County": "Yavapai",
         "Latitude": 34.58474,
-        "Longitude": -113.20857,
+        "Longitude": -113.20857, 
         "Commodity": "Copper",
         "Primary Product": "Copper production",
         "Primary  Production (kt)": 83.46,
