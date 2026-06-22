@@ -923,7 +923,7 @@ var json_ActiveMinesJune2025_3 = {
             {
       "type": "Feature",
       "properties": {
-        "Name": "Centinela ",
+        "Name": "Centinela",
         "Operator": "Antofagasta Minerals (70%), Marubeni Copper Holdings (30%)",
         "State": "Atacama",
         "County": "",
@@ -965,7 +965,7 @@ var json_ActiveMinesJune2025_3 = {
         "Commodity": "Copper",
         "Primary Product": "Copper production",
         "Primary  Production (kt)": "",
-        "Secondary Product": "Silver",
+        "Secondary Product": "Molybdenum",
         "Secondary Production (kt)": "",
         "TRI Total Air Emissions (kg)": "",
         "NEI Total Air Emissions (kg)": "",
@@ -981,6 +981,198 @@ var json_ActiveMinesJune2025_3 = {
         "coordinates": [
           -68.685556,
           -20.968056
+        ]
+      }
+    },
+
+    {
+      "type": "Feature",
+      "properties": {
+        "Name": "UVA mine (Distrito Catemu)",
+        "Operator": "Cemin",
+        "State": "Valparaiso",
+        "County": "",
+        "Latitude": -32.676,
+        "Longitude": -70.896,
+        "Commodity": "Copper",
+        "Primary Product": "Copper production",
+        "Primary  Production (kt)": "",
+        "Secondary Product": "Silver",
+        "Secondary Production (kt)": "",
+        "TRI Total Air Emissions (kg)": "",
+        "NEI Total Air Emissions (kg)": "",
+        "Total Air Emissions (kg)": "",
+        "Total Water Emissions (kg)": "",
+        "Total Land Emissions (kg)": "",
+        "Total OffSite Emissions (kg)": "",
+        "TRI Total Emissions (kg)": "",
+        "Total All Emissions (kg)": ""
+      },
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          -70.896,
+          -32.676
+        ]
+      }
+    },
+
+    {
+      "type": "Feature",
+      "properties": {
+        "Name": "Distrito Cerro Negro",
+        "Operator": "Minera Cerro Negro S.A. (CORFO 50%?)",
+        "State": "Valparaiso",
+        "County": "",
+        "Latitude": -32.563333,
+        "Longitude": -70.853333,
+        "Commodity": "Copper",
+        "Primary Product": "Copper production",
+        "Primary  Production (kt)": "",
+        "Secondary Product": "",
+        "Secondary Production (kt)": "",
+        "TRI Total Air Emissions (kg)": "",
+        "NEI Total Air Emissions (kg)": "",
+        "Total Air Emissions (kg)": "",
+        "Total Water Emissions (kg)": "",
+        "Total Land Emissions (kg)": "",
+        "Total OffSite Emissions (kg)": "",
+        "TRI Total Emissions (kg)": "",
+        "Total All Emissions (kg)": ""
+      },
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          -70.853333,
+          -32.563333
+        ]
+      }
+    },
+
+    {
+      "type": "Feature",
+      "properties": {
+        "Name": "Distrito Michilla / Faena Michilla ",
+        "Operator": "HMC",
+        "State": "Antofagasta",
+        "County": "",
+        "Latitude": -22.683,
+        "Longitude": -70.178,
+        "Commodity": "Copper",
+        "Primary Product": "Copper production",
+        "Primary  Production (kt)": "",
+        "Secondary Product": "",
+        "Secondary Production (kt)": "",
+        "TRI Total Air Emissions (kg)": "",
+        "NEI Total Air Emissions (kg)": "",
+        "Total Air Emissions (kg)": "",
+        "Total Water Emissions (kg)": "",
+        "Total Land Emissions (kg)": "",
+        "Total OffSite Emissions (kg)": "",
+        "TRI Total Emissions (kg)": "",
+        "Total All Emissions (kg)": ""
+      },
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          -70.178,
+          -22.683
+        ]
+      }
+    },
+
+    {
+      "type": "Feature",
+      "properties": {
+        "Name": "Distrito Montecristo",
+        "Operator": "Nova Ventura",
+        "State": "Antofagasta",
+        "County": "",
+        "Latitude": -24.968,
+        "Longitude": -70.393,
+        "Commodity": "Copper",
+        "Primary Product": "Copper production",
+        "Primary  Production (kt)": "",
+        "Secondary Product": "Gold, Iron",
+        "Secondary Production (kt)": "",
+        "TRI Total Air Emissions (kg)": "",
+        "NEI Total Air Emissions (kg)": "",
+        "Total Air Emissions (kg)": "",
+        "Total Water Emissions (kg)": "",
+        "Total Land Emissions (kg)": "",
+        "Total OffSite Emissions (kg)": "",
+        "TRI Total Emissions (kg)": "",
+        "Total All Emissions (kg)": ""
+      },
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          -70.393,
+          -24.968
+        ]
+      }
+    },
+
+    {
+      "type": "Feature",
+      "properties": {
+        "Name": "Distrito Panulcillo (Panulcillo Alto, Mina San Gregorio, Mina Delta, Mina Asunción)",
+        "Operator": "ENAMI",
+        "State": "Coquimbo",
+        "County": "",
+        "Latitude": -30.461,
+        "Longitude": -71.219,
+        "Commodity": "Copper",
+        "Primary Product": "Copper production",
+        "Primary  Production (kt)": "",
+        "Secondary Product": "",
+        "Secondary Production (kt)": "",
+        "TRI Total Air Emissions (kg)": "",
+        "NEI Total Air Emissions (kg)": "",
+        "Total Air Emissions (kg)": "",
+        "Total Water Emissions (kg)": "",
+        "Total Land Emissions (kg)": "",
+        "Total OffSite Emissions (kg)": "",
+        "TRI Total Emissions (kg)": "",
+        "Total All Emissions (kg)": ""
+      },
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          -71.219,
+          -30.461
+        ]
+      }
+    },
+
+        {
+      "type": "Feature",
+      "properties": {
+        "Name": "Tambor (Distrito Talcuna)",
+        "Operator": "ENAMI",
+        "State": "Coquimbo",
+        "County": "",
+        "Latitude": -29.889,
+        "Longitude": -70.882,
+        "Commodity": "Copper",
+        "Primary Product": "Copper production",
+        "Primary  Production (kt)": "",
+        "Secondary Product": "Silver",
+        "Secondary Production (kt)": "",
+        "TRI Total Air Emissions (kg)": "",
+        "NEI Total Air Emissions (kg)": "",
+        "Total Air Emissions (kg)": "",
+        "Total Water Emissions (kg)": "",
+        "Total Land Emissions (kg)": "",
+        "Total OffSite Emissions (kg)": "",
+        "TRI Total Emissions (kg)": "",
+        "Total All Emissions (kg)": ""
+      },
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          -70.882,
+          -29.889
         ]
       }
     }
