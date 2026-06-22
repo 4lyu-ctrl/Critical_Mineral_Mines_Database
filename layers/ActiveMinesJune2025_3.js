@@ -801,7 +801,7 @@ var json_ActiveMinesJune2025_3 = {
         "Longitude": -69.541,
         "Commodity": "Copper",
         "Primary Product": "Copper production",
-        "Primary  Production (kt)": 83.46,
+        "Primary  Production (kt)": "",
         "Secondary Product": "Molybdenum",
         "Secondary Production (kt)": "",
         "TRI Total Air Emissions (kg)": "",
@@ -833,7 +833,7 @@ var json_ActiveMinesJune2025_3 = {
         "Longitude": -69.264722,
         "Commodity": "Copper",
         "Primary Product": "Copper production",
-        "Primary  Production (kt)": 83.46,
+        "Primary  Production (kt)": "",
         "Secondary Product": "Molybdenum",
         "Secondary Production (kt)": "",
         "TRI Total Air Emissions (kg)": "",
@@ -858,15 +858,15 @@ var json_ActiveMinesJune2025_3 = {
         {
       "type": "Feature",
       "properties": {
-        "Name": "Caserones",
-        "Operator": "Lundin Mining (70%), JX Nippon (30%)",
-        "State": "Atacama",
+        "Name": "Chuquicamata",
+        "Operator": "Codelco",
+        "State": "Antofagasta",
         "County": "",
-        "Latitude": -28.166,
-        "Longitude": -69.541,
+        "Latitude": -22.299722,
+        "Longitude": -68.895278,
         "Commodity": "Copper",
         "Primary Product": "Copper production",
-        "Primary  Production (kt)": 83.46,
+        "Primary  Production (kt)": "",
         "Secondary Product": "Molybdenum",
         "Secondary Production (kt)": "",
         "TRI Total Air Emissions (kg)": "",
@@ -881,8 +881,8 @@ var json_ActiveMinesJune2025_3 = {
       "geometry": {
         "type": "Point",
         "coordinates": [
-          -69.541,
-          -28.166
+          -68.895278,
+          -22.299722
         ]
       }
     },
@@ -891,15 +891,47 @@ var json_ActiveMinesJune2025_3 = {
         {
       "type": "Feature",
       "properties": {
-        "Name": "Caserones",
-        "Operator": "Lundin Mining (70%), JX Nippon (30%)",
-        "State": "Atacama",
+        "Name": "Punitaqui (Cinabrio Deposit)",
+        "Operator": "Battery Mineral Resources",
+        "State": "Coquimbo",
         "County": "",
-        "Latitude": -28.166,
-        "Longitude": -69.541,
+        "Latitude": -30.713,
+        "Longitude": -71.214,
         "Commodity": "Copper",
         "Primary Product": "Copper production",
-        "Primary  Production (kt)": 83.46,
+        "Primary  Production (kt)": "",
+        "Secondary Product": "Silver",
+        "Secondary Production (kt)": "",
+        "TRI Total Air Emissions (kg)": "",
+        "NEI Total Air Emissions (kg)": "",
+        "Total Air Emissions (kg)": "",
+        "Total Water Emissions (kg)": "",
+        "Total Land Emissions (kg)": "",
+        "Total OffSite Emissions (kg)": "",
+        "TRI Total Emissions (kg)": "",
+        "Total All Emissions (kg)": ""
+      },
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          -71.214,
+          -30.713
+        ]
+      }
+    },
+
+            {
+      "type": "Feature",
+      "properties": {
+        "Name": "Centinela ",
+        "Operator": "Antofagasta Minerals (70%), Marubeni Copper Holdings (30%)",
+        "State": "Atacama",
+        "County": "",
+        "Latitude": -22.975156,
+        "Longitude": -69.061419,
+        "Commodity": "Copper",
+        "Primary Product": "Copper production",
+        "Primary  Production (kt)": "",
         "Secondary Product": "Molybdenum",
         "Secondary Production (kt)": "",
         "TRI Total Air Emissions (kg)": "",
@@ -914,11 +946,43 @@ var json_ActiveMinesJune2025_3 = {
       "geometry": {
         "type": "Point",
         "coordinates": [
-          -69.541,
-          -28.166
+          -69.061419,
+          -22.975156
         ]
       }
     },
-    
+
+
+        {
+      "type": "Feature",
+      "properties": {
+        "Name": "Collahuasi (Ujina)",
+        "Operator": "Anglo American (44%)",
+        "State": "Tarapaca",
+        "County": "",
+        "Latitude": -20.968056,
+        "Longitude": -68.685556,
+        "Commodity": "Copper",
+        "Primary Product": "Copper production",
+        "Primary  Production (kt)": "",
+        "Secondary Product": "Silver",
+        "Secondary Production (kt)": "",
+        "TRI Total Air Emissions (kg)": "",
+        "NEI Total Air Emissions (kg)": "",
+        "Total Air Emissions (kg)": "",
+        "Total Water Emissions (kg)": "",
+        "Total Land Emissions (kg)": "",
+        "Total OffSite Emissions (kg)": "",
+        "TRI Total Emissions (kg)": "",
+        "Total All Emissions (kg)": ""
+      },
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          -68.685556,
+          -20.968056
+        ]
+      }
+    }
   ]
 };
