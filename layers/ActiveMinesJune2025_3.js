@@ -627,6 +627,362 @@ var json_ActiveMinesJune2025_3 = {
           35.4706037
         ]
       }
+    },
+//chile mines
+
+        {
+      "type": "Feature",
+      "properties": {
+        "Name": "Altamira",
+        "Operator": "",
+        "State": "",
+        "County": "",
+        "Latitude": -25.836,
+        "Longitude": -69.857,
+        "Commodity": "Copper",
+        "Primary Product": "Copper production",
+        "Primary  Production (kt)": "",
+        "Secondary Product": "Silver",
+        "Secondary Production (kt)": "",
+        "TRI Total Air Emissions (kg)": "",
+        "NEI Total Air Emissions (kg)": "",
+        "Total Air Emissions (kg)": "",
+        "Total Water Emissions (kg)": "",
+        "Total Land Emissions (kg)": "",
+        "Total OffSite Emissions (kg)": "",
+        "TRI Total Emissions (kg)": "",
+        "Total All Emissions (kg)": ""
+      },
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          -69.857,
+          -25.836
+        ]
+      }
+    },
+
+{
+      "type": "Feature",
+      "properties": {
+        "Name": "Andina",
+        "Operator": "Codelco",
+        "State": "Valparaiso",
+        "County": "",
+        "Latitude": -33.08914885,
+        "Longitude": -70.24579293,
+        "Commodity": "Copper",
+        "Primary Product": "Copper production",
+        "Primary  Production (kt)": "",
+        "Secondary Product": "",
+        "Secondary Production (kt)": "",
+        "TRI Total Air Emissions (kg)": "",
+        "NEI Total Air Emissions (kg)": "",
+        "Total Air Emissions (kg)": "",
+        "Total Water Emissions (kg)": "",
+        "Total Land Emissions (kg)": "",
+        "Total OffSite Emissions (kg)": "",
+        "TRI Total Emissions (kg)": "",
+        "Total All Emissions (kg)": ""
+      },
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          -70.24579293,
+          -33.08914885
+        ]
+      }
+    },
+
+
+  {
+      "type": "Feature",
+      "properties": {
+        "Name": "Antucoya",
+        "Operator": "Antofagasta Minerals (70%), Marubeni Copper Holdings (30%)",
+        "State": "Antofagasta",
+        "County": "",
+        "Latitude": -22.638,
+        "Longitude": -69.8828,
+        "Commodity": "Copper",
+        "Primary Product": "Copper production",
+        "Primary  Production (kt)": "",
+        "Secondary Product": "",
+        "Secondary Production (kt)": "",
+        "TRI Total Air Emissions (kg)": "",
+        "NEI Total Air Emissions (kg)": "",
+        "Total Air Emissions (kg)": "",
+        "Total Water Emissions (kg)": "",
+        "Total Land Emissions (kg)": "",
+        "Total OffSite Emissions (kg)": "",
+        "TRI Total Emissions (kg)": "",
+        "Total All Emissions (kg)": ""
+      },
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          -69.8828,
+          -22.638
+        ]
+      }
+    },
+{
+      "type": "Feature",
+      "properties": {
+        "Name": "Candelaria",
+        "Operator": "Lundin Mining (80%), Sumitomo Group (20%)",
+        "State": "Atacama",
+        "County": "",
+        "Latitude": -27.516944,
+        "Longitude": -70.291111,
+        "Commodity": "Copper",
+        "Primary Product": "Copper production",
+        "Primary  Production (kt)": "",
+        "Secondary Product": "Gold, Iron",
+        "Secondary Production (kt)": "",
+        "TRI Total Air Emissions (kg)": "",
+        "NEI Total Air Emissions (kg)": "",
+        "Total Air Emissions (kg)": "",
+        "Total Water Emissions (kg)": "",
+        "Total Land Emissions (kg)": "",
+        "Total OffSite Emissions (kg)": "",
+        "TRI Total Emissions (kg)": "",
+        "Total All Emissions (kg)": ""
+      },
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          -70.291111,
+         -27.516944
+        ]
+      }
+    },
+
+    {
+      "type": "Feature",
+      "properties": {
+        "Name": "Carmen de Andacollo",
+        "Operator": "Teck Resources (90%), ENAMI (10%)",
+        "State": "Coquimbo",
+        "County": "",
+        "Latitude": -30.25,
+        "Longitude": -71.1,
+        "Commodity": "Copper",
+        "Primary Product": "Copper production",
+        "Primary  Production (kt)": "",
+        "Secondary Product": "Gold, Molybdenum",
+        "Secondary Production (kt)": "",
+        "TRI Total Air Emissions (kg)": "",
+        "NEI Total Air Emissions (kg)": "",
+        "Total Air Emissions (kg)": "",
+        "Total Water Emissions (kg)": "",
+        "Total Land Emissions (kg)": "",
+        "Total OffSite Emissions (kg)": "",
+        "TRI Total Emissions (kg)": "",
+        "Total All Emissions (kg)": ""
+      },
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          -71.1,
+          -30.25
+        ]
+      }
+    },
+
+    {
+      "type": "Feature",
+      "properties": {
+        "Name": "Caserones",
+        "Operator": "Lundin Mining (70%), JX Nippon (30%)",
+        "State": "Atacama",
+        "County": "",
+        "Latitude": -28.166,
+        "Longitude": -69.541,
+        "Commodity": "Copper",
+        "Primary Product": "Copper production",
+        "Primary  Production (kt)": "",
+        "Secondary Product": "Molybdenum",
+        "Secondary Production (kt)": "",
+        "TRI Total Air Emissions (kg)": "",
+        "NEI Total Air Emissions (kg)": "",
+        "Total Air Emissions (kg)": "",
+        "Total Water Emissions (kg)": "",
+        "Total Land Emissions (kg)": "",
+        "Total OffSite Emissions (kg)": "",
+        "TRI Total Emissions (kg)": "",
+        "Total All Emissions (kg)": ""
+      },
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          -69.541,
+          -28.166
+        ]
+      }
+    },
+
+        {
+      "type": "Feature",
+      "properties": {
+        "Name": "Cerro Colorado",
+        "Operator": "BHP (Pampa Norte)",
+        "State": "Tarapaca",
+        "County": "",
+        "Latitude": -20.044444,
+        "Longitude": -69.264722,
+        "Commodity": "Copper",
+        "Primary Product": "Copper production",
+        "Primary  Production (kt)": "",
+        "Secondary Product": "Molybdenum",
+        "Secondary Production (kt)": "",
+        "TRI Total Air Emissions (kg)": "",
+        "NEI Total Air Emissions (kg)": "",
+        "Total Air Emissions (kg)": "",
+        "Total Water Emissions (kg)": "",
+        "Total Land Emissions (kg)": "",
+        "Total OffSite Emissions (kg)": "",
+        "TRI Total Emissions (kg)": "",
+        "Total All Emissions (kg)": ""
+      },
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          -69.264722,
+          -20.044444
+        ]
+      }
+    },
+
+
+        {
+      "type": "Feature",
+      "properties": {
+        "Name": "Chuquicamata",
+        "Operator": "Codelco",
+        "State": "Antofagasta",
+        "County": "",
+        "Latitude": -22.299722,
+        "Longitude": -68.895278,
+        "Commodity": "Copper",
+        "Primary Product": "Copper production",
+        "Primary  Production (kt)": "",
+        "Secondary Product": "Molybdenum",
+        "Secondary Production (kt)": "",
+        "TRI Total Air Emissions (kg)": "",
+        "NEI Total Air Emissions (kg)": "",
+        "Total Air Emissions (kg)": "",
+        "Total Water Emissions (kg)": "",
+        "Total Land Emissions (kg)": "",
+        "Total OffSite Emissions (kg)": "",
+        "TRI Total Emissions (kg)": "",
+        "Total All Emissions (kg)": ""
+      },
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          -68.895278,
+          -22.299722
+        ]
+      }
+    },
+
+
+        {
+      "type": "Feature",
+      "properties": {
+        "Name": "Punitaqui (Cinabrio Deposit)",
+        "Operator": "Battery Mineral Resources",
+        "State": "Coquimbo",
+        "County": "",
+        "Latitude": -30.713,
+        "Longitude": -71.214,
+        "Commodity": "Copper",
+        "Primary Product": "Copper production",
+        "Primary  Production (kt)": "",
+        "Secondary Product": "Silver",
+        "Secondary Production (kt)": "",
+        "TRI Total Air Emissions (kg)": "",
+        "NEI Total Air Emissions (kg)": "",
+        "Total Air Emissions (kg)": "",
+        "Total Water Emissions (kg)": "",
+        "Total Land Emissions (kg)": "",
+        "Total OffSite Emissions (kg)": "",
+        "TRI Total Emissions (kg)": "",
+        "Total All Emissions (kg)": ""
+      },
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          -71.214,
+          -30.713
+        ]
+      }
+    },
+
+            {
+      "type": "Feature",
+      "properties": {
+        "Name": "Centinela ",
+        "Operator": "Antofagasta Minerals (70%), Marubeni Copper Holdings (30%)",
+        "State": "Atacama",
+        "County": "",
+        "Latitude": -22.975156,
+        "Longitude": -69.061419,
+        "Commodity": "Copper",
+        "Primary Product": "Copper production",
+        "Primary  Production (kt)": "",
+        "Secondary Product": "Molybdenum",
+        "Secondary Production (kt)": "",
+        "TRI Total Air Emissions (kg)": "",
+        "NEI Total Air Emissions (kg)": "",
+        "Total Air Emissions (kg)": "",
+        "Total Water Emissions (kg)": "",
+        "Total Land Emissions (kg)": "",
+        "Total OffSite Emissions (kg)": "",
+        "TRI Total Emissions (kg)": "",
+        "Total All Emissions (kg)": ""
+      },
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          -69.061419,
+          -22.975156
+        ]
+      }
+    },
+
+
+        {
+      "type": "Feature",
+      "properties": {
+        "Name": "Collahuasi (Ujina)",
+        "Operator": "Anglo American (44%)",
+        "State": "Tarapaca",
+        "County": "",
+        "Latitude": -20.968056,
+        "Longitude": -68.685556,
+        "Commodity": "Copper",
+        "Primary Product": "Copper production",
+        "Primary  Production (kt)": "",
+        "Secondary Product": "Silver",
+        "Secondary Production (kt)": "",
+        "TRI Total Air Emissions (kg)": "",
+        "NEI Total Air Emissions (kg)": "",
+        "Total Air Emissions (kg)": "",
+        "Total Water Emissions (kg)": "",
+        "Total Land Emissions (kg)": "",
+        "Total OffSite Emissions (kg)": "",
+        "TRI Total Emissions (kg)": "",
+        "Total All Emissions (kg)": ""
+      },
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          -68.685556,
+          -20.968056
+        ]
+      }
     }
   ]
 };
