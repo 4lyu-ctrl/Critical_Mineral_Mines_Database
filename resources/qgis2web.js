@@ -1,4 +1,3 @@
-
 var map = new ol.Map({
     target: 'map',
     renderer: 'canvas',
@@ -10,16 +9,11 @@ var map = new ol.Map({
     })
 });
 
-//initial view - epsg:3857 coordinates if not "Match project CRS"
 map.getView().fit([-14038336.420211, 3371615.826222, -8801786.078273, 7085422.956296], map.getSize());
 
-////small screen definition
     var hasTouchScreen = map.getViewport().classList.contains('ol-touch');
     var isSmallScreen = window.innerWidth < 650;
 
-////controls container
-
-    //top left container
     var topLeftContainer = new ol.control.Control({
         element: (() => {
             var topLeftContainer = document.createElement('div');
@@ -29,7 +23,6 @@ map.getView().fit([-14038336.420211, 3371615.826222, -8801786.078273, 7085422.95
     });
     map.addControl(topLeftContainer)
 
-    //bottom left container
     var bottomLeftContainer = new ol.control.Control({
         element: (() => {
             var bottomLeftContainer = document.createElement('div');
@@ -39,7 +32,6 @@ map.getView().fit([-14038336.420211, 3371615.826222, -8801786.078273, 7085422.95
     });
     map.addControl(bottomLeftContainer)
 
-    //top right container
     var topRightContainer = new ol.control.Control({
         element: (() => {
             var topRightContainer = document.createElement('div');
@@ -49,7 +41,6 @@ map.getView().fit([-14038336.420211, 3371615.826222, -8801786.078273, 7085422.95
     });
     map.addControl(topRightContainer)
 
-    //bottom right container
     var bottomRightContainer = new ol.control.Control({
         element: (() => {
             var bottomRightContainer = document.createElement('div');
@@ -59,7 +50,6 @@ map.getView().fit([-14038336.420211, 3371615.826222, -8801786.078273, 7085422.95
     });
     map.addControl(bottomRightContainer)
 
-//popup
 var container = document.getElementById('popup');
 var content = document.getElementById('popup-content');
 var closer = document.getElementById('popup-closer');
@@ -72,7 +62,7 @@ closer.onclick = function() {
 };
 var overlayPopup = new ol.Overlay({
     element: container,
-	autoPan: true
+	autoPan: false
 });
 map.addOverlay(overlayPopup)
 
@@ -80,13 +70,12 @@ map.addOverlay(overlayPopup)
 var NO_POPUP = 0
 var ALL_FIELDS = 1
 
-//highlight collection
 var collection = new ol.Collection();
 var featureOverlay = new ol.layer.Vector({
     map: map,
     source: new ol.source.Vector({
         features: collection,
-        useSpatialIndex: false // optional, might improve performance
+        useSpatialIndex: false
     }),
     style: [new ol.style.Style({
         stroke: new ol.style.Stroke({
@@ -97,8 +86,8 @@ var featureOverlay = new ol.layer.Vector({
             color: 'rgba(255,0,0,0.1)'
         }),
     })],
-    updateWhileAnimating: true, // optional, for instant visual feedback
-    updateWhileInteracting: true // optional, for instant visual feedback
+    updateWhileAnimating: false,
+    updateWhileInteracting: false
 });
 
 var doHighlight = false;
@@ -151,16 +140,6 @@ function createPopupField(currentFeature, currentFeatureKeys, layer) {
 
 var highlight;
 var autolinker = new Autolinker({truncate: {length: 30, location: 'smart'}});
-var SLIDE_GROUPS = [
-    { title: 'Mine Info', fields: ['Name', 'Operator', 'State', 'County', 'Commodity'] },
-    { title: 'Production', fields: ['Primary Product', 'Primary  Production (kt)', 'Secondary Product', 'Secondary Production (kt)'] },
-    { title: 'Air Emissions', fields: ['Total Air Emissions (kg)', 'TRI Total Air Emissions (kg)', 'NEI Total Air Emissions (kg)'] },
-    { title: 'Land & Water', fields: ['Total Water Emissions (kg)', 'Total Land Emissions (kg)', 'Total OffSite Emissions (kg)'] },
-    { title: 'Totals', fields: ['TRI Total Emissions (kg)', 'Total All Emissions (kg)'] }
-];
-var currentSlideIndex = 0;
-var currentSlideFeature = null;
-var currentSlideLayer = null;
 
 function onPointerMove(evt) {
     if (!doHover && !doHighlight) {
@@ -285,50 +264,6 @@ function onPointerMove(evt) {
     }
 };
 
-function createSlidePopup(feature, layer, slideIndex) {
-    var group = SLIDE_GROUPS[slideIndex];
-    var html = '<div class="slider-popup">';
-    html += '<div class="slider-title">' + group.title + '</div>';
-    html += '<table class="slider-table">';
-    for (var i = 0; i < group.fields.length; i++) {
-        var fieldName = group.fields[i];
-        var value = feature.get(fieldName);
-        var alias = layer.get('fieldAliases')[fieldName] || fieldName;
-        var displayValue = (value === null || value === undefined || value === "None reported" || value === "Not reported") ? "—" : value.toLocaleString();
-        html += '<tr><th>' + alias + '</th><td>' + displayValue + '</td></tr>';
-    }
-    html += '</table>';
-    html += '<div class="slider-controls">';
-    html += '<a href="#" class="slider-prev">‹</a>';
-    html += '<span class="slider-dots">';
-    for (var d = 0; d < SLIDE_GROUPS.length; d++) {
-        html += '<span class="slider-dot' + (d === slideIndex ? ' active' : '') + '"></span>';
-    }
-    html += '</span>';
-    html += '<a href="#" class="slider-next">›</a>';
-    html += '</div>';
-    html += '</div>';
-    return html;
-}
-
-function renderSlide() {
-    if (!currentSlideFeature) return;
-    content.innerHTML = createSlidePopup(currentSlideFeature, currentSlideLayer, currentSlideIndex);
-    container.style.display = 'block';
-    overlayPopup.setPosition(popupCoord);
-
-    content.querySelector('.slider-prev').onclick = function(e) {
-        e.preventDefault();
-        currentSlideIndex = (currentSlideIndex - 1 + SLIDE_GROUPS.length) % SLIDE_GROUPS.length;
-        renderSlide();
-    };
-    content.querySelector('.slider-next').onclick = function(e) {
-        e.preventDefault();
-        currentSlideIndex = (currentSlideIndex + 1) % SLIDE_GROUPS.length;
-        renderSlide();
-    };
-}
-
 map.on('pointermove', onPointerMove);
 
 var popupContent = '';
@@ -343,33 +278,6 @@ function updatePopup() {
     } else {
         container.style.display = 'none';
         closer.blur();
-    }
-}
-function onSingleClickFeatures(evt) {
-    if (doHover || sketch) {
-        return;
-    }
-    var pixel = map.getEventPixel(evt.originalEvent);
-    var coord = evt.coordinate;
-    var found = false;
-
-    map.forEachFeatureAtPixel(pixel, function(feature, layer) {
-        if (layer && feature instanceof ol.Feature && layer.get("popuplayertitle") === "Active Mines June 2025") {
-            currentSlideFeature = feature;
-            currentSlideLayer = layer;
-            currentSlideIndex = 0;
-            popupCoord = coord;
-            found = true;
-            return true;
-        }
-    });
-
-    if (found) {
-        renderSlide();
-    } else {
-        container.style.display = 'none';
-        closer.blur();
-        currentSlideFeature = null;
     }
 }
 
@@ -401,10 +309,9 @@ function onSingleClickWMS(evt) {
                 var timeoutPromise = new Promise((resolve, reject) => {
                     setTimeout(() => {
                         reject(new Error('Timeout exceeded'));
-                    }, 5000); // (5 second)
+                    }, 5000);
                 });
 
-                // Function to try fetch with different option
                 function tryFetch(urls) {
                     if (urls.length === 0) {
                         return Promise.reject(new Error('All fetch attempts failed'));
@@ -417,11 +324,9 @@ function onSingleClickWMS(evt) {
                                 throw new Error('Fetch failed');
                             }
                         })
-                        .catch(() => tryFetch(urls.slice(1))); // Try next URL
+                        .catch(() => tryFetch(urls.slice(1)));
                 }
 
-                // List of URLs to try
-                // The first URL is the original, the second is the encoded version, and the third is the proxy
                 const urlsToTry = [
                     url,
                     encodeURIComponent(url),
@@ -440,7 +345,7 @@ function onSingleClickWMS(evt) {
                         setTimeout(() => {
                             var loaderIcon = document.querySelector('#lds-roller');
                             if (loaderIcon) loaderIcon.remove();
-                        }, 500); // (0.5 second)
+                        }, 500);
                     });
             }
         }
@@ -450,12 +355,9 @@ function onSingleClickWMS(evt) {
 map.on('singleclick', onSingleClickFeatures);
 map.on('singleclick', onSingleClickWMS);
 
-//get container
 var topLeftContainerDiv = document.getElementById('top-left-container')
 var bottomLeftContainerDiv = document.getElementById('bottom-left-container')
 var bottomRightContainerDiv = document.getElementById('bottom-right-container')
-
-//title
 
 var Title = new ol.control.Control({
     element: (() => {
@@ -467,8 +369,6 @@ var Title = new ol.control.Control({
     target: 'top-left-container'
 });
 map.addControl(Title)
-
-//abstract
 
 var Abstract = new ol.control.Control({
     element: (() => {
@@ -508,28 +408,6 @@ var Abstract = new ol.control.Control({
 });
 map.addControl(Abstract);
 
-
-//geolocate
-
-
-
-//measurement
-
-
-
-
-
-//geocoder
-
-
-//layer search
-
-
-//scalebar
-
-
-//layerswitcher
-
 var layerSwitcher = new ol.control.LayerSwitcher({
     activationMode: 'click',
 	startActive: true,
@@ -547,12 +425,6 @@ if (hasTouchScreen || isSmallScreen) {
 	});
 }
 
-
-
-
-
-
-//attribution
 var bottomAttribution = new ol.control.Attribution({
   collapsible: false,
   collapsed: false,
@@ -571,8 +443,6 @@ if (bottomAttributionUl) {
   bottomAttribution.element.insertBefore(attributionList, bottomAttributionUl);
 }
 
-
-// Disable "popup on hover" or "highlight on hover" if ol-control mouseover
 var preDoHover = doHover;
 var preDoHighlight = doHighlight;
 var isPopupAllActive = false;
@@ -593,40 +463,31 @@ document.addEventListener('DOMContentLoaded', function() {
 	}
 });
 
-
-//move controls inside containers, in order
-    //zoom
     var zoomControl = document.getElementsByClassName('ol-zoom')[0];
     if (zoomControl) {
         topLeftContainerDiv.appendChild(zoomControl);
     }
-    //geolocate
     var geolocateControl = document.getElementsByClassName('geolocate')[0];
     if (geolocateControl) {
         topLeftContainerDiv.appendChild(geolocateControl);
     }
-    //measure
     var measureControl = document.getElementsByClassName('measure-control')[0];
     if (measureControl) {
         topLeftContainerDiv.appendChild(measureControl);
     }
-    //geocoder
     var geocoderControl = document.getElementsByClassName('ol-geocoder')[0];
     if (geocoderControl) {
         topLeftContainerDiv.appendChild(geocoderControl);
     }
-    //search layer
     var searchLayerControl = document.getElementsByClassName('search-layer')[0];
     if (searchLayerControl) {
         topLeftContainerDiv.appendChild(searchLayerControl);
     }
-    //scale line
     var scaleLineControl = document.getElementsByClassName('ol-scale-line')[0];
     if (scaleLineControl) {
         scaleLineControl.className += ' ol-control';
         bottomLeftContainerDiv.appendChild(scaleLineControl);
     }
-    //attribution
     var attributionControl = document.getElementsByClassName('bottom-attribution')[0];
     if (attributionControl) {
         bottomRightContainerDiv.appendChild(attributionControl);

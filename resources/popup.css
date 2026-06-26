@@ -1,0 +1,74 @@
+.slider-popup {
+    min-width: 240px;
+    max-width: 280px;
+    font-family: -apple-system, BlinkMacSystemFont, "Segoe UI", Roboto, sans-serif;
+    background: #e8e8e8;
+    border-radius: 14px;
+    padding: 14px 16px 10px 16px;
+}
+
+.slider-dots {
+    display: flex;
+    justify-content: center;
+    gap: 5px;
+    margin-bottom: 10px;
+}
+
+.slider-dot {
+    width: 5px;
+    height: 5px;
+    border-radius: 50%;
+    background: #b5b5b5;
+    display: inline-block;
+}
+
+.slider-dot.active {
+    background: #555;
+}
+
+.slider-name {
+    font-size: 14px;
+    font-weight: 600;
+    color: #222;
+    border-bottom: 1px solid #999;
+    padding-bottom: 6px;
+    margin-bottom: 8px;
+}
+
+.slider-row {
+    display: flex;
+    justify-content: space-between;
+    align-items: baseline;
+    font-size: 13px;
+    padding: 3px 0;
+    color: #333;
+}
+
+.slider-label {
+    color: #555;
+    font-weight: 500;
+}
+
+.slider-value {
+    color: #111;
+    text-align: right;
+    margin-left: 12px;
+}
+
+.slider-controls {
+    display: flex;
+    justify-content: flex-end;
+    margin-top: 8px;
+}
+
+.slider-prev, .slider-next {
+    font-size: 20px;
+    text-decoration: none;
+    color: #444;
+    padding: 0 6px;
+    line-height: 1;
+}
+
+.slider-prev:hover, .slider-next:hover {
+    color: #000;
+}
