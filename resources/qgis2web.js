@@ -1,23 +1,19 @@
-
 var map = new ol.Map({
     target: 'map',
     renderer: 'canvas',
     layers: layersList,
     view: new ol.View({
-         maxZoom: 28, minZoom: 1
+         maxZoom: 8, 
+         minZoom: 4, 
+         projection: 'EPSG:3857'
     })
 });
 
-//initial view - epsg:3857 coordinates if not "Match project CRS"
 map.getView().fit([-14038336.420211, 3371615.826222, -8801786.078273, 7085422.956296], map.getSize());
 
-////small screen definition
     var hasTouchScreen = map.getViewport().classList.contains('ol-touch');
     var isSmallScreen = window.innerWidth < 650;
 
-////controls container
-
-    //top left container
     var topLeftContainer = new ol.control.Control({
         element: (() => {
             var topLeftContainer = document.createElement('div');
@@ -27,7 +23,6 @@ map.getView().fit([-14038336.420211, 3371615.826222, -8801786.078273, 7085422.95
     });
     map.addControl(topLeftContainer)
 
-    //bottom left container
     var bottomLeftContainer = new ol.control.Control({
         element: (() => {
             var bottomLeftContainer = document.createElement('div');
@@ -37,7 +32,6 @@ map.getView().fit([-14038336.420211, 3371615.826222, -8801786.078273, 7085422.95
     });
     map.addControl(bottomLeftContainer)
 
-    //top right container
     var topRightContainer = new ol.control.Control({
         element: (() => {
             var topRightContainer = document.createElement('div');
@@ -47,7 +41,6 @@ map.getView().fit([-14038336.420211, 3371615.826222, -8801786.078273, 7085422.95
     });
     map.addControl(topRightContainer)
 
-    //bottom right container
     var bottomRightContainer = new ol.control.Control({
         element: (() => {
             var bottomRightContainer = document.createElement('div');
@@ -57,7 +50,6 @@ map.getView().fit([-14038336.420211, 3371615.826222, -8801786.078273, 7085422.95
     });
     map.addControl(bottomRightContainer)
 
-//popup
 var container = document.getElementById('popup');
 var content = document.getElementById('popup-content');
 var closer = document.getElementById('popup-closer');
@@ -70,7 +62,7 @@ closer.onclick = function() {
 };
 var overlayPopup = new ol.Overlay({
     element: container,
-	autoPan: true
+	autoPan: false
 });
 map.addOverlay(overlayPopup)
 
@@ -78,27 +70,12 @@ map.addOverlay(overlayPopup)
 var NO_POPUP = 0
 var ALL_FIELDS = 1
 
-/**
- * Returns either NO_POPUP, ALL_FIELDS or the name of a single field to use for
- * a given layer
- * @param layerList {Array} List of ol.Layer instances
- * @param layer {ol.Layer} Layer to find field info about
- */
-function getPopupFields(layerList, layer) {
-    // Determine the index that the layer will have in the popupLayers Array,
-    // if the layersList contains more items than popupLayers then we need to
-    // adjust the index to take into account the base maps group
-    var idx = layersList.indexOf(layer) - (layersList.length - popupLayers.length);
-    return popupLayers[idx];
-}
-
-//highligth collection
 var collection = new ol.Collection();
 var featureOverlay = new ol.layer.Vector({
     map: map,
     source: new ol.source.Vector({
         features: collection,
-        useSpatialIndex: false // optional, might improve performance
+        useSpatialIndex: false
     }),
     style: [new ol.style.Style({
         stroke: new ol.style.Stroke({
@@ -109,8 +86,8 @@ var featureOverlay = new ol.layer.Vector({
             color: 'rgba(255,0,0,0.1)'
         }),
     })],
-    updateWhileAnimating: true, // optional, for instant visual feedback
-    updateWhileInteracting: true // optional, for instant visual feedback
+    updateWhileAnimating: false,
+    updateWhileInteracting: false
 });
 
 var doHighlight = false;
@@ -304,63 +281,6 @@ function updatePopup() {
     }
 }
 
-function onSingleClickFeatures(evt) {
-    if (doHover || sketch) {
-        return;
-    }
-    if (!featuresPopupActive) {
-        featuresPopupActive = true;
-    }
-    var pixel = map.getEventPixel(evt.originalEvent);
-    var coord = evt.coordinate;
-    var currentFeature;
-    var currentFeatureKeys;
-    var clusteredFeatures;
-    var popupText = '<ul>';
-
-    map.forEachFeatureAtPixel(pixel, function(feature, layer) {
-        if (layer && feature instanceof ol.Feature && (layer.get("interactive") || layer.get("interactive") === undefined)) {
-            var doPopup = false;
-            for (var k in layer.get('fieldImages')) {
-                if (layer.get('fieldImages')[k] !== "Hidden") {
-                    doPopup = true;
-                }
-            }
-            currentFeature = feature;
-            clusteredFeatures = feature.get("features");
-            if (typeof clusteredFeatures !== "undefined") {
-                if (doPopup) {
-                    for(var n = 0; n < clusteredFeatures.length; n++) {
-                        currentFeature = clusteredFeatures[n];
-                        currentFeatureKeys = currentFeature.getKeys();
-                        popupText += '<li><table>';
-                        popupText += '<a><b>' + layer.get('popuplayertitle') + '</b></a>';
-                        popupText += createPopupField(currentFeature, currentFeatureKeys, layer);
-                        popupText += '</table></li>';
-                    }
-                }
-            } else {
-                currentFeatureKeys = currentFeature.getKeys();
-                if (doPopup) {
-                    popupText += '<li><table>';
-                    popupText += '<a><b>' + layer.get('popuplayertitle') + '</b></a>';
-                    popupText += createPopupField(currentFeature, currentFeatureKeys, layer);
-                    popupText += '</table>';
-                }
-            }
-        }
-    });
-    if (popupText === '<ul>') {
-        popupText = '';
-    } else {
-        popupText += '</ul>';
-    }
-
-	popupContent = popupText;
-    popupCoord = coord;
-    updatePopup();
-}
-
 function onSingleClickWMS(evt) {
     if (doHover || sketch) {
         return;
@@ -389,10 +309,9 @@ function onSingleClickWMS(evt) {
                 var timeoutPromise = new Promise((resolve, reject) => {
                     setTimeout(() => {
                         reject(new Error('Timeout exceeded'));
-                    }, 5000); // (5 second)
+                    }, 5000);
                 });
 
-                // Function to try fetch with different option
                 function tryFetch(urls) {
                     if (urls.length === 0) {
                         return Promise.reject(new Error('All fetch attempts failed'));
@@ -405,11 +324,9 @@ function onSingleClickWMS(evt) {
                                 throw new Error('Fetch failed');
                             }
                         })
-                        .catch(() => tryFetch(urls.slice(1))); // Try next URL
+                        .catch(() => tryFetch(urls.slice(1)));
                 }
 
-                // List of URLs to try
-                // The first URL is the original, the second is the encoded version, and the third is the proxy
                 const urlsToTry = [
                     url,
                     encodeURIComponent(url),
@@ -428,7 +345,7 @@ function onSingleClickWMS(evt) {
                         setTimeout(() => {
                             var loaderIcon = document.querySelector('#lds-roller');
                             if (loaderIcon) loaderIcon.remove();
-                        }, 500); // (0.5 second)
+                        }, 500);
                     });
             }
         }
@@ -438,12 +355,9 @@ function onSingleClickWMS(evt) {
 map.on('singleclick', onSingleClickFeatures);
 map.on('singleclick', onSingleClickWMS);
 
-//get container
 var topLeftContainerDiv = document.getElementById('top-left-container')
 var bottomLeftContainerDiv = document.getElementById('bottom-left-container')
 var bottomRightContainerDiv = document.getElementById('bottom-right-container')
-
-//title
 
 var Title = new ol.control.Control({
     element: (() => {
@@ -455,8 +369,6 @@ var Title = new ol.control.Control({
     target: 'top-left-container'
 });
 map.addControl(Title)
-
-//abstract
 
 var Abstract = new ol.control.Control({
     element: (() => {
@@ -496,28 +408,6 @@ var Abstract = new ol.control.Control({
 });
 map.addControl(Abstract);
 
-
-//geolocate
-
-
-
-//measurement
-
-
-
-
-
-//geocoder
-
-
-//layer search
-
-
-//scalebar
-
-
-//layerswitcher
-
 var layerSwitcher = new ol.control.LayerSwitcher({
     activationMode: 'click',
 	startActive: true,
@@ -535,12 +425,6 @@ if (hasTouchScreen || isSmallScreen) {
 	});
 }
 
-
-
-
-
-
-//attribution
 var bottomAttribution = new ol.control.Attribution({
   collapsible: false,
   collapsed: false,
@@ -559,8 +443,6 @@ if (bottomAttributionUl) {
   bottomAttribution.element.insertBefore(attributionList, bottomAttributionUl);
 }
 
-
-// Disable "popup on hover" or "highlight on hover" if ol-control mouseover
 var preDoHover = doHover;
 var preDoHighlight = doHighlight;
 var isPopupAllActive = false;
@@ -581,40 +463,31 @@ document.addEventListener('DOMContentLoaded', function() {
 	}
 });
 
-
-//move controls inside containers, in order
-    //zoom
     var zoomControl = document.getElementsByClassName('ol-zoom')[0];
     if (zoomControl) {
         topLeftContainerDiv.appendChild(zoomControl);
     }
-    //geolocate
     var geolocateControl = document.getElementsByClassName('geolocate')[0];
     if (geolocateControl) {
         topLeftContainerDiv.appendChild(geolocateControl);
     }
-    //measure
     var measureControl = document.getElementsByClassName('measure-control')[0];
     if (measureControl) {
         topLeftContainerDiv.appendChild(measureControl);
     }
-    //geocoder
     var geocoderControl = document.getElementsByClassName('ol-geocoder')[0];
     if (geocoderControl) {
         topLeftContainerDiv.appendChild(geocoderControl);
     }
-    //search layer
     var searchLayerControl = document.getElementsByClassName('search-layer')[0];
     if (searchLayerControl) {
         topLeftContainerDiv.appendChild(searchLayerControl);
     }
-    //scale line
     var scaleLineControl = document.getElementsByClassName('ol-scale-line')[0];
     if (scaleLineControl) {
         scaleLineControl.className += ' ol-control';
         bottomLeftContainerDiv.appendChild(scaleLineControl);
     }
-    //attribution
     var attributionControl = document.getElementsByClassName('bottom-attribution')[0];
     if (attributionControl) {
         bottomRightContainerDiv.appendChild(attributionControl);

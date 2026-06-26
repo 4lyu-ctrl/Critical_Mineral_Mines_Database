@@ -1,4 +1,4 @@
-﻿var json_ActiveMinesJune2025_3 = {
+{
   "type": "FeatureCollection",
   "name": "ActiveMinesJune2025_3",
   "crs": {
@@ -629,4 +629,4 @@
       }
     }
   ]
-};
+}
