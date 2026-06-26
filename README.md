@@ -6,4 +6,4 @@
 
 <p>We will continue to update this compendium as new data become available for the U.S. Additionally, we are developing a similar compendium for Chile and Australia critical mineral mines that will also be hosted in this repository.</p>
 
-<p>To view the interactive map, click <a href = "https://raw.githack.com/4lyu-ctrl/Critical_Mineral_Mines_Database/2242ec0e4b4f41183c8486763d44281e8572d58d/index.html"> here </a>.</p>
+<p>To view the interactive map, click <a href = "https://rawcdn.githack.com/4lyu-ctrl/Critical_Mineral_Mines_Database/2242ec0e4b4f41183c8486763d44281e8572d58d/index.html"> here </a>.</p>
