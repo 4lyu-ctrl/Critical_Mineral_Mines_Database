@@ -1,4 +1,4 @@
-var size = 0;
+var size = 100;
 var placement = 'point';
 // Define a color mapping for commodities
 var commodityColors = {
@@ -17,8 +17,8 @@ var defaultCommodityColor = 'rgba(150,150,150,1.0)';
 
 /**
  * Get the color for a given commodity value.
- * @param {string} valueStr 
- * @returns {string} 
+ * @param {string} valueStr
+ * @returns {string}
  */
 function getCommodityColor(valueStr) {
     for (var key in commodityColors) {
@@ -28,6 +28,32 @@ function getCommodityColor(valueStr) {
     }
     return defaultCommodityColor;
 }
+
+/**
+ * Map "Estimated Total Resources (Mt)" to a size category (1-6).
+ * @param {number} resources
+ * @returns {number}
+ */
+function getSizeCategory(resources) {
+    var val = (resources !== null && resources !== undefined) ? resources : 0;
+    switch (true) {
+        case (val < 25):
+            return 1;
+        case (val < 100):
+            return 2;
+        case (val < 500):
+            return 3;
+        case (val < 2500):
+            return 4;
+        case (val < 9000):
+            return 5;
+        default:
+            return 6;
+    }
+}
+
+// Circle radius (px) for each size category, indexed [category - 1]
+var sizeCategoryRadii = [4, 6, 8, 10, 13, 16];
  
 function categories_mines(feature, value, size, resolution, labelText,
                        labelFont, labelFill, bufferColor, bufferWidth,
@@ -35,9 +61,12 @@ function categories_mines(feature, value, size, resolution, labelText,
     var valueStr = (value !== null && value !== undefined) ? value.toString() : 'default';
     var color = getCommodityColor(valueStr);
  
+    var resources = feature.get("Estimated Total Resources (Mt)");
+    var radius = sizeCategoryRadii[getSizeCategory(resources) - 1];
+
     return [ new ol.style.Style({
         image: new ol.style.Circle({
-            radius: 12.0 + size,
+            radius: radius,
             displacement: [0, 0],
             stroke: new ol.style.Stroke({color: 'rgba(35,35,35,1.0)', lineDash: null, lineCap: 'butt', lineJoin: 'miter', width: 2.28}),
             fill: new ol.style.Fill({color: color})
@@ -62,4 +91,5 @@ var mines_style = function(feature, resolution){
                             bufferWidth, placement);
 };
 var style_ActiveMinesJune2025_3 = mines_style;
-var style_chile_mines = mines_style;
+var style_Chile = mines_style;
+var style_Australia = mines_style;

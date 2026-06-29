@@ -1,6 +1,6 @@
 {
   "type": "FeatureCollection",
-  "name": "chile_mines",
+  "name": "Australia",
   "crs": {
     "type": "name",
     "properties": {
@@ -11,23 +11,23 @@
     {
       "type": "Feature",
       "properties": {
-        "Name": "Altamira",
-        "Operator": "Las Cenizas Mining Group",
-        "State": "Antofagasta ",
-        "Country": "Chile",
+        "Name": "Bauxite Hills",
+        "Operator": "Metro Mining",
+        "State": "Queensland",
+        "Country": "Australia",
         "County": null,
-        "Latitude": -25.836,
-        "Longitude": -69.857,
-        "Commodity": "Cu",
-        "Years of Operation": null,
-        "Primary Product": "Cu",
-        "Primary  Production (kt)": null,
-        "Secondary Product": "Ag",
+        "Latitude": -11.8348,
+        "Longitude": 142.0449,
+        "Commodity": "Bauxite",
+        "Years of Operation": "2017-2029",
+        "Primary Product": "Bauxite",
+        "Primary  Production (kt)": 5,
+        "Secondary Product": null,
         "Secondary Production (kt)": null,
-        "Estimated Total Resources (Mt)": 2.86,
-        "Ore Grade": "1.24% Cu",
-        "Est. Reserves": null,
-        "Notes": null,
+        "Estimated Total Resources (Mt)": 114.4,
+        "Ore Grade": "48.4% alumina",
+        "Est. Reserves": "77.7 Mt (49.8% alumina) bauxite",
+        "Notes": "China (not specified)",
         "TRI Total Air Emissions (kg)": "Not reported",
         "NEI Total Air Emissions (kg)": "Not reported",
         "Total Air Emissions (kg)": "Not reported",
@@ -40,31 +40,68 @@
       "geometry": {
         "type": "Point",
         "coordinates": [
-          -69.857,
-          -25.836
+          142.0449,
+          -11.8348
         ]
       }
     },
     {
       "type": "Feature",
       "properties": {
-        "Name": "Andina ",
-        "Operator": "Codelco",
-        "State": "Valparaiso",
-        "Country": "Chile",
+        "Name": "Gove",
+        "Operator": "Rio Tinto",
+        "State": "Northern Territory",
+        "Country": "Australia",
         "County": null,
-        "Latitude": -33.0891488545434,
-        "Longitude": -70.2457929283312,
-        "Commodity": "Cu",
-        "Years of Operation": "1970-2052",
-        "Primary Product": "Cu",
-        "Primary  Production (kt)": 164.5,
+        "Latitude": -12.2611,
+        "Longitude": 136.837,
+        "Commodity": "Bauxite",
+        "Years of Operation": "1971-2030",
+        "Primary Product": "Bauxite",
+        "Primary  Production (kt)": 11800,
+        "Secondary Product": null,
+        "Secondary Production (kt)": null,
+        "Estimated Total Resources (Mt)": 10.0,
+        "Ore Grade": "47.7% Alumina",
+        "Est. Reserves": "48 Mt (50.0% Alumina)",
+        "Notes": "Queensland Alumina, Yarwun refineries, international refineries",
+        "TRI Total Air Emissions (kg)": "Not reported",
+        "NEI Total Air Emissions (kg)": "Not reported",
+        "Total Air Emissions (kg)": "Not reported",
+        "Total Water Emissions (kg)": "Not reported",
+        "Total Land Emissions (kg)": "Not reported",
+        "Total OffSite Emissions (kg)": "Not reported",
+        "TRI Total Emissions (kg)": "Not reported",
+        "Total All Emissions (kg)": "Not reported"
+      },
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          136.837,
+          -12.2611
+        ]
+      }
+    },
+    {
+      "type": "Feature",
+      "properties": {
+        "Name": "Huntly",
+        "Operator": "Alcoa, Alumina Limited",
+        "State": "Western Australia",
+        "Country": "Australia",
+        "County": null,
+        "Latitude": -32.5558,
+        "Longitude": 116.1665,
+        "Commodity": "Bauxite",
+        "Years of Operation": "1975-2045",
+        "Primary Product": "Bauxite",
+        "Primary  Production (kt)": 23800,
         "Secondary Product": null,
         "Secondary Production (kt)": null,
         "Estimated Total Resources (Mt)": null,
         "Ore Grade": null,
-        "Est. Reserves": "36.8 Mt Cu",
-        "Notes": "Made up of Rio Blanco underground mine and Sur Sur open pit mine",
+        "Est. Reserves": null,
+        "Notes": "Pinjarra Alumina Refinery, Kwinana Energy Hub (BP), 423.7 Mt (30.7% Alumina) reserves with Willowdale",
         "TRI Total Air Emissions (kg)": "Not reported",
         "NEI Total Air Emissions (kg)": "Not reported",
         "Total Air Emissions (kg)": "Not reported",
@@ -77,30 +114,30 @@
       "geometry": {
         "type": "Point",
         "coordinates": [
-          -70.2457929283312,
-          -33.0891488545434
+          116.1665,
+          -32.5558
         ]
       }
     },
     {
       "type": "Feature",
       "properties": {
-        "Name": "Antucoya",
-        "Operator": "Antofagasta Minerals (70%), Marubeni Copper Holdings (30%)",
-        "State": "Antofagasta ",
-        "Country": "Chile",
+        "Name": "Weipa (East Weipa, Andoom, Amrun)",
+        "Operator": "Rio Tinto",
+        "State": "Queensland",
+        "Country": "Australia",
         "County": null,
-        "Latitude": -22.638,
-        "Longitude": -69.8828,
-        "Commodity": "Cu",
-        "Years of Operation": null,
-        "Primary Product": "Cu",
-        "Primary  Production (kt)": 80.5,
+        "Latitude": -12.6637,
+        "Longitude": 141.8732,
+        "Commodity": "Bauxite",
+        "Years of Operation": 1963,
+        "Primary Product": "Bauxite",
+        "Primary  Production (kt)": 37000,
         "Secondary Product": null,
         "Secondary Production (kt)": null,
-        "Estimated Total Resources (Mt)": 1204,
-        "Ore Grade": "0.31% Cu",
-        "Est. Reserves": "691.4 mt (0.3% Cu)",
+        "Estimated Total Resources (Mt)": 545.0,
+        "Ore Grade": "49.5% Alumina (509 Mt), 48% Alumina (36 Mt)",
+        "Est. Reserves": "978 Mt (54.4% Alumina) + 56 Mt (50.5% Alumina)",
         "Notes": null,
         "TRI Total Air Emissions (kg)": "Not reported",
         "NEI Total Air Emissions (kg)": "Not reported",
@@ -114,31 +151,31 @@
       "geometry": {
         "type": "Point",
         "coordinates": [
-          -69.8828,
-          -22.638
+          141.8732,
+          -12.6637
         ]
       }
     },
     {
       "type": "Feature",
       "properties": {
-        "Name": "Candelaria",
-        "Operator": "Lundin Mining (80%), Sumitomo Group (20%)",
-        "State": "Atacama",
-        "Country": "Chile",
+        "Name": "Willowdale",
+        "Operator": "Alcoa, local interests",
+        "State": "Western Australia",
+        "Country": "Australia",
         "County": null,
-        "Latitude": -27.516944,
-        "Longitude": -70.291111,
-        "Commodity": "Cu",
-        "Years of Operation": 1995,
-        "Primary Product": "Cu",
-        "Primary  Production (kt)": 151.0,
-        "Secondary Product": "Au, Fe",
+        "Latitude": -32.8451,
+        "Longitude": 116.0618,
+        "Commodity": "Bauxite",
+        "Years of Operation": "1984-2045",
+        "Primary Product": "Bauxite",
+        "Primary  Production (kt)": 10000,
+        "Secondary Product": null,
         "Secondary Production (kt)": null,
-        "Estimated Total Resources (Mt)": 501,
-        "Ore Grade": "0.54% Cu, 0.13 g/t Au",
-        "Est. Reserves": "676 Mt (0.53% Cu)",
-        "Notes": "Reverse osmosis plant at port of Caldera ",
+        "Estimated Total Resources (Mt)": null,
+        "Ore Grade": null,
+        "Est. Reserves": null,
+        "Notes": "Wagerup refinery, 423.7 Mt (30.7% Alumina) with Huntly",
         "TRI Total Air Emissions (kg)": "Not reported",
         "NEI Total Air Emissions (kg)": "Not reported",
         "Total Air Emissions (kg)": "Not reported",
@@ -151,104 +188,215 @@
       "geometry": {
         "type": "Point",
         "coordinates": [
-          -70.291111,
-          -27.516944
+          116.0618,
+          -32.8451
         ]
       }
     },
     {
       "type": "Feature",
       "properties": {
-        "Name": "Carmen de Andacollo",
-        "Operator": "Teck Resources (90%), ENAMI (10%)",
-        "State": "Coquimbo",
-        "Country": "Chile",
+        "Name": "Worsley",
+        "Operator": "South32 (86%), Japan Alumina (10%), Sojitz (4%)",
+        "State": "Western Australia",
+        "Country": "Australia",
         "County": null,
-        "Latitude": -30.25,
-        "Longitude": -71.1,
-        "Commodity": "Cu",
+        "Latitude": -32.9292,
+        "Longitude": 116.4559,
+        "Commodity": "Bauxite",
+        "Years of Operation": null,
+        "Primary Product": "Bauxite",
+        "Primary  Production (kt)": null,
+        "Secondary Product": null,
+        "Secondary Production (kt)": 3.8,
+        "Estimated Total Resources (Mt)": 1090.0,
+        "Ore Grade": "28.7% Alumina",
+        "Est. Reserves": "199 Mt (28.2% alumina)",
+        "Notes": "Worsley refinery (local/Collie), Hillside smelter (South Africa) & Mozal smelter (Mozambique) ",
+        "TRI Total Air Emissions (kg)": "Not reported",
+        "NEI Total Air Emissions (kg)": "Not reported",
+        "Total Air Emissions (kg)": "Not reported",
+        "Total Water Emissions (kg)": "Not reported",
+        "Total Land Emissions (kg)": "Not reported",
+        "Total OffSite Emissions (kg)": "Not reported",
+        "TRI Total Emissions (kg)": "Not reported",
+        "Total All Emissions (kg)": "Not reported"
+      },
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          116.4559,
+          -32.9292
+        ]
+      }
+    },
+    {
+      "type": "Feature",
+      "properties": {
+        "Name": "Coobina",
+        "Operator": "Consolidated Minerals (now part of Mineral Resources)",
+        "State": "Western Australia",
+        "Country": "Australia",
+        "County": null,
+        "Latitude": -23.49194,
+        "Longitude": 120.27556,
+        "Commodity": "Chromite",
+        "Years of Operation": "1925 - 2008, 2010-2014",
+        "Primary Product": "Chromite",
+        "Primary  Production (kt)": 452,
+        "Secondary Product": null,
+        "Secondary Production (kt)": null,
+        "Estimated Total Resources (Mt)": 1.5,
+        "Ore Grade": "29.4% Cr",
+        "Est. Reserves": null,
+        "Notes": "only significant chromium deposit in AUS",
+        "TRI Total Air Emissions (kg)": "Not reported",
+        "NEI Total Air Emissions (kg)": "Not reported",
+        "Total Air Emissions (kg)": "Not reported",
+        "Total Water Emissions (kg)": "Not reported",
+        "Total Land Emissions (kg)": "Not reported",
+        "Total OffSite Emissions (kg)": "Not reported",
+        "TRI Total Emissions (kg)": "Not reported",
+        "Total All Emissions (kg)": "Not reported"
+      },
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          120.27556,
+          -23.49194
+        ]
+      }
+    },
+    {
+      "type": "Feature",
+      "properties": {
+        "Name": "Cadia-Ridgeway",
+        "Operator": "Newmont",
+        "State": "New South Wales",
+        "Country": "Australia",
+        "County": null,
+        "Latitude": -33.45635071,
+        "Longitude": 148.9964945,
+        "Commodity": "Copper",
+        "Years of Operation": "1998-2030",
+        "Primary Product": "Copper",
+        "Primary  Production (kt)": 85,
+        "Secondary Product": null,
+        "Secondary Production (kt)": null,
+        "Estimated Total Resources (Mt)": 2.1,
+        "Ore Grade": "0.25% Cu",
+        "Est. Reserves": "1.1 Mt (0.29% Cu)",
+        "Notes": "also produces Molybdenum (0.01% of reserves)",
+        "TRI Total Air Emissions (kg)": "Not reported",
+        "NEI Total Air Emissions (kg)": "Not reported",
+        "Total Air Emissions (kg)": "Not reported",
+        "Total Water Emissions (kg)": "Not reported",
+        "Total Land Emissions (kg)": "Not reported",
+        "Total OffSite Emissions (kg)": "Not reported",
+        "TRI Total Emissions (kg)": "Not reported",
+        "Total All Emissions (kg)": "Not reported"
+      },
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          148.9964945,
+          -33.45635071
+        ]
+      }
+    },
+    {
+      "type": "Feature",
+      "properties": {
+        "Name": "Carapateena",
+        "Operator": "BHP (previously OZ Minerals)",
+        "State": "South Australia",
+        "Country": "Australia",
+        "County": null,
+        "Latitude": -31.24172476,
+        "Longitude": 137.4818677,
+        "Commodity": "Copper",
+        "Years of Operation": "2019-2039",
+        "Primary Product": "Copper",
+        "Primary  Production (kt)": 4250,
+        "Secondary Product": null,
+        "Secondary Production (kt)": null,
+        "Estimated Total Resources (Mt)": 900.0,
+        "Ore Grade": "0.55% Cu",
+        "Est. Reserves": "185 Mt (1.03% Cu)",
+        "Notes": "Production of 1.31% copper",
+        "TRI Total Air Emissions (kg)": "Not reported",
+        "NEI Total Air Emissions (kg)": "Not reported",
+        "Total Air Emissions (kg)": "Not reported",
+        "Total Water Emissions (kg)": "Not reported",
+        "Total Land Emissions (kg)": "Not reported",
+        "Total OffSite Emissions (kg)": "Not reported",
+        "TRI Total Emissions (kg)": "Not reported",
+        "Total All Emissions (kg)": "Not reported"
+      },
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          137.4818677,
+          -31.24172476
+        ]
+      }
+    },
+    {
+      "type": "Feature",
+      "properties": {
+        "Name": "CSA",
+        "Operator": "Metals Acquisition",
+        "State": "New South Wales",
+        "Country": "Australia",
+        "County": null,
+        "Latitude": -31.408,
+        "Longitude": 145.801,
+        "Commodity": "Copper",
+        "Years of Operation": "1965-2034",
+        "Primary Product": "Copper",
+        "Primary  Production (kt)": "40-50",
+        "Secondary Product": null,
+        "Secondary Production (kt)": null,
+        "Estimated Total Resources (Mt)": 8.0,
+        "Ore Grade": "5.2% Cu",
+        "Est. Reserves": "14.9 Mt (3.3% Cu) = 494 kt Cu",
+        "Notes": "smelted in Asia",
+        "TRI Total Air Emissions (kg)": "Not reported",
+        "NEI Total Air Emissions (kg)": "Not reported",
+        "Total Air Emissions (kg)": "Not reported",
+        "Total Water Emissions (kg)": "Not reported",
+        "Total Land Emissions (kg)": "Not reported",
+        "Total OffSite Emissions (kg)": "Not reported",
+        "TRI Total Emissions (kg)": "Not reported",
+        "Total All Emissions (kg)": "Not reported"
+      },
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          145.801,
+          -31.408
+        ]
+      }
+    },
+    {
+      "type": "Feature",
+      "properties": {
+        "Name": "Eloise",
+        "Operator": "AIC Mines",
+        "State": "Queensland",
+        "Country": "Australia",
+        "County": null,
+        "Latitude": -20.953056,
+        "Longitude": 140.978611,
+        "Commodity": "Copper",
         "Years of Operation": 1996,
-        "Primary Product": "Cu",
-        "Primary  Production (kt)": 39.6,
-        "Secondary Product": "Au, Mo",
-        "Secondary Production (kt)": null,
-        "Estimated Total Resources (Mt)": 417,
-        "Ore Grade": "0.34 % Cu, 0.12 % Au",
-        "Est. Reserves": null,
-        "Notes": null,
-        "TRI Total Air Emissions (kg)": "Not reported",
-        "NEI Total Air Emissions (kg)": "Not reported",
-        "Total Air Emissions (kg)": "Not reported",
-        "Total Water Emissions (kg)": "Not reported",
-        "Total Land Emissions (kg)": "Not reported",
-        "Total OffSite Emissions (kg)": "Not reported",
-        "TRI Total Emissions (kg)": "Not reported",
-        "Total All Emissions (kg)": "Not reported"
-      },
-      "geometry": {
-        "type": "Point",
-        "coordinates": [
-          -71.1,
-          -30.25
-        ]
-      }
-    },
-    {
-      "type": "Feature",
-      "properties": {
-        "Name": "Caserones",
-        "Operator": "Lundin Mining (70%), JX Nippon (30%)",
-        "State": "Atacama",
-        "Country": "Chile",
-        "County": null,
-        "Latitude": -28.166,
-        "Longitude": -69.541,
-        "Commodity": "Cu",
-        "Years of Operation": 2014,
-        "Primary Product": "Cu",
-        "Primary  Production (kt)": 139.5,
-        "Secondary Product": "Mo",
-        "Secondary Production (kt)": 4.6,
-        "Estimated Total Resources (Mt)": 2715,
-        "Ore Grade": "0.26 % Cu, 98 g/t Mo",
-        "Est. Reserves": null,
-        "Notes": "Fundicion Paipote",
-        "TRI Total Air Emissions (kg)": "Not reported",
-        "NEI Total Air Emissions (kg)": "Not reported",
-        "Total Air Emissions (kg)": "Not reported",
-        "Total Water Emissions (kg)": "Not reported",
-        "Total Land Emissions (kg)": "Not reported",
-        "Total OffSite Emissions (kg)": "Not reported",
-        "TRI Total Emissions (kg)": "Not reported",
-        "Total All Emissions (kg)": "Not reported"
-      },
-      "geometry": {
-        "type": "Point",
-        "coordinates": [
-          -69.541,
-          -28.166
-        ]
-      }
-    },
-    {
-      "type": "Feature",
-      "properties": {
-        "Name": "Cerro Colorado",
-        "Operator": "BHP (Pampa Norte) ",
-        "State": "Tarapaca",
-        "Country": "Chile",
-        "County": null,
-        "Latitude": -20.044444,
-        "Longitude": -69.264722,
-        "Commodity": "Cu",
-        "Years of Operation": "1994-2023, 2030",
-        "Primary Product": "Cu",
-        "Primary  Production (kt)": 35.0,
+        "Primary Product": "Copper",
+        "Primary  Production (kt)": 10.6,
         "Secondary Product": null,
         "Secondary Production (kt)": null,
-        "Estimated Total Resources (Mt)": 1610,
-        "Ore Grade": "0.37% Cu",
-        "Est. Reserves": null,
+        "Estimated Total Resources (Mt)": 6.2,
+        "Ore Grade": "2.5% Cu",
+        "Est. Reserves": "2.45 Mt (2.4% Cu) = 58.1 kt Cu",
         "Notes": null,
         "TRI Total Air Emissions (kg)": "Not reported",
         "NEI Total Air Emissions (kg)": "Not reported",
@@ -262,327 +410,31 @@
       "geometry": {
         "type": "Point",
         "coordinates": [
-          -69.264722,
-          -20.044444
+          140.978611,
+          -20.953056
         ]
       }
     },
     {
       "type": "Feature",
       "properties": {
-        "Name": "Chuquicamata",
-        "Operator": "Codelco",
-        "State": "Antofagasta ",
-        "Country": "Chile",
+        "Name": "Ernest Henry",
+        "Operator": "Evolution Mining",
+        "State": "Queensland",
+        "Country": "Australia",
         "County": null,
-        "Latitude": -22.299722,
-        "Longitude": -68.895278,
-        "Commodity": "Cu",
-        "Years of Operation": 1882,
-        "Primary Product": "Cu",
-        "Primary  Production (kt)": 248.5,
-        "Secondary Product": "Mo",
-        "Secondary Production (kt)": null,
-        "Estimated Total Resources (Mt)": 14571,
-        "Ore Grade": "0.43% Cu",
-        "Est. Reserves": null,
-        "Notes": null,
-        "TRI Total Air Emissions (kg)": "Not reported",
-        "NEI Total Air Emissions (kg)": "Not reported",
-        "Total Air Emissions (kg)": "Not reported",
-        "Total Water Emissions (kg)": "Not reported",
-        "Total Land Emissions (kg)": "Not reported",
-        "Total OffSite Emissions (kg)": "Not reported",
-        "TRI Total Emissions (kg)": "Not reported",
-        "Total All Emissions (kg)": "Not reported"
-      },
-      "geometry": {
-        "type": "Point",
-        "coordinates": [
-          -68.895278,
-          -22.299722
-        ]
-      }
-    },
-    {
-      "type": "Feature",
-      "properties": {
-        "Name": "Punitaqui (Cinabrio Deposit)",
-        "Operator": "Battery Mineral Resources",
-        "State": "Coquimbo",
-        "Country": "Chile",
-        "County": null,
-        "Latitude": -30.713,
-        "Longitude": -71.214,
-        "Commodity": "Cu",
-        "Years of Operation": 1972,
-        "Primary Product": "Cu",
-        "Primary  Production (kt)": null,
-        "Secondary Product": "Ag",
-        "Secondary Production (kt)": null,
-        "Estimated Total Resources (Mt)": 3.35,
-        "Ore Grade": "1.51% Cu",
-        "Est. Reserves": "378 kt (1.55% Cu)",
-        "Notes": null,
-        "TRI Total Air Emissions (kg)": "Not reported",
-        "NEI Total Air Emissions (kg)": "Not reported",
-        "Total Air Emissions (kg)": "Not reported",
-        "Total Water Emissions (kg)": "Not reported",
-        "Total Land Emissions (kg)": "Not reported",
-        "Total OffSite Emissions (kg)": "Not reported",
-        "TRI Total Emissions (kg)": "Not reported",
-        "Total All Emissions (kg)": "Not reported"
-      },
-      "geometry": {
-        "type": "Point",
-        "coordinates": [
-          -71.214,
-          -30.713
-        ]
-      }
-    },
-    {
-      "type": "Feature",
-      "properties": {
-        "Name": "Centinela ",
-        "Operator": "Antofagasta Minerals (70%), Marubeni Copper Holdings (30%)",
-        "State": "Atacama",
-        "Country": "Chile",
-        "County": null,
-        "Latitude": -22.975156,
-        "Longitude": -69.061419,
-        "Commodity": "Cu",
-        "Years of Operation": 2014,
-        "Primary Product": "Cu",
-        "Primary  Production (kt)": 223.8,
-        "Secondary Product": "Mo",
-        "Secondary Production (kt)": 2.4,
-        "Estimated Total Resources (Mt)": 5185.4,
-        "Ore Grade": "0.35% Cu, 0.012% Mo",
-        "Est. Reserves": "2553.3 Mt (0.39% Cu) or 2400.6 Mt (0.013% Mo)",
-        "Notes": null,
-        "TRI Total Air Emissions (kg)": "Not reported",
-        "NEI Total Air Emissions (kg)": "Not reported",
-        "Total Air Emissions (kg)": "Not reported",
-        "Total Water Emissions (kg)": "Not reported",
-        "Total Land Emissions (kg)": "Not reported",
-        "Total OffSite Emissions (kg)": "Not reported",
-        "TRI Total Emissions (kg)": "Not reported",
-        "Total All Emissions (kg)": "Not reported"
-      },
-      "geometry": {
-        "type": "Point",
-        "coordinates": [
-          -69.061419,
-          -22.975156
-        ]
-      }
-    },
-    {
-      "type": "Feature",
-      "properties": {
-        "Name": "Collahuasi (Ujina)",
-        "Operator": "Anglo American (44%)",
-        "State": "Tarapaca",
-        "Country": "Chile",
-        "County": null,
-        "Latitude": -20.968056,
-        "Longitude": -68.685556,
-        "Commodity": "Cu",
-        "Years of Operation": null,
-        "Primary Product": "Cu",
-        "Primary  Production (kt)": 560.0,
-        "Secondary Product": "Mo",
-        "Secondary Production (kt)": null,
-        "Estimated Total Resources (Mt)": 9975,
-        "Ore Grade": "0.78% Cu",
-        "Est. Reserves": "2656.5 Mt (0.96% Cu) + 1501.8 Mt (0.49% Cu) = 4158.3 or 3930 Mt (?% Mo)",
-        "Notes": null,
-        "TRI Total Air Emissions (kg)": "Not reported",
-        "NEI Total Air Emissions (kg)": "Not reported",
-        "Total Air Emissions (kg)": "Not reported",
-        "Total Water Emissions (kg)": "Not reported",
-        "Total Land Emissions (kg)": "Not reported",
-        "Total OffSite Emissions (kg)": "Not reported",
-        "TRI Total Emissions (kg)": "Not reported",
-        "Total All Emissions (kg)": "Not reported"
-      },
-      "geometry": {
-        "type": "Point",
-        "coordinates": [
-          -68.685556,
-          -20.968056
-        ]
-      }
-    },
-    {
-      "type": "Feature",
-      "properties": {
-        "Name": "UVA mine (Distrito Catemu)",
-        "Operator": "Cemin",
-        "State": "Valparaiso",
-        "Country": "Chile",
-        "County": null,
-        "Latitude": -32.676,
-        "Longitude": -70.896,
-        "Commodity": "Cu",
-        "Years of Operation": null,
-        "Primary Product": "Cu",
-        "Primary  Production (kt)": null,
-        "Secondary Product": "Ag",
-        "Secondary Production (kt)": null,
-        "Estimated Total Resources (Mt)": 2.5,
-        "Ore Grade": "1.75% Cu",
-        "Est. Reserves": null,
-        "Notes": "Amalia Plant (onsite)",
-        "TRI Total Air Emissions (kg)": "Not reported",
-        "NEI Total Air Emissions (kg)": "Not reported",
-        "Total Air Emissions (kg)": "Not reported",
-        "Total Water Emissions (kg)": "Not reported",
-        "Total Land Emissions (kg)": "Not reported",
-        "Total OffSite Emissions (kg)": "Not reported",
-        "TRI Total Emissions (kg)": "Not reported",
-        "Total All Emissions (kg)": "Not reported"
-      },
-      "geometry": {
-        "type": "Point",
-        "coordinates": [
-          -70.896,
-          -32.676
-        ]
-      }
-    },
-    {
-      "type": "Feature",
-      "properties": {
-        "Name": "Distrito Cerro Negro",
-        "Operator": "Minera Cerro Negro S.A. (CORFO 50%?)",
-        "State": "Valparaiso",
-        "Country": "Chile",
-        "County": null,
-        "Latitude": -32.563333,
-        "Longitude": -70.853333,
-        "Commodity": "Cu",
-        "Years of Operation": 1942,
-        "Primary Product": "Cu",
-        "Primary  Production (kt)": null,
+        "Latitude": -20.44430555,
+        "Longitude": 140.7182624,
+        "Commodity": "Copper",
+        "Years of Operation": "1998-2040",
+        "Primary Product": "Copper",
+        "Primary  Production (kt)": 52,
         "Secondary Product": null,
         "Secondary Production (kt)": null,
-        "Estimated Total Resources (Mt)": 21.1,
-        "Ore Grade": "1.07 % Cu",
-        "Est. Reserves": null,
-        "Notes": null,
-        "TRI Total Air Emissions (kg)": "Not reported",
-        "NEI Total Air Emissions (kg)": "Not reported",
-        "Total Air Emissions (kg)": "Not reported",
-        "Total Water Emissions (kg)": "Not reported",
-        "Total Land Emissions (kg)": "Not reported",
-        "Total OffSite Emissions (kg)": "Not reported",
-        "TRI Total Emissions (kg)": "Not reported",
-        "Total All Emissions (kg)": "Not reported"
-      },
-      "geometry": {
-        "type": "Point",
-        "coordinates": [
-          -70.853333,
-          -32.563333
-        ]
-      }
-    },
-    {
-      "type": "Feature",
-      "properties": {
-        "Name": "Distrito Michilla / Faena Michilla ",
-        "Operator": "HMC",
-        "State": "Antofagasta ",
-        "Country": "Chile",
-        "County": null,
-        "Latitude": -22.683,
-        "Longitude": -70.178,
-        "Commodity": "Cu",
-        "Years of Operation": 1994,
-        "Primary Product": "Cu",
-        "Primary  Production (kt)": 21.0,
-        "Secondary Product": null,
-        "Secondary Production (kt)": null,
-        "Estimated Total Resources (Mt)": 16,
-        "Ore Grade": "1.56% Cu",
-        "Est. Reserves": null,
-        "Notes": "onside processing",
-        "TRI Total Air Emissions (kg)": "Not reported",
-        "NEI Total Air Emissions (kg)": "Not reported",
-        "Total Air Emissions (kg)": "Not reported",
-        "Total Water Emissions (kg)": "Not reported",
-        "Total Land Emissions (kg)": "Not reported",
-        "Total OffSite Emissions (kg)": "Not reported",
-        "TRI Total Emissions (kg)": "Not reported",
-        "Total All Emissions (kg)": "Not reported"
-      },
-      "geometry": {
-        "type": "Point",
-        "coordinates": [
-          -70.178,
-          -22.683
-        ]
-      }
-    },
-    {
-      "type": "Feature",
-      "properties": {
-        "Name": "Distrito Montecristo",
-        "Operator": "Nova Ventura",
-        "State": "Antofagasta ",
-        "Country": "Chile",
-        "County": null,
-        "Latitude": -24.968,
-        "Longitude": -70.393,
-        "Commodity": "Cu",
-        "Years of Operation": null,
-        "Primary Product": "Cu",
-        "Primary  Production (kt)": null,
-        "Secondary Product": "Au, Fe",
-        "Secondary Production (kt)": null,
-        "Estimated Total Resources (Mt)": 15,
-        "Ore Grade": "1.6% Cu",
-        "Est. Reserves": null,
-        "Notes": null,
-        "TRI Total Air Emissions (kg)": "Not reported",
-        "NEI Total Air Emissions (kg)": "Not reported",
-        "Total Air Emissions (kg)": "Not reported",
-        "Total Water Emissions (kg)": "Not reported",
-        "Total Land Emissions (kg)": "Not reported",
-        "Total OffSite Emissions (kg)": "Not reported",
-        "TRI Total Emissions (kg)": "Not reported",
-        "Total All Emissions (kg)": "Not reported"
-      },
-      "geometry": {
-        "type": "Point",
-        "coordinates": [
-          -70.393,
-          -24.968
-        ]
-      }
-    },
-    {
-      "type": "Feature",
-      "properties": {
-        "Name": "Distrito Panulcillo (Panulcillo Alto, Mina San Gregorio, Mina Delta, Mina Asunci\u00f3n)",
-        "Operator": "ENAMI",
-        "State": "Coquimbo",
-        "Country": "Chile",
-        "County": null,
-        "Latitude": -30.461,
-        "Longitude": -71.219,
-        "Commodity": "Cu",
-        "Years of Operation": "1848-2035",
-        "Primary Product": "Cu",
-        "Primary  Production (kt)": null,
-        "Secondary Product": null,
-        "Secondary Production (kt)": null,
-        "Estimated Total Resources (Mt)": 9.139,
+        "Estimated Total Resources (Mt)": 97.0,
         "Ore Grade": "1.3% Cu",
-        "Est. Reserves": null,
-        "Notes": "Planta Delta (also ENAMI owned)",
+        "Est. Reserves": "75 Mt (0.76%) = 560 kt Cu",
+        "Notes": null,
         "TRI Total Air Emissions (kg)": "Not reported",
         "NEI Total Air Emissions (kg)": "Not reported",
         "Total Air Emissions (kg)": "Not reported",
@@ -595,30 +447,326 @@
       "geometry": {
         "type": "Point",
         "coordinates": [
-          -71.219,
-          -30.461
+          140.7182624,
+          -20.44430555
         ]
       }
     },
     {
       "type": "Feature",
       "properties": {
-        "Name": "Tambor (Distrito Talcuna)",
-        "Operator": null,
-        "State": "Coquimbo",
-        "Country": "Chile",
+        "Name": "Golden Grove",
+        "Operator": "29 Metals ",
+        "State": "West Australia",
+        "Country": "Australia",
         "County": null,
-        "Latitude": -29.889,
-        "Longitude": -70.882,
-        "Commodity": "Cu",
-        "Years of Operation": null,
-        "Primary Product": "Cu",
+        "Latitude": -28.7450698,
+        "Longitude": 116.946304,
+        "Commodity": "Copper",
+        "Years of Operation": "1990-2034",
+        "Primary Product": "Copper",
+        "Primary  Production (kt)": 18.1,
+        "Secondary Product": null,
+        "Secondary Production (kt)": 51.5,
+        "Estimated Total Resources (Mt)": 53.8,
+        "Ore Grade": "1.7% Cu, 4.2% Zn",
+        "Est. Reserves": "16.5 (1.6% Cu, 5% Zn)",
+        "Notes": "270 kt contained Cu, 2.3 kt contained Zn",
+        "TRI Total Air Emissions (kg)": "Not reported",
+        "NEI Total Air Emissions (kg)": "Not reported",
+        "Total Air Emissions (kg)": "Not reported",
+        "Total Water Emissions (kg)": "Not reported",
+        "Total Land Emissions (kg)": "Not reported",
+        "Total OffSite Emissions (kg)": "Not reported",
+        "TRI Total Emissions (kg)": "Not reported",
+        "Total All Emissions (kg)": "Not reported"
+      },
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          116.946304,
+          -28.7450698
+        ]
+      }
+    },
+    {
+      "type": "Feature",
+      "properties": {
+        "Name": "Kanmantoo",
+        "Operator": "Hillgrove Resources Limited",
+        "State": "South Australia",
+        "Country": "Australia",
+        "County": null,
+        "Latitude": -35.09576279,
+        "Longitude": 138.9962521,
+        "Commodity": "Copper",
+        "Years of Operation": "1846-1874, 1970-1976, 2011-2019, 2023-",
+        "Primary Product": "Copper",
+        "Primary  Production (kt)": "12-14",
+        "Secondary Product": null,
+        "Secondary Production (kt)": null,
+        "Estimated Total Resources (Mt)": 19.3,
+        "Ore Grade": "0.77% Cu",
+        "Est. Reserves": "2.8 Mt (0.91% Cu)",
+        "Notes": null,
+        "TRI Total Air Emissions (kg)": "Not reported",
+        "NEI Total Air Emissions (kg)": "Not reported",
+        "Total Air Emissions (kg)": "Not reported",
+        "Total Water Emissions (kg)": "Not reported",
+        "Total Land Emissions (kg)": "Not reported",
+        "Total OffSite Emissions (kg)": "Not reported",
+        "TRI Total Emissions (kg)": "Not reported",
+        "Total All Emissions (kg)": "Not reported"
+      },
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          138.9962521,
+          -35.09576279
+        ]
+      }
+    },
+    {
+      "type": "Feature",
+      "properties": {
+        "Name": "Mount Isa",
+        "Operator": "Mount Isa Mines, Glencore",
+        "State": "Queensland",
+        "Country": "Australia",
+        "County": null,
+        "Latitude": -20.72232753,
+        "Longitude": 139.4772983,
+        "Commodity": "Copper",
+        "Years of Operation": "1924-2025",
+        "Primary Product": "Copper",
+        "Primary  Production (kt)": 6100,
+        "Secondary Product": null,
+        "Secondary Production (kt)": 4600.0,
+        "Estimated Total Resources (Mt)": 521.0,
+        "Ore Grade": "0.68% Cu and 2.04% Zn (244 Mt), 1.93% Cu (29 Mt), 7.35% Zn (277 Mt)",
+        "Est. Reserves": "2.3 Mt (1.87% Cu), 59 Mt (6.72% Zn)",
+        "Notes": "Production of 3.3% copper. 6.5% Zn for production. smelted by Mount Isa Mines smelter (Glencore) in Queensland",
+        "TRI Total Air Emissions (kg)": "Not reported",
+        "NEI Total Air Emissions (kg)": "Not reported",
+        "Total Air Emissions (kg)": "Not reported",
+        "Total Water Emissions (kg)": "Not reported",
+        "Total Land Emissions (kg)": "Not reported",
+        "Total OffSite Emissions (kg)": "Not reported",
+        "TRI Total Emissions (kg)": "Not reported",
+        "Total All Emissions (kg)": "Not reported"
+      },
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          139.4772983,
+          -20.72232753
+        ]
+      }
+    },
+    {
+      "type": "Feature",
+      "properties": {
+        "Name": "Northparkes ",
+        "Operator": "Evolution Mining 80%, Sumitomo Group 20%",
+        "State": "New South Wales",
+        "Country": "Australia",
+        "County": null,
+        "Latitude": -32.93680094,
+        "Longitude": 148.0636215,
+        "Commodity": "Copper",
+        "Years of Operation": "1994-2032",
+        "Primary Product": "Copper",
+        "Primary  Production (kt)": "23-27 ",
+        "Secondary Product": null,
+        "Secondary Production (kt)": null,
+        "Estimated Total Resources (Mt)": 420.8,
+        "Ore Grade": "0.55% Cu",
+        "Est. Reserves": "75.0 Mt (0.51% Cu) = 386 kt contained Cu",
+        "Notes": null,
+        "TRI Total Air Emissions (kg)": "Not reported",
+        "NEI Total Air Emissions (kg)": "Not reported",
+        "Total Air Emissions (kg)": "Not reported",
+        "Total Water Emissions (kg)": "Not reported",
+        "Total Land Emissions (kg)": "Not reported",
+        "Total OffSite Emissions (kg)": "Not reported",
+        "TRI Total Emissions (kg)": "Not reported",
+        "Total All Emissions (kg)": "Not reported"
+      },
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          148.0636215,
+          -32.93680094
+        ]
+      }
+    },
+    {
+      "type": "Feature",
+      "properties": {
+        "Name": "Nova Bollinger",
+        "Operator": "Independence Group (IGO)",
+        "State": "West Australia",
+        "Country": "Australia",
+        "County": null,
+        "Latitude": -31.80977951,
+        "Longitude": 123.1734882,
+        "Commodity": "Copper",
+        "Years of Operation": 2017,
+        "Primary Product": "Copper",
+        "Primary  Production (kt)": 10.2,
+        "Secondary Product": null,
+        "Secondary Production (kt)": null,
+        "Estimated Total Resources (Mt)": 14.3,
+        "Ore Grade": "0.9% Cu",
+        "Est. Reserves": "13.6 Mt (2.0% Ni, 0.07% Co)",
+        "Notes": null,
+        "TRI Total Air Emissions (kg)": "Not reported",
+        "NEI Total Air Emissions (kg)": "Not reported",
+        "Total Air Emissions (kg)": "Not reported",
+        "Total Water Emissions (kg)": "Not reported",
+        "Total Land Emissions (kg)": "Not reported",
+        "Total OffSite Emissions (kg)": "Not reported",
+        "TRI Total Emissions (kg)": "Not reported",
+        "Total All Emissions (kg)": "Not reported"
+      },
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          123.1734882,
+          -31.80977951
+        ]
+      }
+    },
+    {
+      "type": "Feature",
+      "properties": {
+        "Name": "Olympic Dam",
+        "Operator": "BHP",
+        "State": "South Australia",
+        "Country": "Australia",
+        "County": null,
+        "Latitude": -30.44059024,
+        "Longitude": 136.8717805,
+        "Commodity": "Copper",
+        "Years of Operation": "1988-2038",
+        "Primary Product": "Copper",
+        "Primary  Production (kt)": 220,
+        "Secondary Product": null,
+        "Secondary Production (kt)": null,
+        "Estimated Total Resources (Mt)": 11370.0,
+        "Ore Grade": "0.59% Cu (9720 Mt), 1.51% Cu (1650 Mt)",
+        "Est. Reserves": "558 Mt (1.85% Cu) + 42 Mt (0.84 Cu) = 10.67 Mt contained Cu",
+        "Notes": null,
+        "TRI Total Air Emissions (kg)": "Not reported",
+        "NEI Total Air Emissions (kg)": "Not reported",
+        "Total Air Emissions (kg)": "Not reported",
+        "Total Water Emissions (kg)": "Not reported",
+        "Total Land Emissions (kg)": "Not reported",
+        "Total OffSite Emissions (kg)": "Not reported",
+        "TRI Total Emissions (kg)": "Not reported",
+        "Total All Emissions (kg)": "Not reported"
+      },
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          136.8717805,
+          -30.44059024
+        ]
+      }
+    },
+    {
+      "type": "Feature",
+      "properties": {
+        "Name": "Prominent Hill",
+        "Operator": "BHP (previously OZ Minerals)",
+        "State": "South Australia",
+        "Country": "Australia",
+        "County": null,
+        "Latitude": -29.72780742,
+        "Longitude": 135.5647557,
+        "Commodity": "Copper",
+        "Years of Operation": "2009-2030",
+        "Primary Product": "Copper",
+        "Primary  Production (kt)": 60.1,
+        "Secondary Product": null,
+        "Secondary Production (kt)": null,
+        "Estimated Total Resources (Mt)": 158.0,
+        "Ore Grade": "0.93% Cu",
+        "Est. Reserves": "50 Mt (0.97% Cu)",
+        "Notes": null,
+        "TRI Total Air Emissions (kg)": "Not reported",
+        "NEI Total Air Emissions (kg)": "Not reported",
+        "Total Air Emissions (kg)": "Not reported",
+        "Total Water Emissions (kg)": "Not reported",
+        "Total Land Emissions (kg)": "Not reported",
+        "Total OffSite Emissions (kg)": "Not reported",
+        "TRI Total Emissions (kg)": "Not reported",
+        "Total All Emissions (kg)": "Not reported"
+      },
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          135.5647557,
+          -29.72780742
+        ]
+      }
+    },
+    {
+      "type": "Feature",
+      "properties": {
+        "Name": "Telfer",
+        "Operator": "Greatland Gold (previously Newcrest Mining)",
+        "State": "West Australia",
+        "Country": "Australia",
+        "County": null,
+        "Latitude": -21.72937863,
+        "Longitude": 122.2138268,
+        "Commodity": "Copper",
+        "Years of Operation": "1977-2000, 2003-",
+        "Primary Product": "Copper",
+        "Primary  Production (kt)": "7-11",
+        "Secondary Product": null,
+        "Secondary Production (kt)": null,
+        "Estimated Total Resources (Mt)": 154.0,
+        "Ore Grade": "0.08% Cu",
+        "Est. Reserves": "46.1 (0.05% Cu) = 23 kt Cu",
+        "Notes": null,
+        "TRI Total Air Emissions (kg)": "Not reported",
+        "NEI Total Air Emissions (kg)": "Not reported",
+        "Total Air Emissions (kg)": "Not reported",
+        "Total Water Emissions (kg)": "Not reported",
+        "Total Land Emissions (kg)": "Not reported",
+        "Total OffSite Emissions (kg)": "Not reported",
+        "TRI Total Emissions (kg)": "Not reported",
+        "Total All Emissions (kg)": "Not reported"
+      },
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          122.2138268,
+          -21.72937863
+        ]
+      }
+    },
+    {
+      "type": "Feature",
+      "properties": {
+        "Name": "Bald Hill",
+        "Operator": "Mineral Resources",
+        "State": "Western Australia",
+        "Country": "Australia",
+        "County": null,
+        "Latitude": -31.51044591,
+        "Longitude": 122.183731,
+        "Commodity": "Lithium (Spodumene)",
+        "Years of Operation": "2018-2024",
+        "Primary Product": "Lithium (Spodumene)",
         "Primary  Production (kt)": null,
-        "Secondary Product": "Ag",
+        "Secondary Product": null,
         "Secondary Production (kt)": null,
-        "Estimated Total Resources (Mt)": 15,
-        "Ore Grade": "1.5% Cu",
-        "Est. Reserves": null,
+        "Estimated Total Resources (Mt)": 58.1,
+        "Ore Grade": "0.94% Li2O",
+        "Est. Reserves": "26.5Mt (0.96% LCE)",
         "Notes": null,
         "TRI Total Air Emissions (kg)": "Not reported",
         "NEI Total Air Emissions (kg)": "Not reported",
@@ -632,29 +780,362 @@
       "geometry": {
         "type": "Point",
         "coordinates": [
-          -70.882,
-          -29.889
+          122.183731,
+          -31.51044591
         ]
       }
     },
     {
       "type": "Feature",
       "properties": {
-        "Name": "Dos Amigos",
-        "Operator": "Cemin",
-        "State": "Vallenar",
-        "Country": "Chile",
+        "Name": "Greenbushes",
+        "Operator": "Talison Lithium (Tianqui Lithium Corporation + Albemarle Corporation)",
+        "State": "Western Australia",
+        "Country": "Australia",
         "County": null,
-        "Latitude": -28.991,
-        "Longitude": -70.88,
-        "Commodity": "Cu",
+        "Latitude": -33.85139738,
+        "Longitude": 116.059144,
+        "Commodity": "Lithium (Spodumene)",
+        "Years of Operation": "1983-",
+        "Primary Product": "Lithium (Spodumene)",
+        "Primary  Production (kt)": 1950,
+        "Secondary Product": null,
+        "Secondary Production (kt)": null,
+        "Estimated Total Resources (Mt)": 447.0,
+        "Ore Grade": "1.5% Li2O",
+        "Est. Reserves": "179 Mt (1.9% Li2O) = 8.5 Mt LCE = 57 Mt SCE",
+        "Notes": "16 Mt LCE = 111 Mt SC6",
+        "TRI Total Air Emissions (kg)": "Not reported",
+        "NEI Total Air Emissions (kg)": "Not reported",
+        "Total Air Emissions (kg)": "Not reported",
+        "Total Water Emissions (kg)": "Not reported",
+        "Total Land Emissions (kg)": "Not reported",
+        "Total OffSite Emissions (kg)": "Not reported",
+        "TRI Total Emissions (kg)": "Not reported",
+        "Total All Emissions (kg)": "Not reported"
+      },
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          116.059144,
+          -33.85139738
+        ]
+      }
+    },
+    {
+      "type": "Feature",
+      "properties": {
+        "Name": "Mt Cattlin",
+        "Operator": "Arcadium Lithium (Rio Tinto)",
+        "State": "Western Australia",
+        "Country": "Australia",
+        "County": null,
+        "Latitude": -33.55995188,
+        "Longitude": 120.0201353,
+        "Commodity": "Lithium (Spodumene)",
+        "Years of Operation": "2009-2013, 2016-2024, 2025-2033",
+        "Primary Product": "Lithium (Spodumene)",
+        "Primary  Production (kt)": 800,
+        "Secondary Product": null,
+        "Secondary Production (kt)": null,
+        "Estimated Total Resources (Mt)": 9.4,
+        "Ore Grade": "1.2% Li2O",
+        "Est. Reserves": "7.1 Mt (1.2% Li2O) = 84 kt contained Li2O",
+        "Notes": "Primary production 1.29% Li2O",
+        "TRI Total Air Emissions (kg)": "Not reported",
+        "NEI Total Air Emissions (kg)": "Not reported",
+        "Total Air Emissions (kg)": "Not reported",
+        "Total Water Emissions (kg)": "Not reported",
+        "Total Land Emissions (kg)": "Not reported",
+        "Total OffSite Emissions (kg)": "Not reported",
+        "TRI Total Emissions (kg)": "Not reported",
+        "Total All Emissions (kg)": "Not reported"
+      },
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          120.0201353,
+          -33.55995188
+        ]
+      }
+    },
+    {
+      "type": "Feature",
+      "properties": {
+        "Name": "Mt Marion",
+        "Operator": "Mineral Resources, Jianxi Ganfeng Lithium",
+        "State": "Western Australia",
+        "Country": "Australia",
+        "County": null,
+        "Latitude": -31.08095649,
+        "Longitude": 121.4361783,
+        "Commodity": "Lithium (Spodumene)",
+        "Years of Operation": "2017-2027",
+        "Primary Product": "Lithium (Spodumene)",
+        "Primary  Production (kt)": 600,
+        "Secondary Product": null,
+        "Secondary Production (kt)": null,
+        "Estimated Total Resources (Mt)": 66.1,
+        "Ore Grade": "1.36% Li2O",
+        "Est. Reserves": "35.7 Mt (1.42% Li2O)",
+        "Notes": "Primary production 6%Li2O",
+        "TRI Total Air Emissions (kg)": "Not reported",
+        "NEI Total Air Emissions (kg)": "Not reported",
+        "Total Air Emissions (kg)": "Not reported",
+        "Total Water Emissions (kg)": "Not reported",
+        "Total Land Emissions (kg)": "Not reported",
+        "Total OffSite Emissions (kg)": "Not reported",
+        "TRI Total Emissions (kg)": "Not reported",
+        "Total All Emissions (kg)": "Not reported"
+      },
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          121.4361783,
+          -31.08095649
+        ]
+      }
+    },
+    {
+      "type": "Feature",
+      "properties": {
+        "Name": "Pilgangoora",
+        "Operator": "Pilbara Minerals",
+        "State": "Western Australia",
+        "Country": "Australia",
+        "County": null,
+        "Latitude": -21.04811246,
+        "Longitude": 118.8972516,
+        "Commodity": "Lithium (Spodumene)",
+        "Years of Operation": "2018-2052",
+        "Primary Product": "Lithium (Spodumene)",
+        "Primary  Production (kt)": 680,
+        "Secondary Product": null,
+        "Secondary Production (kt)": null,
+        "Estimated Total Resources (Mt)": 413.8,
+        "Ore Grade": "1.15% Li2O",
+        "Est. Reserves": "214.2 Mt (1.19% Li2O)",
+        "Notes": null,
+        "TRI Total Air Emissions (kg)": "Not reported",
+        "NEI Total Air Emissions (kg)": "Not reported",
+        "Total Air Emissions (kg)": "Not reported",
+        "Total Water Emissions (kg)": "Not reported",
+        "Total Land Emissions (kg)": "Not reported",
+        "Total OffSite Emissions (kg)": "Not reported",
+        "TRI Total Emissions (kg)": "Not reported",
+        "Total All Emissions (kg)": "Not reported"
+      },
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          118.8972516,
+          -21.04811246
+        ]
+      }
+    },
+    {
+      "type": "Feature",
+      "properties": {
+        "Name": "Wodgina",
+        "Operator": "Mineral Resources, Albemarle Corporation",
+        "State": "Western Australia",
+        "Country": "Australia",
+        "County": null,
+        "Latitude": -21.1777311,
+        "Longitude": 118.6745341,
+        "Commodity": "Lithium (Spodumene)",
+        "Years of Operation": 2019,
+        "Primary Product": "Lithium (Spodumene)",
+        "Primary  Production (kt)": 900,
+        "Secondary Product": null,
+        "Secondary Production (kt)": null,
+        "Estimated Total Resources (Mt)": 217.4,
+        "Ore Grade": "1.15% Li2O",
+        "Est. Reserves": "164.6 (1.15% Li2O)",
+        "Notes": null,
+        "TRI Total Air Emissions (kg)": "Not reported",
+        "NEI Total Air Emissions (kg)": "Not reported",
+        "Total Air Emissions (kg)": "Not reported",
+        "Total Water Emissions (kg)": "Not reported",
+        "Total Land Emissions (kg)": "Not reported",
+        "Total OffSite Emissions (kg)": "Not reported",
+        "TRI Total Emissions (kg)": "Not reported",
+        "Total All Emissions (kg)": "Not reported"
+      },
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          118.6745341,
+          -21.1777311
+        ]
+      }
+    },
+    {
+      "type": "Feature",
+      "properties": {
+        "Name": "Earl Grey",
+        "Operator": "Covalent Lithium",
+        "State": "Western Australia",
+        "Country": "Australia",
+        "County": null,
+        "Latitude": -32.10373169,
+        "Longitude": 119.7682851,
+        "Commodity": "Lithium (Spodumene)  ",
+        "Years of Operation": "2022-2052",
+        "Primary Product": "Lithium (Spodumene)  ",
+        "Primary  Production (kt)": 380,
+        "Secondary Product": null,
+        "Secondary Production (kt)": null,
+        "Estimated Total Resources (Mt)": null,
+        "Ore Grade": null,
+        "Est. Reserves": "100 Mt (SC6?)",
+        "Notes": null,
+        "TRI Total Air Emissions (kg)": "Not reported",
+        "NEI Total Air Emissions (kg)": "Not reported",
+        "Total Air Emissions (kg)": "Not reported",
+        "Total Water Emissions (kg)": "Not reported",
+        "Total Land Emissions (kg)": "Not reported",
+        "Total OffSite Emissions (kg)": "Not reported",
+        "TRI Total Emissions (kg)": "Not reported",
+        "Total All Emissions (kg)": "Not reported"
+      },
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          119.7682851,
+          -32.10373169
+        ]
+      }
+    },
+    {
+      "type": "Feature",
+      "properties": {
+        "Name": "Butcherbird",
+        "Operator": "Element 25",
+        "State": "Western Australia",
+        "Country": "Australia",
+        "County": null,
+        "Latitude": -24.4117,
+        "Longitude": 119.7058,
+        "Commodity": "Manganese",
+        "Years of Operation": "2021-2063",
+        "Primary Product": "Manganese",
+        "Primary  Production (kt)": 312,
+        "Secondary Product": null,
+        "Secondary Production (kt)": null,
+        "Estimated Total Resources (Mt)": 274.0,
+        "Ore Grade": "10% Mn",
+        "Est. Reserves": "101.4 Mt (10.4% Mn)",
+        "Notes": null,
+        "TRI Total Air Emissions (kg)": "Not reported",
+        "NEI Total Air Emissions (kg)": "Not reported",
+        "Total Air Emissions (kg)": "Not reported",
+        "Total Water Emissions (kg)": "Not reported",
+        "Total Land Emissions (kg)": "Not reported",
+        "Total OffSite Emissions (kg)": "Not reported",
+        "TRI Total Emissions (kg)": "Not reported",
+        "Total All Emissions (kg)": "Not reported"
+      },
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          119.7058,
+          -24.4117
+        ]
+      }
+    },
+    {
+      "type": "Feature",
+      "properties": {
+        "Name": "GEMCO (Groote Eylandt Mining Company)",
+        "Operator": "South32 (60%), Anglo American(40%)",
+        "State": "Northern Territory",
+        "Country": "Australia",
+        "County": null,
+        "Latitude": -13.9922,
+        "Longitude": 136.4455,
+        "Commodity": "Manganese Ore",
+        "Years of Operation": "1965",
+        "Primary Product": "Manganese Ore",
+        "Primary  Production (kt)": "2090-2324",
+        "Secondary Product": null,
+        "Secondary Production (kt)": null,
+        "Estimated Total Resources (Mt)": 138.0,
+        "Ore Grade": "43.5% Mn (126 Mt), 19.8% Mn (12 Mt)",
+        "Est. Reserves": "46 Mt (42.2% Mn) ROM 56% yield + 6.1 Mt (40% Mn) sands 20% yield",
+        "Notes": "2324 kwmt Mn produced",
+        "TRI Total Air Emissions (kg)": "Not reported",
+        "NEI Total Air Emissions (kg)": "Not reported",
+        "Total Air Emissions (kg)": "Not reported",
+        "Total Water Emissions (kg)": "Not reported",
+        "Total Land Emissions (kg)": "Not reported",
+        "Total OffSite Emissions (kg)": "Not reported",
+        "TRI Total Emissions (kg)": "Not reported",
+        "Total All Emissions (kg)": "Not reported"
+      },
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          136.4455,
+          -13.9922
+        ]
+      }
+    },
+    {
+      "type": "Feature",
+      "properties": {
+        "Name": "Woodie Woodie",
+        "Operator": "Consolidated Minerals, Mineral Resources",
+        "State": "Western Australia",
+        "Country": "Australia",
+        "County": null,
+        "Latitude": -21.6388,
+        "Longitude": 121.2355,
+        "Commodity": "Manganese Ore",
+        "Years of Operation": "1950s",
+        "Primary Product": "Manganese Ore",
+        "Primary  Production (kt)": 1500,
+        "Secondary Product": null,
+        "Secondary Production (kt)": null,
+        "Estimated Total Resources (Mt)": 36.5,
+        "Ore Grade": "37% Mn",
+        "Est. Reserves": "18.0 (36% Mn)",
+        "Notes": null,
+        "TRI Total Air Emissions (kg)": "Not reported",
+        "NEI Total Air Emissions (kg)": "Not reported",
+        "Total Air Emissions (kg)": "Not reported",
+        "Total Water Emissions (kg)": "Not reported",
+        "Total Land Emissions (kg)": "Not reported",
+        "Total OffSite Emissions (kg)": "Not reported",
+        "TRI Total Emissions (kg)": "Not reported",
+        "Total All Emissions (kg)": "Not reported"
+      },
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          121.2355,
+          -21.6388
+        ]
+      }
+    },
+    {
+      "type": "Feature",
+      "properties": {
+        "Name": "Avebury",
+        "Operator": "Mallee Resources",
+        "State": "Tasmania",
+        "Country": "Australia",
+        "County": null,
+        "Latitude": -41.9203,
+        "Longitude": 145.2485,
+        "Commodity": "Nickel ",
         "Years of Operation": null,
-        "Primary Product": "Cu",
+        "Primary Product": "Nickel ",
         "Primary  Production (kt)": null,
-        "Secondary Product": "Au",
+        "Secondary Product": null,
         "Secondary Production (kt)": null,
-        "Estimated Total Resources (Mt)": 36,
-        "Ore Grade": "0.6% Cu",
+        "Estimated Total Resources (Mt)": null,
+        "Ore Grade": null,
         "Est. Reserves": null,
         "Notes": null,
         "TRI Total Air Emissions (kg)": "Not reported",
@@ -669,66 +1150,29 @@
       "geometry": {
         "type": "Point",
         "coordinates": [
-          -70.88,
-          -28.991
+          145.2485,
+          -41.9203
         ]
       }
     },
     {
       "type": "Feature",
       "properties": {
-        "Name": "El Abra",
-        "Operator": "Freeport-McMoRan (51%), Codelco (49%)",
-        "State": "El Loa",
-        "Country": "Chile",
+        "Name": "Cosmos",
+        "Operator": "IGO",
+        "State": "Western Australia",
+        "Country": "Australia",
         "County": null,
-        "Latitude": -21.924167,
-        "Longitude": -68.834167,
-        "Commodity": "Cu",
+        "Latitude": -27.59,
+        "Longitude": 120.576,
+        "Commodity": "Nickel ",
         "Years of Operation": null,
-        "Primary Product": "Cu",
-        "Primary  Production (kt)": 98.4,
-        "Secondary Product": "Mo",
-        "Secondary Production (kt)": null,
-        "Estimated Total Resources (Mt)": 2991,
-        "Ore Grade": "0.395% Cu, 0.007% Mo",
-        "Est. Reserves": null,
-        "Notes": null,
-        "TRI Total Air Emissions (kg)": "Not reported",
-        "NEI Total Air Emissions (kg)": "Not reported",
-        "Total Air Emissions (kg)": "Not reported",
-        "Total Water Emissions (kg)": "Not reported",
-        "Total Land Emissions (kg)": "Not reported",
-        "Total OffSite Emissions (kg)": "Not reported",
-        "TRI Total Emissions (kg)": "Not reported",
-        "Total All Emissions (kg)": "Not reported"
-      },
-      "geometry": {
-        "type": "Point",
-        "coordinates": [
-          -68.834167,
-          -21.924167
-        ]
-      }
-    },
-    {
-      "type": "Feature",
-      "properties": {
-        "Name": "El Durazno",
-        "Operator": "Atacama Pacific Gold",
-        "State": "Concepcion",
-        "Country": "Chile",
-        "County": null,
-        "Latitude": -32.029,
-        "Longitude": -71.188,
-        "Commodity": "Cu",
-        "Years of Operation": null,
-        "Primary Product": "Cu",
+        "Primary Product": "Nickel ",
         "Primary  Production (kt)": null,
-        "Secondary Product": "Au",
+        "Secondary Product": null,
         "Secondary Production (kt)": null,
-        "Estimated Total Resources (Mt)": 0.5,
-        "Ore Grade": "3.5% Cu",
+        "Estimated Total Resources (Mt)": null,
+        "Ore Grade": null,
         "Est. Reserves": null,
         "Notes": null,
         "TRI Total Air Emissions (kg)": "Not reported",
@@ -743,956 +1187,62 @@
       "geometry": {
         "type": "Point",
         "coordinates": [
-          -71.188,
-          -32.029
+          120.576,
+          -27.59
         ]
       }
     },
     {
       "type": "Feature",
       "properties": {
-        "Name": "El Salvador",
-        "Operator": "Codelco",
-        "State": "Atacama",
-        "Country": "Chile",
-        "County": null,
-        "Latitude": -26.241389,
-        "Longitude": -69.57,
-        "Commodity": "Cu",
-        "Years of Operation": null,
-        "Primary Product": "Cu",
-        "Primary  Production (kt)": 13.0,
-        "Secondary Product": "Mo, Au",
-        "Secondary Production (kt)": null,
-        "Estimated Total Resources (Mt)": 3569,
-        "Ore Grade": "0.41 % Cu",
-        "Est. Reserves": null,
-        "Notes": null,
-        "TRI Total Air Emissions (kg)": "Not reported",
-        "NEI Total Air Emissions (kg)": "Not reported",
-        "Total Air Emissions (kg)": "Not reported",
-        "Total Water Emissions (kg)": "Not reported",
-        "Total Land Emissions (kg)": "Not reported",
-        "Total OffSite Emissions (kg)": "Not reported",
-        "TRI Total Emissions (kg)": "Not reported",
-        "Total All Emissions (kg)": "Not reported"
-      },
-      "geometry": {
-        "type": "Point",
-        "coordinates": [
-          -69.57,
-          -26.241389
-        ]
-      }
-    },
-    {
-      "type": "Feature",
-      "properties": {
-        "Name": "El Sauce",
+        "Name": "Forrestania (Giant, Gemcutter, Bounty East, Bannon, Calypso, South Iron Cap East)",
         "Operator": null,
         "State": null,
-        "Country": "Chile",
+        "Country": "Australia",
         "County": null,
-        "Latitude": -32.457,
-        "Longitude": -71.071,
-        "Commodity": "Cu",
+        "Latitude": null,
+        "Longitude": null,
+        "Commodity": "Nickel ",
         "Years of Operation": null,
-        "Primary Product": "Cu",
+        "Primary Product": "Nickel ",
         "Primary  Production (kt)": null,
-        "Secondary Product": null,
-        "Secondary Production (kt)": null,
-        "Estimated Total Resources (Mt)": 1.83,
-        "Ore Grade": "1.6% Cu",
-        "Est. Reserves": null,
-        "Notes": null,
-        "TRI Total Air Emissions (kg)": "Not reported",
-        "NEI Total Air Emissions (kg)": "Not reported",
-        "Total Air Emissions (kg)": "Not reported",
-        "Total Water Emissions (kg)": "Not reported",
-        "Total Land Emissions (kg)": "Not reported",
-        "Total OffSite Emissions (kg)": "Not reported",
-        "TRI Total Emissions (kg)": "Not reported",
-        "Total All Emissions (kg)": "Not reported"
-      },
-      "geometry": {
-        "type": "Point",
-        "coordinates": [
-          -71.071,
-          -32.457
-        ]
-      }
-    },
-    {
-      "type": "Feature",
-      "properties": {
-        "Name": "El Soldado",
-        "Operator": "Anglo American ",
-        "State": "Valparaiso",
-        "Country": "Chile",
-        "County": null,
-        "Latitude": -32.611667,
-        "Longitude": -71.1275,
-        "Commodity": "Cu",
-        "Years of Operation": null,
-        "Primary Product": "Cu",
-        "Primary  Production (kt)": null,
-        "Secondary Product": null,
-        "Secondary Production (kt)": null,
-        "Estimated Total Resources (Mt)": 237,
-        "Ore Grade": "0.67% Cu",
-        "Est. Reserves": "24.4 Mt (0.72% Cu)",
-        "Notes": null,
-        "TRI Total Air Emissions (kg)": "Not reported",
-        "NEI Total Air Emissions (kg)": "Not reported",
-        "Total Air Emissions (kg)": "Not reported",
-        "Total Water Emissions (kg)": "Not reported",
-        "Total Land Emissions (kg)": "Not reported",
-        "Total OffSite Emissions (kg)": "Not reported",
-        "TRI Total Emissions (kg)": "Not reported",
-        "Total All Emissions (kg)": "Not reported"
-      },
-      "geometry": {
-        "type": "Point",
-        "coordinates": [
-          -71.1275,
-          -32.611667
-        ]
-      }
-    },
-    {
-      "type": "Feature",
-      "properties": {
-        "Name": "El Teniente",
-        "Operator": "Codelco",
-        "State": "Cachopoal",
-        "Country": "Chile",
-        "County": null,
-        "Latitude": -34.091667,
-        "Longitude": -70.338333,
-        "Commodity": "Cu",
-        "Years of Operation": 1906,
-        "Primary Product": "Cu",
-        "Primary  Production (kt)": 351.9,
-        "Secondary Product": "Mo",
-        "Secondary Production (kt)": null,
-        "Estimated Total Resources (Mt)": 16613,
-        "Ore Grade": "0.56% Cu",
-        "Est. Reserves": null,
-        "Notes": null,
-        "TRI Total Air Emissions (kg)": "Not reported",
-        "NEI Total Air Emissions (kg)": "Not reported",
-        "Total Air Emissions (kg)": "Not reported",
-        "Total Water Emissions (kg)": "Not reported",
-        "Total Land Emissions (kg)": "Not reported",
-        "Total OffSite Emissions (kg)": "Not reported",
-        "TRI Total Emissions (kg)": "Not reported",
-        "Total All Emissions (kg)": "Not reported"
-      },
-      "geometry": {
-        "type": "Point",
-        "coordinates": [
-          -70.338333,
-          -34.091667
-        ]
-      }
-    },
-    {
-      "type": "Feature",
-      "properties": {
-        "Name": "El Tesoro",
-        "Operator": "Centinela (Antofagasta Minerals)",
-        "State": "Antofagasta ",
-        "Country": "Chile",
-        "County": null,
-        "Latitude": -22.9531,
-        "Longitude": -69.0731,
-        "Commodity": "Cu",
-        "Years of Operation": "2001-2030",
-        "Primary Product": "Cu",
-        "Primary  Production (kt)": null,
-        "Secondary Product": null,
-        "Secondary Production (kt)": null,
-        "Estimated Total Resources (Mt)": 127,
-        "Ore Grade": "0.58% Cu",
-        "Est. Reserves": null,
-        "Notes": null,
-        "TRI Total Air Emissions (kg)": "Not reported",
-        "NEI Total Air Emissions (kg)": "Not reported",
-        "Total Air Emissions (kg)": "Not reported",
-        "Total Water Emissions (kg)": "Not reported",
-        "Total Land Emissions (kg)": "Not reported",
-        "Total OffSite Emissions (kg)": "Not reported",
-        "TRI Total Emissions (kg)": "Not reported",
-        "Total All Emissions (kg)": "Not reported"
-      },
-      "geometry": {
-        "type": "Point",
-        "coordinates": [
-          -69.0731,
-          -22.9531
-        ]
-      }
-    },
-    {
-      "type": "Feature",
-      "properties": {
-        "Name": "Esperanza",
-        "Operator": "Centinela ",
-        "State": "Antofagasta ",
-        "Country": "Chile",
-        "County": null,
-        "Latitude": -22.975,
-        "Longitude": -69.063,
-        "Commodity": "Cu",
-        "Years of Operation": 2007,
-        "Primary Product": "Cu",
-        "Primary  Production (kt)": 190.0,
-        "Secondary Product": "Mo, Au",
-        "Secondary Production (kt)": 2,
-        "Estimated Total Resources (Mt)": 1287,
-        "Ore Grade": "0.38% Cu, 0.012% Mo",
-        "Est. Reserves": "580 Mt (0.01% Mo)",
-        "Notes": null,
-        "TRI Total Air Emissions (kg)": "Not reported",
-        "NEI Total Air Emissions (kg)": "Not reported",
-        "Total Air Emissions (kg)": "Not reported",
-        "Total Water Emissions (kg)": "Not reported",
-        "Total Land Emissions (kg)": "Not reported",
-        "Total OffSite Emissions (kg)": "Not reported",
-        "TRI Total Emissions (kg)": "Not reported",
-        "Total All Emissions (kg)": "Not reported"
-      },
-      "geometry": {
-        "type": "Point",
-        "coordinates": [
-          -69.063,
-          -22.975
-        ]
-      }
-    },
-    {
-      "type": "Feature",
-      "properties": {
-        "Name": "Esperanza Sur",
-        "Operator": "Centinela ",
-        "State": "Antofagasta ",
-        "Country": "Chile",
-        "County": null,
-        "Latitude": -22.973,
-        "Longitude": -69.092,
-        "Commodity": "Cu",
-        "Years of Operation": 2023,
-        "Primary Product": "Cu",
-        "Primary  Production (kt)": null,
-        "Secondary Product": "Mo, Au",
-        "Secondary Production (kt)": null,
-        "Estimated Total Resources (Mt)": 1995,
-        "Ore Grade": "0.42% Cu, 0.011% Mo",
-        "Est. Reserves": null,
-        "Notes": null,
-        "TRI Total Air Emissions (kg)": "Not reported",
-        "NEI Total Air Emissions (kg)": "Not reported",
-        "Total Air Emissions (kg)": "Not reported",
-        "Total Water Emissions (kg)": "Not reported",
-        "Total Land Emissions (kg)": "Not reported",
-        "Total OffSite Emissions (kg)": "Not reported",
-        "TRI Total Emissions (kg)": "Not reported",
-        "Total All Emissions (kg)": "Not reported"
-      },
-      "geometry": {
-        "type": "Point",
-        "coordinates": [
-          -69.092,
-          -22.973
-        ]
-      }
-    },
-    {
-      "type": "Feature",
-      "properties": {
-        "Name": "Franke",
-        "Operator": "Las Cenizas Mining Group",
-        "State": "Antofagasta ",
-        "Country": "Chile",
-        "County": null,
-        "Latitude": -25.829,
-        "Longitude": -69.864,
-        "Commodity": "Cu",
-        "Years of Operation": "2028-2043",
-        "Primary Product": "Cu",
-        "Primary  Production (kt)": null,
-        "Secondary Product": "Ag",
-        "Secondary Production (kt)": null,
-        "Estimated Total Resources (Mt)": 27,
-        "Ore Grade": "0.82% Cu",
-        "Est. Reserves": null,
-        "Notes": "Franke Plant",
-        "TRI Total Air Emissions (kg)": "Not reported",
-        "NEI Total Air Emissions (kg)": "Not reported",
-        "Total Air Emissions (kg)": "Not reported",
-        "Total Water Emissions (kg)": "Not reported",
-        "Total Land Emissions (kg)": "Not reported",
-        "Total OffSite Emissions (kg)": "Not reported",
-        "TRI Total Emissions (kg)": "Not reported",
-        "Total All Emissions (kg)": "Not reported"
-      },
-      "geometry": {
-        "type": "Point",
-        "coordinates": [
-          -69.864,
-          -25.829
-        ]
-      }
-    },
-    {
-      "type": "Feature",
-      "properties": {
-        "Name": "Gabriela Mistral",
-        "Operator": "Codelco",
-        "State": "Antofagasta ",
-        "Country": "Chile",
-        "County": null,
-        "Latitude": -23.4183,
-        "Longitude": -68.8111,
-        "Commodity": "Cu",
-        "Years of Operation": "2008-2055",
-        "Primary Product": "Cu",
-        "Primary  Production (kt)": 105.8,
-        "Secondary Product": "Mo",
-        "Secondary Production (kt)": null,
-        "Estimated Total Resources (Mt)": 2239,
-        "Ore Grade": "0.32% Cu",
-        "Est. Reserves": null,
-        "Notes": null,
-        "TRI Total Air Emissions (kg)": "Not reported",
-        "NEI Total Air Emissions (kg)": "Not reported",
-        "Total Air Emissions (kg)": "Not reported",
-        "Total Water Emissions (kg)": "Not reported",
-        "Total Land Emissions (kg)": "Not reported",
-        "Total OffSite Emissions (kg)": "Not reported",
-        "TRI Total Emissions (kg)": "Not reported",
-        "Total All Emissions (kg)": "Not reported"
-      },
-      "geometry": {
-        "type": "Point",
-        "coordinates": [
-          -68.8111,
-          -23.4183
-        ]
-      }
-    },
-    {
-      "type": "Feature",
-      "properties": {
-        "Name": "Inca de Oro",
-        "Operator": null,
-        "State": "Atacama",
-        "Country": "Chile",
-        "County": null,
-        "Latitude": -26.838,
-        "Longitude": -69.954,
-        "Commodity": "Cu",
-        "Years of Operation": null,
-        "Primary Product": "Cu",
-        "Primary  Production (kt)": null,
-        "Secondary Product": "Au, Mo",
-        "Secondary Production (kt)": null,
-        "Estimated Total Resources (Mt)": 769,
-        "Ore Grade": "0.36% Cu",
-        "Est. Reserves": null,
-        "Notes": null,
-        "TRI Total Air Emissions (kg)": "Not reported",
-        "NEI Total Air Emissions (kg)": "Not reported",
-        "Total Air Emissions (kg)": "Not reported",
-        "Total Water Emissions (kg)": "Not reported",
-        "Total Land Emissions (kg)": "Not reported",
-        "Total OffSite Emissions (kg)": "Not reported",
-        "TRI Total Emissions (kg)": "Not reported",
-        "Total All Emissions (kg)": "Not reported"
-      },
-      "geometry": {
-        "type": "Point",
-        "coordinates": [
-          -69.954,
-          -26.838
-        ]
-      }
-    },
-    {
-      "type": "Feature",
-      "properties": {
-        "Name": "La Escondida ",
-        "Operator": "BHP (57.5%) , Rio Tinto (30%), JECO (12.5%)",
-        "State": "Atacama",
-        "Country": "Chile",
-        "County": null,
-        "Latitude": -24.275,
-        "Longitude": -69.058333,
-        "Commodity": "Cu",
-        "Years of Operation": "1990-2036",
-        "Primary Product": "Cu",
-        "Primary  Production (kt)": 1125.0,
-        "Secondary Product": "Mo",
-        "Secondary Production (kt)": null,
-        "Estimated Total Resources (Mt)": 19400,
-        "Ore Grade": "0.55% Cu",
-        "Est. Reserves": "4770 Mt (0.6% Cu, sulfides) + 1500 Mt (0.38% Cu, sulfide leach)",
-        "Notes": "three concentrator plants, two leaching operations",
-        "TRI Total Air Emissions (kg)": "Not reported",
-        "NEI Total Air Emissions (kg)": "Not reported",
-        "Total Air Emissions (kg)": "Not reported",
-        "Total Water Emissions (kg)": "Not reported",
-        "Total Land Emissions (kg)": "Not reported",
-        "Total OffSite Emissions (kg)": "Not reported",
-        "TRI Total Emissions (kg)": "Not reported",
-        "Total All Emissions (kg)": "Not reported"
-      },
-      "geometry": {
-        "type": "Point",
-        "coordinates": [
-          -69.058333,
-          -24.275
-        ]
-      }
-    },
-    {
-      "type": "Feature",
-      "properties": {
-        "Name": "Las Luces",
-        "Operator": "Las Cenizas Mining Group",
-        "State": "Antofagasta ",
-        "Country": "Chile",
-        "County": null,
-        "Latitude": -25.698,
-        "Longitude": -70.496,
-        "Commodity": "Cu",
-        "Years of Operation": null,
-        "Primary Product": "Cu",
-        "Primary  Production (kt)": null,
-        "Secondary Product": "Ag",
-        "Secondary Production (kt)": null,
-        "Estimated Total Resources (Mt)": 2.3,
-        "Ore Grade": "1.1% Cu",
-        "Est. Reserves": null,
-        "Notes": "Las Luces plant",
-        "TRI Total Air Emissions (kg)": "Not reported",
-        "NEI Total Air Emissions (kg)": "Not reported",
-        "Total Air Emissions (kg)": "Not reported",
-        "Total Water Emissions (kg)": "Not reported",
-        "Total Land Emissions (kg)": "Not reported",
-        "Total OffSite Emissions (kg)": "Not reported",
-        "TRI Total Emissions (kg)": "Not reported",
-        "Total All Emissions (kg)": "Not reported"
-      },
-      "geometry": {
-        "type": "Point",
-        "coordinates": [
-          -70.496,
-          -25.698
-        ]
-      }
-    },
-    {
-      "type": "Feature",
-      "properties": {
-        "Name": "Lomas Bayas",
-        "Operator": "Glencore",
-        "State": "Antofagasta ",
-        "Country": "Chile",
-        "County": null,
-        "Latitude": -23.431389,
-        "Longitude": -69.506667,
-        "Commodity": "Cu",
-        "Years of Operation": null,
-        "Primary Product": "Cu",
-        "Primary  Production (kt)": null,
-        "Secondary Product": "Mo",
-        "Secondary Production (kt)": null,
-        "Estimated Total Resources (Mt)": 2410,
-        "Ore Grade": "0.273% Cu",
-        "Est. Reserves": "272 Mt (0.29% Cu)",
-        "Notes": null,
-        "TRI Total Air Emissions (kg)": "Not reported",
-        "NEI Total Air Emissions (kg)": "Not reported",
-        "Total Air Emissions (kg)": "Not reported",
-        "Total Water Emissions (kg)": "Not reported",
-        "Total Land Emissions (kg)": "Not reported",
-        "Total OffSite Emissions (kg)": "Not reported",
-        "TRI Total Emissions (kg)": "Not reported",
-        "Total All Emissions (kg)": "Not reported"
-      },
-      "geometry": {
-        "type": "Point",
-        "coordinates": [
-          -69.506667,
-          -23.431389
-        ]
-      }
-    },
-    {
-      "type": "Feature",
-      "properties": {
-        "Name": "Los Bronces",
-        "Operator": "Anglo American Sur (75.5%), Codelco (24.5%)",
-        "State": "Valparaiso",
-        "Country": "Chile",
-        "County": null,
-        "Latitude": -33.151,
-        "Longitude": -70.285,
-        "Commodity": "Cu",
-        "Years of Operation": null,
-        "Primary Product": "Cu",
-        "Primary  Production (kt)": null,
-        "Secondary Product": "Mo",
-        "Secondary Production (kt)": null,
-        "Estimated Total Resources (Mt)": 6384,
-        "Ore Grade": "0.424 % Cu, 0.009% Mo",
-        "Est. Reserves": "1296.3 Mt (0.5% Cu) + 465.2 Mt (0.26% Cu)",
-        "Notes": null,
-        "TRI Total Air Emissions (kg)": "Not reported",
-        "NEI Total Air Emissions (kg)": "Not reported",
-        "Total Air Emissions (kg)": "Not reported",
-        "Total Water Emissions (kg)": "Not reported",
-        "Total Land Emissions (kg)": "Not reported",
-        "Total OffSite Emissions (kg)": "Not reported",
-        "TRI Total Emissions (kg)": "Not reported",
-        "Total All Emissions (kg)": "Not reported"
-      },
-      "geometry": {
-        "type": "Point",
-        "coordinates": [
-          -70.285,
-          -33.151
-        ]
-      }
-    },
-    {
-      "type": "Feature",
-      "properties": {
-        "Name": "Los Pelambres",
-        "Operator": "Antofagasta Minerals  ",
-        "State": "Coquimbo",
-        "Country": "Chile",
-        "County": null,
-        "Latitude": -31.715,
-        "Longitude": -70.499444,
-        "Commodity": "Cu",
-        "Years of Operation": 1990,
-        "Primary Product": "Cu",
-        "Primary  Production (kt)": null,
-        "Secondary Product": "Mo",
-        "Secondary Production (kt)": 8.3,
-        "Estimated Total Resources (Mt)": 5957.4,
-        "Ore Grade": "0.5% Cu, 0.017% Mo",
-        "Est. Reserves": "781.5 Mt (0.58% Cu, 0.021% Mo)",
-        "Notes": null,
-        "TRI Total Air Emissions (kg)": "Not reported",
-        "NEI Total Air Emissions (kg)": "Not reported",
-        "Total Air Emissions (kg)": "Not reported",
-        "Total Water Emissions (kg)": "Not reported",
-        "Total Land Emissions (kg)": "Not reported",
-        "Total OffSite Emissions (kg)": "Not reported",
-        "TRI Total Emissions (kg)": "Not reported",
-        "Total All Emissions (kg)": "Not reported"
-      },
-      "geometry": {
-        "type": "Point",
-        "coordinates": [
-          -70.499444,
-          -31.715
-        ]
-      }
-    },
-    {
-      "type": "Feature",
-      "properties": {
-        "Name": "Manto Verde",
-        "Operator": "Capstone Copper (70%), Mitsubishi Minerals (30%)",
-        "State": "Atacama",
-        "Country": "Chile",
-        "County": null,
-        "Latitude": -26.558889,
-        "Longitude": -70.315,
-        "Commodity": "Cu",
-        "Years of Operation": null,
-        "Primary Product": "Cu",
-        "Primary  Production (kt)": null,
-        "Secondary Product": "Au, Fe",
-        "Secondary Production (kt)": null,
-        "Estimated Total Resources (Mt)": 482.7,
-        "Ore Grade": "0.56% Cu",
-        "Est. Reserves": "398 Mt (0.49% Cu) = 1.954 kt contained Cu",
-        "Notes": "oxide leach & sulfide concentrator operations",
-        "TRI Total Air Emissions (kg)": "Not reported",
-        "NEI Total Air Emissions (kg)": "Not reported",
-        "Total Air Emissions (kg)": "Not reported",
-        "Total Water Emissions (kg)": "Not reported",
-        "Total Land Emissions (kg)": "Not reported",
-        "Total OffSite Emissions (kg)": "Not reported",
-        "TRI Total Emissions (kg)": "Not reported",
-        "Total All Emissions (kg)": "Not reported"
-      },
-      "geometry": {
-        "type": "Point",
-        "coordinates": [
-          -70.315,
-          -26.558889
-        ]
-      }
-    },
-    {
-      "type": "Feature",
-      "properties": {
-        "Name": "Mantos Blancos",
-        "Operator": "Castone copper",
-        "State": "Antofagasta ",
-        "Country": "Chile",
-        "County": null,
-        "Latitude": -23.421667,
-        "Longitude": -70.071667,
-        "Commodity": "Cu",
-        "Years of Operation": null,
-        "Primary Product": "Cu",
-        "Primary  Production (kt)": 50.0,
-        "Secondary Product": "Ag",
-        "Secondary Production (kt)": null,
-        "Estimated Total Resources (Mt)": 329,
-        "Ore Grade": "0.448% Cu",
-        "Est. Reserves": "881 kt contained Cu",
-        "Notes": "oxide leach & sulfide concentrator operations",
-        "TRI Total Air Emissions (kg)": "Not reported",
-        "NEI Total Air Emissions (kg)": "Not reported",
-        "Total Air Emissions (kg)": "Not reported",
-        "Total Water Emissions (kg)": "Not reported",
-        "Total Land Emissions (kg)": "Not reported",
-        "Total OffSite Emissions (kg)": "Not reported",
-        "TRI Total Emissions (kg)": "Not reported",
-        "Total All Emissions (kg)": "Not reported"
-      },
-      "geometry": {
-        "type": "Point",
-        "coordinates": [
-          -70.071667,
-          -23.421667
-        ]
-      }
-    },
-    {
-      "type": "Feature",
-      "properties": {
-        "Name": "Mantos de la Luna",
-        "Operator": "Mantos de la Luna S.A.",
-        "State": "Antofagasta ",
-        "Country": "Chile",
-        "County": null,
-        "Latitude": -22.383,
-        "Longitude": -70.218,
-        "Commodity": "Cu",
-        "Years of Operation": null,
-        "Primary Product": "Cu",
-        "Primary  Production (kt)": null,
-        "Secondary Product": null,
-        "Secondary Production (kt)": null,
-        "Estimated Total Resources (Mt)": 22.5,
-        "Ore Grade": "0.85% Cu",
-        "Est. Reserves": null,
-        "Notes": null,
-        "TRI Total Air Emissions (kg)": "Not reported",
-        "NEI Total Air Emissions (kg)": "Not reported",
-        "Total Air Emissions (kg)": "Not reported",
-        "Total Water Emissions (kg)": "Not reported",
-        "Total Land Emissions (kg)": "Not reported",
-        "Total OffSite Emissions (kg)": "Not reported",
-        "TRI Total Emissions (kg)": "Not reported",
-        "Total All Emissions (kg)": "Not reported"
-      },
-      "geometry": {
-        "type": "Point",
-        "coordinates": [
-          -70.218,
-          -22.383
-        ]
-      }
-    },
-    {
-      "type": "Feature",
-      "properties": {
-        "Name": "Mantos del Pac\u00edfico",
-        "Operator": null,
-        "State": "Antofagasta ",
-        "Country": "Chile",
-        "County": null,
-        "Latitude": -22.531,
-        "Longitude": -70.221,
-        "Commodity": "Cu",
-        "Years of Operation": null,
-        "Primary Product": "Cu",
-        "Primary  Production (kt)": null,
-        "Secondary Product": null,
-        "Secondary Production (kt)": null,
-        "Estimated Total Resources (Mt)": 4.5,
-        "Ore Grade": "1.21% Cu",
-        "Est. Reserves": null,
-        "Notes": null,
-        "TRI Total Air Emissions (kg)": "Not reported",
-        "NEI Total Air Emissions (kg)": "Not reported",
-        "Total Air Emissions (kg)": "Not reported",
-        "Total Water Emissions (kg)": "Not reported",
-        "Total Land Emissions (kg)": "Not reported",
-        "Total OffSite Emissions (kg)": "Not reported",
-        "TRI Total Emissions (kg)": "Not reported",
-        "Total All Emissions (kg)": "Not reported"
-      },
-      "geometry": {
-        "type": "Point",
-        "coordinates": [
-          -70.221,
-          -22.531
-        ]
-      }
-    },
-    {
-      "type": "Feature",
-      "properties": {
-        "Name": "Minera Florida (Alhu\u00e9)",
-        "Operator": "Pan-American Silver",
-        "State": "Melipilla",
-        "Country": "Chile",
-        "County": null,
-        "Latitude": -34.008,
-        "Longitude": -70.978,
-        "Commodity": "Zn concentrate",
-        "Years of Operation": "?-2030",
-        "Primary Product": "Zn concentrate",
-        "Primary  Production (kt)": null,
-        "Secondary Product": "Ag, Au",
-        "Secondary Production (kt)": null,
-        "Estimated Total Resources (Mt)": 11.4,
-        "Ore Grade": "0.98% Zn",
-        "Est. Reserves": "3.1 Mt (0.99% Zn)",
-        "Notes": null,
-        "TRI Total Air Emissions (kg)": "Not reported",
-        "NEI Total Air Emissions (kg)": "Not reported",
-        "Total Air Emissions (kg)": "Not reported",
-        "Total Water Emissions (kg)": "Not reported",
-        "Total Land Emissions (kg)": "Not reported",
-        "Total OffSite Emissions (kg)": "Not reported",
-        "TRI Total Emissions (kg)": "Not reported",
-        "Total All Emissions (kg)": "Not reported"
-      },
-      "geometry": {
-        "type": "Point",
-        "coordinates": [
-          -70.978,
-          -34.008
-        ]
-      }
-    },
-    {
-      "type": "Feature",
-      "properties": {
-        "Name": "Ministro Hales",
-        "Operator": "Codelco",
-        "State": "Antofagasta ",
-        "Country": "Chile",
-        "County": null,
-        "Latitude": -22.3788,
-        "Longitude": -68.9133,
-        "Commodity": "Cu",
-        "Years of Operation": null,
-        "Primary Product": "Cu",
-        "Primary  Production (kt)": 126.0,
-        "Secondary Product": "Mo",
-        "Secondary Production (kt)": null,
-        "Estimated Total Resources (Mt)": 3044,
-        "Ore Grade": "0.72% Cu",
-        "Est. Reserves": null,
-        "Notes": null,
-        "TRI Total Air Emissions (kg)": "Not reported",
-        "NEI Total Air Emissions (kg)": "Not reported",
-        "Total Air Emissions (kg)": "Not reported",
-        "Total Water Emissions (kg)": "Not reported",
-        "Total Land Emissions (kg)": "Not reported",
-        "Total OffSite Emissions (kg)": "Not reported",
-        "TRI Total Emissions (kg)": "Not reported",
-        "Total All Emissions (kg)": "Not reported"
-      },
-      "geometry": {
-        "type": "Point",
-        "coordinates": [
-          -68.9133,
-          -22.3788
-        ]
-      }
-    },
-    {
-      "type": "Feature",
-      "properties": {
-        "Name": "Quebrada Blanca (Fase II)",
-        "Operator": "Teck Resources (60%), Sumitomo Metal Mining Co/Corporation (30%), Codelco(10%)",
-        "State": "Tarapaca",
-        "Country": "Chile",
-        "County": null,
-        "Latitude": -21.007,
-        "Longitude": -68.812,
-        "Commodity": "Cu",
-        "Years of Operation": 1971,
-        "Primary Product": "Cu",
-        "Primary  Production (kt)": 208.0,
-        "Secondary Product": "Mo",
-        "Secondary Production (kt)": "3-4.5",
-        "Estimated Total Resources (Mt)": 1594.2,
-        "Ore Grade": "0.4% Cu, 0.016% Mo",
-        "Est. Reserves": null,
-        "Notes": "new crusher development",
-        "TRI Total Air Emissions (kg)": "Not reported",
-        "NEI Total Air Emissions (kg)": "Not reported",
-        "Total Air Emissions (kg)": "Not reported",
-        "Total Water Emissions (kg)": "Not reported",
-        "Total Land Emissions (kg)": "Not reported",
-        "Total OffSite Emissions (kg)": "Not reported",
-        "TRI Total Emissions (kg)": "Not reported",
-        "Total All Emissions (kg)": "Not reported"
-      },
-      "geometry": {
-        "type": "Point",
-        "coordinates": [
-          -68.812,
-          -21.007
-        ]
-      }
-    },
-    {
-      "type": "Feature",
-      "properties": {
-        "Name": "Radomiro Tomic",
-        "Operator": "Codelco",
-        "State": "Antofagasta ",
-        "Country": "Chile",
-        "County": null,
-        "Latitude": -22.226944,
-        "Longitude": -68.883333,
-        "Commodity": "Cu",
-        "Years of Operation": 1995,
-        "Primary Product": "Cu",
-        "Primary  Production (kt)": 314.8,
-        "Secondary Product": null,
-        "Secondary Production (kt)": null,
-        "Estimated Total Resources (Mt)": 7394,
-        "Ore Grade": "0.41% Cu",
-        "Est. Reserves": null,
-        "Notes": null,
-        "TRI Total Air Emissions (kg)": "Not reported",
-        "NEI Total Air Emissions (kg)": "Not reported",
-        "Total Air Emissions (kg)": "Not reported",
-        "Total Water Emissions (kg)": "Not reported",
-        "Total Land Emissions (kg)": "Not reported",
-        "Total OffSite Emissions (kg)": "Not reported",
-        "TRI Total Emissions (kg)": "Not reported",
-        "Total All Emissions (kg)": "Not reported"
-      },
-      "geometry": {
-        "type": "Point",
-        "coordinates": [
-          -68.883333,
-          -22.226944
-        ]
-      }
-    },
-    {
-      "type": "Feature",
-      "properties": {
-        "Name": "R\u00edo Blanco",
-        "Operator": "Codelco",
-        "State": "Valparaiso",
-        "Country": "Chile",
-        "County": null,
-        "Latitude": -33.149,
-        "Longitude": -70.254,
-        "Commodity": "Cu",
-        "Years of Operation": null,
-        "Primary Product": "Cu",
-        "Primary  Production (kt)": null,
-        "Secondary Product": "Mo",
-        "Secondary Production (kt)": null,
-        "Estimated Total Resources (Mt)": 21969,
-        "Ore Grade": "0.62% Cu",
-        "Est. Reserves": null,
-        "Notes": "Part of Los Bronces mine but slightly different depost, it seems",
-        "TRI Total Air Emissions (kg)": "Not reported",
-        "NEI Total Air Emissions (kg)": "Not reported",
-        "Total Air Emissions (kg)": "Not reported",
-        "Total Water Emissions (kg)": "Not reported",
-        "Total Land Emissions (kg)": "Not reported",
-        "Total OffSite Emissions (kg)": "Not reported",
-        "TRI Total Emissions (kg)": "Not reported",
-        "Total All Emissions (kg)": "Not reported"
-      },
-      "geometry": {
-        "type": "Point",
-        "coordinates": [
-          -70.254,
-          -33.149
-        ]
-      }
-    },
-    {
-      "type": "Feature",
-      "properties": {
-        "Name": "Salar de Atacama ",
-        "Operator": "Albamerle",
-        "State": "Antofagasta",
-        "Country": "Chile",
-        "County": null,
-        "Latitude": -23.552,
-        "Longitude": -68.378,
-        "Commodity": "Lithium metal",
-        "Years of Operation": "?-2043",
-        "Primary Product": "Lithium metal",
-        "Primary  Production (kt)": 13.0,
-        "Secondary Product": null,
-        "Secondary Production (kt)": null,
-        "Estimated Total Resources (Mt)": "175 Mm^3",
-        "Ore Grade": "1500 g/t Li",
-        "Est. Reserves": "9.2 Mt",
-        "Notes": "La Negra Chemical Plant in Antofagasta (85kt \"battery grade lithium\" annual production capacity",
-        "TRI Total Air Emissions (kg)": "Not reported",
-        "NEI Total Air Emissions (kg)": "Not reported",
-        "Total Air Emissions (kg)": "Not reported",
-        "Total Water Emissions (kg)": "Not reported",
-        "Total Land Emissions (kg)": "Not reported",
-        "Total OffSite Emissions (kg)": "Not reported",
-        "TRI Total Emissions (kg)": "Not reported",
-        "Total All Emissions (kg)": "Not reported"
-      },
-      "geometry": {
-        "type": "Point",
-        "coordinates": [
-          -68.378,
-          -23.552
-        ]
-      }
-    },
-    {
-      "type": "Feature",
-      "properties": {
-        "Name": "Salar de Atacama ",
-        "Operator": "SQM ",
-        "State": "Antofagasta",
-        "Country": "Chile",
-        "County": null,
-        "Latitude": -23.552,
-        "Longitude": -68.378,
-        "Commodity": "Lithium sulfate",
-        "Years of Operation": null,
-        "Primary Product": "Lithium sulfate",
-        "Primary  Production (kt)": 53.5,
         "Secondary Product": null,
         "Secondary Production (kt)": null,
         "Estimated Total Resources (Mt)": null,
         "Ore Grade": null,
         "Est. Reserves": null,
-        "Notes": "Salar del Carmen plant in Antofagasta. becomes 179.6 t lithium carbonate",
+        "Notes": null,
+        "TRI Total Air Emissions (kg)": "Not reported",
+        "NEI Total Air Emissions (kg)": "Not reported",
+        "Total Air Emissions (kg)": "Not reported",
+        "Total Water Emissions (kg)": "Not reported",
+        "Total Land Emissions (kg)": "Not reported",
+        "Total OffSite Emissions (kg)": "Not reported",
+        "TRI Total Emissions (kg)": "Not reported",
+        "Total All Emissions (kg)": "Not reported"
+      },
+      "geometry": null
+    },
+    {
+      "type": "Feature",
+      "properties": {
+        "Name": "Forrestania (Spotted Quoll, Flying Fox)",
+        "Operator": "IGO",
+        "State": "Western Australia",
+        "Country": "Australia",
+        "County": null,
+        "Latitude": -32.47434571,
+        "Longitude": 119.6736746,
+        "Commodity": "Nickel ",
+        "Years of Operation": "1992-1998, 2006-2024",
+        "Primary Product": "Nickel ",
+        "Primary  Production (kt)": 22.9,
+        "Secondary Product": null,
+        "Secondary Production (kt)": null,
+        "Estimated Total Resources (Mt)": null,
+        "Ore Grade": null,
+        "Est. Reserves": null,
+        "Notes": null,
         "TRI Total Air Emissions (kg)": "Not reported",
         "NEI Total Air Emissions (kg)": "Not reported",
         "Total Air Emissions (kg)": "Not reported",
@@ -1705,31 +1255,68 @@
       "geometry": {
         "type": "Point",
         "coordinates": [
-          -68.378,
-          -23.552
+          119.6736746,
+          -32.47434571
         ]
       }
     },
     {
       "type": "Feature",
       "properties": {
-        "Name": "Salar de Maricunga ",
-        "Operator": "Lithium Power International",
-        "State": "Atacama",
-        "Country": "Chile",
+        "Name": "Kambalda",
+        "Operator": "BHP, Wyloo Minerals",
+        "State": null,
+        "Country": "Australia",
         "County": null,
-        "Latitude": -26.882,
-        "Longitude": -69.063,
-        "Commodity": "Li",
+        "Latitude": -31.189241,
+        "Longitude": 121.668731,
+        "Commodity": "Nickel ",
+        "Years of Operation": "1967-2016, 2022-2024",
+        "Primary Product": "Nickel ",
+        "Primary  Production (kt)": 1.4,
+        "Secondary Product": null,
+        "Secondary Production (kt)": null,
+        "Estimated Total Resources (Mt)": null,
+        "Ore Grade": null,
+        "Est. Reserves": null,
+        "Notes": null,
+        "TRI Total Air Emissions (kg)": "Not reported",
+        "NEI Total Air Emissions (kg)": "Not reported",
+        "Total Air Emissions (kg)": "Not reported",
+        "Total Water Emissions (kg)": "Not reported",
+        "Total Land Emissions (kg)": "Not reported",
+        "Total OffSite Emissions (kg)": "Not reported",
+        "TRI Total Emissions (kg)": "Not reported",
+        "Total All Emissions (kg)": "Not reported"
+      },
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          121.668731,
+          -31.189241
+        ]
+      }
+    },
+    {
+      "type": "Feature",
+      "properties": {
+        "Name": "Leinster",
+        "Operator": "BHP",
+        "State": null,
+        "Country": "Australia",
+        "County": null,
+        "Latitude": -27.233587,
+        "Longitude": 120.593607,
+        "Commodity": "Nickel ",
         "Years of Operation": null,
-        "Primary Product": "Li",
+        "Primary Product": "Nickel ",
         "Primary  Production (kt)": null,
         "Secondary Product": null,
         "Secondary Production (kt)": null,
         "Estimated Total Resources (Mt)": null,
-        "Ore Grade": "1167 g/t Li",
+        "Ore Grade": null,
         "Est. Reserves": null,
-        "Notes": "onsite brine processing (15.2 kt Lithium carbonate). 18 year LoM",
+        "Notes": null,
         "TRI Total Air Emissions (kg)": "Not reported",
         "NEI Total Air Emissions (kg)": "Not reported",
         "Total Air Emissions (kg)": "Not reported",
@@ -1742,29 +1329,177 @@
       "geometry": {
         "type": "Point",
         "coordinates": [
-          -69.063,
-          -26.882
+          120.593607,
+          -27.233587
         ]
       }
     },
     {
       "type": "Feature",
       "properties": {
-        "Name": "San Marcos",
-        "Operator": null,
-        "State": "Tarapaca",
-        "Country": "Chile",
+        "Name": "Mount Keith",
+        "Operator": "BHP",
+        "State": "Western Australia",
+        "Country": "Australia",
         "County": null,
-        "Latitude": -20.402,
-        "Longitude": -70.123,
-        "Commodity": "Cu",
-        "Years of Operation": null,
-        "Primary Product": "Cu",
+        "Latitude": -27.23288979,
+        "Longitude": 120.5556164,
+        "Commodity": "Nickel ",
+        "Years of Operation": "1995-2024",
+        "Primary Product": "Nickel ",
+        "Primary  Production (kt)": 80,
+        "Secondary Product": null,
+        "Secondary Production (kt)": null,
+        "Estimated Total Resources (Mt)": null,
+        "Ore Grade": null,
+        "Est. Reserves": "270 Mt (0.6% nickel)",
+        "Notes": null,
+        "TRI Total Air Emissions (kg)": "Not reported",
+        "NEI Total Air Emissions (kg)": "Not reported",
+        "Total Air Emissions (kg)": "Not reported",
+        "Total Water Emissions (kg)": "Not reported",
+        "Total Land Emissions (kg)": "Not reported",
+        "Total OffSite Emissions (kg)": "Not reported",
+        "TRI Total Emissions (kg)": "Not reported",
+        "Total All Emissions (kg)": "Not reported"
+      },
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          120.5556164,
+          -27.23288979
+        ]
+      }
+    },
+    {
+      "type": "Feature",
+      "properties": {
+        "Name": "Murrin Murrin",
+        "Operator": "Glencore",
+        "State": "Western Australia",
+        "Country": "Australia",
+        "County": null,
+        "Latitude": -28.76693393,
+        "Longitude": 121.8958611,
+        "Commodity": "Nickel ",
+        "Years of Operation": 1999,
+        "Primary Product": "Nickel ",
+        "Primary  Production (kt)": 35.7,
+        "Secondary Product": null,
+        "Secondary Production (kt)": 3.3,
+        "Estimated Total Resources (Mt)": 205.0,
+        "Ore Grade": "1.00% Ni, 0.08% Co",
+        "Est. Reserves": "127 Mt (0.95% Ni, 0.08% Co)",
+        "Notes": null,
+        "TRI Total Air Emissions (kg)": "Not reported",
+        "NEI Total Air Emissions (kg)": "Not reported",
+        "Total Air Emissions (kg)": "Not reported",
+        "Total Water Emissions (kg)": "Not reported",
+        "Total Land Emissions (kg)": "Not reported",
+        "Total OffSite Emissions (kg)": "Not reported",
+        "TRI Total Emissions (kg)": "Not reported",
+        "Total All Emissions (kg)": "Not reported"
+      },
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          121.8958611,
+          -28.76693393
+        ]
+      }
+    },
+    {
+      "type": "Feature",
+      "properties": {
+        "Name": "Nova Bollinger",
+        "Operator": "Independence Group",
+        "State": "Western Australia",
+        "Country": "Australia",
+        "County": null,
+        "Latitude": -31.80977951,
+        "Longitude": 123.1734882,
+        "Commodity": "Nickel ",
+        "Years of Operation": 2017,
+        "Primary Product": "Nickel ",
+        "Primary  Production (kt)": 23,
+        "Secondary Product": null,
+        "Secondary Production (kt)": 0.803,
+        "Estimated Total Resources (Mt)": 14.3,
+        "Ore Grade": "2.3% Ni, 0.08% Co",
+        "Est. Reserves": "13.6 Mt (0.8% Cu)",
+        "Notes": null,
+        "TRI Total Air Emissions (kg)": "Not reported",
+        "NEI Total Air Emissions (kg)": "Not reported",
+        "Total Air Emissions (kg)": "Not reported",
+        "Total Water Emissions (kg)": "Not reported",
+        "Total Land Emissions (kg)": "Not reported",
+        "Total OffSite Emissions (kg)": "Not reported",
+        "TRI Total Emissions (kg)": "Not reported",
+        "Total All Emissions (kg)": "Not reported"
+      },
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          123.1734882,
+          -31.80977951
+        ]
+      }
+    },
+    {
+      "type": "Feature",
+      "properties": {
+        "Name": "Ravensthorpe",
+        "Operator": "First Quantum (70%), POSCO (30%)",
+        "State": "Western Australia",
+        "Country": "Australia",
+        "County": null,
+        "Latitude": -33.6432012,
+        "Longitude": 120.3833,
+        "Commodity": "Nickel ",
+        "Years of Operation": "2008-2009, 2011-2017, 2020-2044",
+        "Primary Product": "Nickel ",
+        "Primary  Production (kt)": 16.8,
+        "Secondary Product": null,
+        "Secondary Production (kt)": 0.84,
+        "Estimated Total Resources (Mt)": 211.6,
+        "Ore Grade": "0.56% Ni, 0.03% Co",
+        "Est. Reserves": "197.2 Mt (0.6% Nickel, 0.03% Co)",
+        "Notes": "Chemical spill",
+        "TRI Total Air Emissions (kg)": "Not reported",
+        "NEI Total Air Emissions (kg)": "Not reported",
+        "Total Air Emissions (kg)": "Not reported",
+        "Total Water Emissions (kg)": "Not reported",
+        "Total Land Emissions (kg)": "Not reported",
+        "Total OffSite Emissions (kg)": "Not reported",
+        "TRI Total Emissions (kg)": "Not reported",
+        "Total All Emissions (kg)": "Not reported"
+      },
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          120.3833,
+          -33.6432012
+        ]
+      }
+    },
+    {
+      "type": "Feature",
+      "properties": {
+        "Name": "Savannah",
+        "Operator": null,
+        "State": null,
+        "Country": "Australia",
+        "County": null,
+        "Latitude": -17.361575,
+        "Longitude": 128.033105,
+        "Commodity": "Nickel ",
+        "Years of Operation": "2004-2024 ",
+        "Primary Product": "Nickel ",
         "Primary  Production (kt)": null,
         "Secondary Product": null,
         "Secondary Production (kt)": null,
-        "Estimated Total Resources (Mt)": 5.2,
-        "Ore Grade": "1.05 % Cu",
+        "Estimated Total Resources (Mt)": null,
+        "Ore Grade": null,
         "Est. Reserves": null,
         "Notes": null,
         "TRI Total Air Emissions (kg)": "Not reported",
@@ -1779,30 +1514,30 @@
       "geometry": {
         "type": "Point",
         "coordinates": [
-          -70.123,
-          -20.402
+          128.033105,
+          -17.361575
         ]
       }
     },
     {
       "type": "Feature",
       "properties": {
-        "Name": "Sierra Atacama",
-        "Operator": "Salar Blanco Mining Company?",
-        "State": "Atacama",
-        "Country": "Chile",
+        "Name": "Browns Range",
+        "Operator": "Northern Minerals",
+        "State": "Western Australia",
+        "Country": "Australia",
         "County": null,
-        "Latitude": -23.239,
-        "Longitude": -70.119,
-        "Commodity": "Cu",
-        "Years of Operation": null,
-        "Primary Product": "Cu",
-        "Primary  Production (kt)": null,
-        "Secondary Product": "Fe, Au",
+        "Latitude": -18.8595,
+        "Longitude": 128.9398,
+        "Commodity": "Rare Earth Oxides",
+        "Years of Operation": "2018-2022, 2025-2036",
+        "Primary Product": "Rare Earth Oxides",
+        "Primary  Production (kt)": "0.59 - 3.09",
+        "Secondary Product": null,
         "Secondary Production (kt)": null,
-        "Estimated Total Resources (Mt)": 92,
-        "Ore Grade": "0.45% Cu",
-        "Est. Reserves": null,
+        "Estimated Total Resources (Mt)": 7.3,
+        "Ore Grade": "0.96% TREO",
+        "Est. Reserves": "3.8 Mt ore (26.4 kt TREO)",
         "Notes": null,
         "TRI Total Air Emissions (kg)": "Not reported",
         "NEI Total Air Emissions (kg)": "Not reported",
@@ -1816,67 +1551,30 @@
       "geometry": {
         "type": "Point",
         "coordinates": [
-          -70.119,
-          -23.239
+          128.9398,
+          -18.8595
         ]
       }
     },
     {
       "type": "Feature",
       "properties": {
-        "Name": "Sierra Gorda",
-        "Operator": "KGHM Polska Mied (55%), South32 (45%)",
-        "State": "Antofagasta ",
-        "Country": "Chile",
+        "Name": "Yangibana",
+        "Operator": "Hastings Rare Metals",
+        "State": "Western Australia",
+        "Country": "Australia",
         "County": null,
-        "Latitude": -22.8472,
-        "Longitude": -69.3389,
-        "Commodity": "Cu",
-        "Years of Operation": "2014-2040",
-        "Primary Product": "Cu",
-        "Primary  Production (kt)": 150.2,
-        "Secondary Product": "Mo, Au",
-        "Secondary Production (kt)": 3,
-        "Estimated Total Resources (Mt)": 2917,
-        "Ore Grade": "0.37% Cu, 0.009% Mo",
-        "Est. Reserves": "731 Mt (0.39% Cu) + 51 Mt (0.28 Cu)",
-        "Notes": "Sierra Gorga Oxide Project, smelted internationally ",
-        "TRI Total Air Emissions (kg)": "Not reported",
-        "NEI Total Air Emissions (kg)": "Not reported",
-        "Total Air Emissions (kg)": "Not reported",
-        "Total Water Emissions (kg)": "Not reported",
-        "Total Land Emissions (kg)": "Not reported",
-        "Total OffSite Emissions (kg)": "Not reported",
-        "TRI Total Emissions (kg)": "Not reported",
-        "Total All Emissions (kg)": "Not reported"
-      },
-      "geometry": {
-        "type": "Point",
-        "coordinates": [
-          -69.3389,
-          -22.8472
-        ]
-      }
-    },
-    {
-      "type": "Feature",
-      "properties": {
-        "Name": "Spence",
-        "Operator": "BHP (Pampa Norte) ",
-        "State": "Antofagasta ",
-        "Country": "Chile",
-        "County": null,
-        "Latitude": -22.689167,
-        "Longitude": -69.181389,
-        "Commodity": "Cu",
-        "Years of Operation": "2006-2074",
-        "Primary Product": "Cu",
-        "Primary  Production (kt)": 244.0,
-        "Secondary Product": "Mo",
+        "Latitude": -23.8956,
+        "Longitude": 116.1893,
+        "Commodity": "Rare Earths (concentrate)",
+        "Years of Operation": "2026-2043",
+        "Primary Product": "Rare Earths (concentrate)",
+        "Primary  Production (kt)": 37,
+        "Secondary Product": null,
         "Secondary Production (kt)": null,
-        "Estimated Total Resources (Mt)": 2390,
-        "Ore Grade": "0.43% Cu, 120 g/t Mo",
-        "Est. Reserves": "775 Mt (160 g/t Mo) + 11 Mt (120 g/t Mo)",
+        "Estimated Total Resources (Mt)": 29.93,
+        "Ore Grade": "0.93% TREO",
+        "Est. Reserves": "32.0 Mt (6.4% TREO) = 2.0 Mt contained TREO",
         "Notes": null,
         "TRI Total Air Emissions (kg)": "Not reported",
         "NEI Total Air Emissions (kg)": "Not reported",
@@ -1890,30 +1588,67 @@
       "geometry": {
         "type": "Point",
         "coordinates": [
-          -69.181389,
-          -22.689167
+          116.1893,
+          -23.8956
         ]
       }
     },
     {
       "type": "Feature",
       "properties": {
-        "Name": "Zaldivar",
-        "Operator": "Antofagasta Mienrals",
-        "State": "Antofagasta ",
-        "Country": "Chile",
+        "Name": "Mount Weld Rare Earth Minerals Mine",
+        "Operator": "Lynas",
+        "State": "Western Australia",
+        "Country": "Australia",
         "County": null,
-        "Latitude": -24.208333,
-        "Longitude": -69.066667,
-        "Commodity": "Cu",
-        "Years of Operation": null,
-        "Primary Product": "Cu",
-        "Primary  Production (kt)": 40.1,
-        "Secondary Product": "Mo",
+        "Latitude": -28.86175054,
+        "Longitude": 122.548373,
+        "Commodity": "Rare Earths (NdPr oxide)",
+        "Years of Operation": "2013-2048",
+        "Primary Product": "Rare Earths (NdPr oxide)",
+        "Primary  Production (kt)": 12,
+        "Secondary Product": null,
         "Secondary Production (kt)": null,
-        "Estimated Total Resources (Mt)": 507,
-        "Ore Grade": "0.52% Cu",
-        "Est. Reserves": "351 Mt (0.43 %Cu)",
+        "Estimated Total Resources (Mt)": 106.6,
+        "Ore Grade": "4.12% TREO",
+        "Est. Reserves": "20.93 Mt (0.90%TREO)",
+        "Notes": "Concentrate is 27% TREO",
+        "TRI Total Air Emissions (kg)": "Not reported",
+        "NEI Total Air Emissions (kg)": "Not reported",
+        "Total Air Emissions (kg)": "Not reported",
+        "Total Water Emissions (kg)": "Not reported",
+        "Total Land Emissions (kg)": "Not reported",
+        "Total OffSite Emissions (kg)": "Not reported",
+        "TRI Total Emissions (kg)": "Not reported",
+        "Total All Emissions (kg)": "Not reported"
+      },
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          122.548373,
+          -28.86175054
+        ]
+      }
+    },
+    {
+      "type": "Feature",
+      "properties": {
+        "Name": "McArthur River",
+        "Operator": "Glencore",
+        "State": "Northern Territory",
+        "Country": "Australia",
+        "County": null,
+        "Latitude": -16.43389616,
+        "Longitude": 136.0912532,
+        "Commodity": "Zinc",
+        "Years of Operation": "1993-2040",
+        "Primary Product": "Zinc",
+        "Primary  Production (kt)": 271,
+        "Secondary Product": null,
+        "Secondary Production (kt)": null,
+        "Estimated Total Resources (Mt)": 127.0,
+        "Ore Grade": "9.53% Zn",
+        "Est. Reserves": "70 Mt (9.01% Zn)",
         "Notes": null,
         "TRI Total Air Emissions (kg)": "Not reported",
         "NEI Total Air Emissions (kg)": "Not reported",
@@ -1927,8 +1662,156 @@
       "geometry": {
         "type": "Point",
         "coordinates": [
-          -69.066667,
-          -24.208333
+          136.0912532,
+          -16.43389616
+        ]
+      }
+    },
+    {
+      "type": "Feature",
+      "properties": {
+        "Name": "Cannington",
+        "Operator": "South 32",
+        "State": "Queensland",
+        "Country": "Australia",
+        "County": null,
+        "Latitude": -21.85580039,
+        "Longitude": 140.9072019,
+        "Commodity": "Zinc ",
+        "Years of Operation": "1997-2029",
+        "Primary Product": "Zinc ",
+        "Primary  Production (kt)": 59.2,
+        "Secondary Product": null,
+        "Secondary Production (kt)": null,
+        "Estimated Total Resources (Mt)": 80.0,
+        "Ore Grade": "2.88% Zn (53 Mt), 2.18% Zn (27 Mt)",
+        "Est. Reserves": "11 Mt (3.17% Zn)",
+        "Notes": null,
+        "TRI Total Air Emissions (kg)": "Not reported",
+        "NEI Total Air Emissions (kg)": "Not reported",
+        "Total Air Emissions (kg)": "Not reported",
+        "Total Water Emissions (kg)": "Not reported",
+        "Total Land Emissions (kg)": "Not reported",
+        "Total OffSite Emissions (kg)": "Not reported",
+        "TRI Total Emissions (kg)": "Not reported",
+        "Total All Emissions (kg)": "Not reported"
+      },
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          140.9072019,
+          -21.85580039
+        ]
+      }
+    },
+    {
+      "type": "Feature",
+      "properties": {
+        "Name": "Century ",
+        "Operator": "Sibanye Stillwater",
+        "State": "Queensland",
+        "Country": "Australia",
+        "County": null,
+        "Latitude": -18.73302922,
+        "Longitude": 138.6192845,
+        "Commodity": "Zinc ",
+        "Years of Operation": "1999-2015, 2018- 2030",
+        "Primary Product": "Zinc ",
+        "Primary  Production (kt)": 116,
+        "Secondary Product": null,
+        "Secondary Production (kt)": null,
+        "Estimated Total Resources (Mt)": 10.5,
+        "Ore Grade": "5.41% Zn",
+        "Est. Reserves": "18.7 Mt (2.95% Zn) ",
+        "Notes": null,
+        "TRI Total Air Emissions (kg)": "Not reported",
+        "NEI Total Air Emissions (kg)": "Not reported",
+        "Total Air Emissions (kg)": "Not reported",
+        "Total Water Emissions (kg)": "Not reported",
+        "Total Land Emissions (kg)": "Not reported",
+        "Total OffSite Emissions (kg)": "Not reported",
+        "TRI Total Emissions (kg)": "Not reported",
+        "Total All Emissions (kg)": "Not reported"
+      },
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          138.6192845,
+          -18.73302922
+        ]
+      }
+    },
+    {
+      "type": "Feature",
+      "properties": {
+        "Name": "Dugald River",
+        "Operator": "MMG Australia ",
+        "State": "Queensland",
+        "Country": "Australia",
+        "County": null,
+        "Latitude": -20.23464348,
+        "Longitude": 140.1893247,
+        "Commodity": "Zinc ",
+        "Years of Operation": "2017-2044",
+        "Primary Product": "Zinc ",
+        "Primary  Production (kt)": 151.84,
+        "Secondary Product": null,
+        "Secondary Production (kt)": null,
+        "Estimated Total Resources (Mt)": 66.0,
+        "Ore Grade": "12% Zn",
+        "Est. Reserves": "22 Mt (10.5 % Zn)",
+        "Notes": null,
+        "TRI Total Air Emissions (kg)": "Not reported",
+        "NEI Total Air Emissions (kg)": "Not reported",
+        "Total Air Emissions (kg)": "Not reported",
+        "Total Water Emissions (kg)": "Not reported",
+        "Total Land Emissions (kg)": "Not reported",
+        "Total OffSite Emissions (kg)": "Not reported",
+        "TRI Total Emissions (kg)": "Not reported",
+        "Total All Emissions (kg)": "Not reported"
+      },
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          140.1893247,
+          -20.23464348
+        ]
+      }
+    },
+    {
+      "type": "Feature",
+      "properties": {
+        "Name": "Endeavor ",
+        "Operator": "Polymetals ",
+        "State": "New South Wales",
+        "Country": "Australia",
+        "County": null,
+        "Latitude": -31.16243549,
+        "Longitude": 145.6552634,
+        "Commodity": "Zinc ",
+        "Years of Operation": "1982-2020, 2025-",
+        "Primary Product": "Zinc ",
+        "Primary  Production (kt)": 10,
+        "Secondary Product": null,
+        "Secondary Production (kt)": null,
+        "Estimated Total Resources (Mt)": 21.5,
+        "Ore Grade": "8.0% Zn (16.3 Mt), 2.12% Zn (5.2 Mt)",
+        "Est. Reserves": "5.6 Mt (4.04% Zn) ",
+        "Notes": null,
+        "TRI Total Air Emissions (kg)": "Not reported",
+        "NEI Total Air Emissions (kg)": "Not reported",
+        "Total Air Emissions (kg)": "Not reported",
+        "Total Water Emissions (kg)": "Not reported",
+        "Total Land Emissions (kg)": "Not reported",
+        "Total OffSite Emissions (kg)": "Not reported",
+        "TRI Total Emissions (kg)": "Not reported",
+        "Total All Emissions (kg)": "Not reported"
+      },
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          145.6552634,
+          -31.16243549
         ]
       }
     }

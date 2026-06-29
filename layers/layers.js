@@ -59,27 +59,43 @@ var lyr_ActiveMinesJune2025_3 = new ol.layer.Vector({
     <img src="styles/legend/ActiveMinesJune2025_3_0.png" /> Copper<br />\
     <img src="styles/legend/ActiveMinesJune2025_3_1.png" /> Lithium<br />\
     <img src="styles/legend/ActiveMinesJune2025_3_2.png" /> Nickel<br />' });
-var format_chile_mines = new ol.format.GeoJSON();
-var features_chile_mines = format_chile_mines.readFeatures(json_chile_mines, 
+var format_Chile = new ol.format.GeoJSON();
+var features_Chile = format_Chile.readFeatures(json_Chile, 
             {dataProjection: 'EPSG:4326', featureProjection: 'EPSG:3857'})
             .filter(f => f.getGeometry() !== null);
-var jsonSource_chile_mines = new ol.source.Vector({
+var jsonSource_Chile = new ol.source.Vector({
     attributions: ' ',
 });
-jsonSource_chile_mines.addFeatures(features_chile_mines);
-var lyr_chile_mines = new ol.layer.Vector({
+jsonSource_Chile.addFeatures(features_Chile);
+var lyr_Chile = new ol.layer.Vector({
     declutter: false,
-    source: jsonSource_chile_mines,
+    source: jsonSource_Chile,
     style: style_ActiveMinesJune2025_3,  // reuse existing style for now
     popuplayertitle: 'Chile Mines',
     interactive: true,
     title: 'Chile Mines'
 });
+var format_Australia = new ol.format.GeoJSON();
+var features_Australia = format_Australia.readFeatures(json_Australia, 
+            {dataProjection: 'EPSG:4326', featureProjection: 'EPSG:3857'})
+            .filter(f => f.getGeometry() !== null);
+var jsonSource_Australia = new ol.source.Vector({
+    attributions: ' ',
+});
+jsonSource_Australia.addFeatures(features_Australia);
+var lyr_Australia = new ol.layer.Vector({
+    declutter: false,
+    source: jsonSource_Australia,
+    style: style_ActiveMinesJune2025_3,
+    popuplayertitle: 'Australia Mines',
+    interactive: true,
+    title: 'Australia Mines'
+});
 
-lyr_ESRIGraylight_0.setVisible(true);lyr_DisadvantagedTracts_1.setVisible(true);lyr_StateOutline_2.setVisible(true);lyr_ActiveMinesJune2025_3.setVisible(true);lyr_chile_mines.setVisible(true);
-var layersList = [lyr_ESRIGraylight_0,lyr_DisadvantagedTracts_1,lyr_StateOutline_2,lyr_ActiveMinesJune2025_3,lyr_chile_mines];
+lyr_ESRIGraylight_0.setVisible(true);lyr_DisadvantagedTracts_1.setVisible(true);lyr_StateOutline_2.setVisible(true);lyr_ActiveMinesJune2025_3.setVisible(true);lyr_Chile.setVisible(true);lyr_Australia.setVisible(true);
+var layersList = [lyr_ESRIGraylight_0,lyr_DisadvantagedTracts_1,lyr_StateOutline_2,lyr_ActiveMinesJune2025_3,lyr_Chile,lyr_Australia];
 
-lyr_chile_mines.set('fieldAliases', {'Name': 'Name', 'Operator': 'Operator', 'State': 'State', 'Country': 'Country', 'Commodity': 'Commodity', 'Primary Product': 'Primary Product', 'Primary  Production (kt)': 'Primary  Production (kt)', 'Secondary Product': 'Secondary Product', 'Secondary Production (kt)': 'Secondary Production (kt)', 'Estimated Total Resources (Mt)': 'Estimated Total Resources (Mt)', 'Ore Grade': 'Ore Grade', 'Est. Reserves': 'Est. Reserves', 'Notes': 'Notes'});
+lyr_Chile.set('fieldAliases', {'Name': 'Name', 'Operator': 'Operator', 'State': 'State', 'Country': 'Country', 'Commodity': 'Commodity', 'Primary Product': 'Primary Product', 'Primary  Production (kt)': 'Primary  Production (kt)', 'Secondary Product': 'Secondary Product', 'Secondary Production (kt)': 'Secondary Production (kt)', 'Estimated Total Resources (Mt)': 'Estimated Total Resources (Mt)', 'Ore Grade': 'Ore Grade', 'Est. Reserves': 'Est. Reserves', 'Notes': 'Notes'});
 lyr_DisadvantagedTracts_1.set('fieldAliases', {'GEOID10': 'GEOID10', 'SF': 'SF', 'CF': 'CF', 'Area2': 'Area2', });
 lyr_StateOutline_2.set('fieldAliases', {'STATEFP': 'STATEFP', 'STATENS': 'STATENS', 'AFFGEOID': 'AFFGEOID', 'GEOID': 'GEOID', 'STUSPS': 'STUSPS', 'NAME': 'NAME', 'LSAD': 'LSAD', 'ALAND': 'ALAND', 'AWATER': 'AWATER', });
 lyr_ActiveMinesJune2025_3.set('fieldAliases', {'Name': 'Name', 'Operator': 'Operator', 'State': 'State', 'County': 'County', 'Latitude': 'Latitude', 'Longitude': 'Longitude', 'Commodity': 'Commodity', 'Primary Product': 'Primary Product', 'Primary  Production (kt)': 'Primary  Production (kt)', 'Secondary Product': 'Secondary Product', 'Secondary Production (kt)': 'Secondary Production (kt)', 'TRI Total Air Emissions (kg)': 'TRI Total Air Emissions (kg)', 'NEI Total Air Emissions (kg)': 'NEI Total Air Emissions (kg)', 'Total Air Emissions (kg)': 'Total Air Emissions (kg)', 'Total Water Emissions (kg)': 'Total Water Emissions (kg)', 'Total Land Emissions (kg)': 'Total Land Emissions (kg)', 'Total OffSite Emissions (kg)': 'Total OffSite Emissions (kg)', 'TRI Total Emissions (kg)': 'TRI Total Emissions (kg)', 'Total All Emissions (kg)': 'Total All Emissions (kg)', });
