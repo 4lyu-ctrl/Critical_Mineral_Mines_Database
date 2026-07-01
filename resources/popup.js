@@ -8,8 +8,20 @@ var SLIDE_GROUPS = [
         fields: ['Primary Product', 'Primary  Production (kt)', 'Secondary Product', 'Secondary Production (kt)']
     },
     {
-        title: 'Emissions',
-        fields: ['Total Air Emissions (kg)', 'Total Water Emissions (kg)', 'Total Land Emissions (kg)', 'Total All Emissions (kg)']
+        title: 'Air Emissions',
+        fields: ['Total Air Emissions (kg)', 'TRI Total Air Emissions (kg)', 'NEI Total Air Emissions (kg)']
+    },
+    {
+        title: 'Water Emissions',
+        fields: ['Total Water Emissions (kg)']
+    },
+    {
+        title: 'Land Emissions',
+        fields: ['Total Land Emissions (kg)', 'Total OffSite Emissions (kg)']
+    },
+    {
+        title: 'Totals',
+        fields: ['TRI Total Emissions (kg)', 'Total All Emissions (kg)']
     }
 ];
 
@@ -94,7 +106,7 @@ function renderSlide() {
     };
 }
 
-var SLIDER_LAYER_TITLES = ['Active Mines June 2025', 'Chile Mines'];
+var SLIDER_LAYER_TITLES = ['Active Mines June 2025', 'Chile Mines', 'Australia Mines'];
 
 function onSingleClickFeatures(evt) {
     if (doHover || sketch) {

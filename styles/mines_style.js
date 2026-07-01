@@ -1,6 +1,6 @@
 var size = 100;
 var placement = 'point';
-// Define a color mapping for commodities
+
 var commodityColors = {
     'Copper': 'rgba(213,121,93,1.0)',
     'Lithium': 'rgba(191,11,41,1.0)',
@@ -11,9 +11,8 @@ var commodityColors = {
     'Zinc': 'rgba(112,128,144,1.0)',
     'Cobalt': 'rgba(0,71,171,1.0)'
 };
-// Incase commodity doesn't match a predefined color, 
-// we still want it to appear on the map.
-var defaultCommodityColor = 'rgba(150,150,150,1.0)'; 
+
+var defaultCommodityColor = 'rgba(150,150,150,1.0)';
 
 /**
  * Get the color for a given commodity value.
@@ -27,6 +26,29 @@ function getCommodityColor(valueStr) {
         }
     }
     return defaultCommodityColor;
+}
+
+/**
+ * Get the opacity for a given mine status.
+ * @param {string} status
+ * @returns {number}
+ */
+function getOpacity(status) {
+    if (status && status.toString().toLowerCase() === 'inactive') {
+        return 0.4;
+    }
+    return 1.0;
+}
+
+/**
+ * Replace the alpha channel of an rgba(...) color string.
+ * @param {string} rgbaColor
+ * @param {number} opacity
+ * @returns {string}
+ */
+function applyOpacity(rgbaColor, opacity) {
+    var parts = rgbaColor.match(/rgba?\(([^)]+)\)/)[1].split(',').map(function(s) { return s.trim(); });
+    return 'rgba(' + parts[0] + ',' + parts[1] + ',' + parts[2] + ',' + opacity + ')';
 }
 
 /**
@@ -52,15 +74,18 @@ function getSizeCategory(resources) {
     }
 }
 
-// Circle radius (px) for each size category, indexed [category - 1]
 var sizeCategoryRadii = [4, 6, 8, 10, 13, 16];
- 
+
 function categories_mines(feature, value, size, resolution, labelText,
                        labelFont, labelFill, bufferColor, bufferWidth,
                        placement) {
     var valueStr = (value !== null && value !== undefined) ? value.toString() : 'default';
     var color = getCommodityColor(valueStr);
- 
+
+    var status = feature.get("Status");
+    var opacity = getOpacity(status);
+    color = applyOpacity(color, opacity);
+
     var resources = feature.get("Estimated Total Resources (Mt)");
     var radius = sizeCategoryRadii[getSizeCategory(resources) - 1];
 
@@ -85,7 +110,7 @@ var mines_style = function(feature, resolution){
     var bufferColor = "";
     var bufferWidth = 0;
     var placement = 'point';
- 
+
     return categories_mines(feature, value, size, resolution, labelText,
                             labelFont, labelFill, bufferColor,
                             bufferWidth, placement);

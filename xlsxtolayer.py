@@ -64,12 +64,13 @@ def build_feature(row, default_country=None):
         "Years of Operation": safe_get(row, "Years of Operation"),
         "Primary Product": translate_commodity(safe_get(row, "Primary Product")),
         "Primary  Production (kt)": safe_get(row, "Primary Production (kt)", "Primary  Production (kt)"),
-        "Secondary Product": safe_get(row, "Secondary Product(s)", "Secondary Product"),
+        "Secondary Product": safe_get(row, "Secondary Products", "Secondary Product(s)", "Secondary Product"),
         "Secondary Production (kt)": safe_get(row, "Secondary Production (kt)"),
         "Estimated Total Resources (Mt)": safe_get(row, "Estimated Total Resources (Mt)"),
         "Ore Grade": safe_get(row, "Ore Grade"),
         "Est. Reserves": safe_get(row, "Est. Reserves"),
         "Notes": safe_get(row, "Primary refineries and other notes", "Notes"),
+        "Status": safe_get(row, "Status"),
         "TRI Total Air Emissions (kg)": safe_get(row, "TRI Total Air Emissions (kg)") or "Not reported",
         "NEI Total Air Emissions (kg)": safe_get(row, "NEI Total Air Emissions (kg)") or "Not reported",
         "Total Air Emissions (kg)": safe_get(row, "Total Air Emissions (kg)") or "Not reported",
@@ -135,7 +136,7 @@ def convert_dataframe(df, layer_name):
         json.dump(geojson, f, indent=2)
 
     with open(js_path, "w", encoding="utf-8") as f:
-        f.write(f"var json_{var_name} = " + json.dumps(geojson) + ";")
+        f.write(f"var json_{var_name} = " + json.dumps(geojson, indent=2) + ";")
 
     print(f"  [{layer_name}] Converted {len(features)} mines")
     print(f"    -> {geojson_path}")
