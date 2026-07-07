@@ -17,7 +17,7 @@ var SLIDE_GROUPS = [
     },
     {
         title: 'Land Emissions',
-        fields: ['Total Land Emissions (kg)', 'Total OffSite Emissions (kg)']
+        fields: ['Total Land Emissions (kg)', 'Total Off-Site Waste Emissions (kg)']
     },
     {
         title: 'Totals',
