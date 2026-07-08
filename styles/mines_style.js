@@ -59,15 +59,15 @@ function applyOpacity(rgbaColor, opacity) {
 function getSizeCategory(resources) {
     var val = (resources !== null && resources !== undefined) ? resources : 0;
     switch (true) {
-        case (val < 25):
+        case (val < 50):
             return 1;
         case (val < 100):
             return 2;
         case (val < 500):
             return 3;
-        case (val < 2500):
+        case (val < 10000):
             return 4;
-        case (val < 9000):
+        case (val < 50000):
             return 5;
         default:
             return 6;
@@ -93,7 +93,8 @@ function categories_mines(feature, value, size, resolution, labelText,
         image: new ol.style.Circle({
             radius: radius,
             displacement: [0, 0],
-            stroke: new ol.style.Stroke({color: 'rgba(35,35,35,1.0)', lineDash: null, lineCap: 'butt', lineJoin: 'miter', width: 2.28}),
+            // you can add stroke here as well.
+            stroke: new ol.style.Stroke({color: 'rgba(0,0,0,1.0)', width: 1}),
             fill: new ol.style.Fill({color: color})
         }),
         text: createTextStyle(feature, resolution, labelText, labelFont,
