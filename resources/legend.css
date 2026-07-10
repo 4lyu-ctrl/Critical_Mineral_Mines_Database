@@ -45,3 +45,50 @@
     border-radius: 50%;
     display: inline-block;
 }
+
+#legend-header {
+    width: 220px;
+    box-sizing: border-box;
+    background-color: #f8f8f8;
+    color: #444444;
+    padding: 6px 10px;
+    font-weight: bold;
+    border-radius: 4px 4px 0 0;
+    cursor: pointer;
+    box-shadow: 0 3px 14px rgba(0, 0, 0, 0.4);
+}
+
+#legend-list {
+    list-style: none;
+    margin: 0;
+    padding: 6px 10px;
+    width: 220px;
+    box-sizing: border-box;
+    background-color: white;
+    border-radius: 0 0 4px 4px;
+    box-shadow: 0 3px 14px rgba(0, 0, 0, 0.4);
+}
+
+/* --- Layer switcher: matched to legend's look --- */
+ 
+/* Remove the vendor 4px #eee border that was making the switcher panel
+   look visually bigger/heavier than the legend at the same 220px width */
+.layer-switcher .panel {
+    border: none;
+    box-shadow: 0 3px 14px rgba(0, 0, 0, 0.4);
+}
+ 
+/* "Layers" title bar, styled identically to #legend-header */
+.layer-switcher .panel::before {
+    content: "Layers";
+    display: block;
+    width: 220px;
+    box-sizing: border-box;
+    background-color: #f8f8f8;
+    color: #444444;
+    padding: 6px 10px;
+    font-weight: bold;
+    font-family: inherit;
+    border-radius: 4px 4px 0 0;
+    margin: -4px -4px 6px -4px;
+}
