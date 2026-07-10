@@ -1,0 +1,47 @@
+#legend {
+    position: absolute;
+    top: 0.5em;
+    right: 0.5em;
+    z-index: 1000;
+    font-family: inherit;
+    text-align: left;
+}
+
+#legend-header {
+    width: 220px;
+    box-sizing: border-box;
+    background-color: #f8f8f8;
+    color: #444444;
+    padding: 6px 10px;
+    font-weight: bold;
+    border-radius: 4px;
+    cursor: pointer;
+}
+
+#legend-header:hover,
+#legend-header:focus {
+    background-color: rgba(248, 248, 248, 0.7);
+}
+
+#legend-list {
+    list-style: none;
+    margin: 4px 0 0 0;
+    padding: 6px 10px;
+    width: 220px;
+    box-sizing: border-box;
+    background-color: white;
+}
+
+#legend-list li {
+    display: flex;
+    align-items: center;
+    gap: 6px;
+    padding: 2px 0;
+}
+
+.legend-swatch {
+    width: 12px;
+    height: 12px;
+    border-radius: 50%;
+    display: inline-block;
+}
