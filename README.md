@@ -6,4 +6,4 @@
   
 <p>The underlying data can be accessed in the <a href = 'https://github.com/jenmbdunn/Critical_Mineral_Mines_Database/blob/main/CMDC_AllData_June2025.xlsx'>CMDC_AllData_June2025.xlsx</a> spreadsheet (last updated in June 2025). Data come from a combination of mining company reports, government approval documentation, and publicly-available emissions inventories (TRI, NEI, RETC, and others).<p>
   
-<p> The interactive map may be accessed by clicking , click <a href = "https://rawcdn.githack.com/4lyu-ctrl/Critical_Mineral_Mines_Database/blob/7a73277f535a65f2b2f92b1eee6448b83e0dbfb1"> here</a>.</p>
+<p> The interactive map may be accessed by clicking , click <a href = "https://raw.githack.com/4lyu-ctrl/Critical_Mineral_Mines_Database/db1d1d4ef386b34c47314581b0c842436f0dcea4/index.html"> here</a>.</p>
