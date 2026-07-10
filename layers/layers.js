@@ -2,7 +2,7 @@ var wms_layers = [];
 
 
         var lyr_ESRIGraylight_0 = new ol.layer.Tile({
-            'title': 'ESRI Gray (light)',
+            'title': '',
             'type':'base',
             'opacity': 1.000000,
             
@@ -25,7 +25,7 @@ var lyr_DisadvantagedTracts_1 = new ol.layer.Vector({
                 style: style_DisadvantagedTracts_1,
                 popuplayertitle: 'Disadvantaged Tracts',
                 interactive: false,
-                title: '<img src="styles/legend/DisadvantagedTracts_1.png" /> Disadvantaged Tracts'
+                title: 'Disadvantaged Tracts'
             });
 
 var format_ActiveMinesJune2025_3 = new ol.format.GeoJSON();
@@ -41,10 +41,7 @@ var lyr_ActiveMinesJune2025_3 = new ol.layer.Vector({
                 style: style_ActiveMinesJune2025_3,
                 popuplayertitle: 'Active Mines June 2025',
                 interactive: true,
-    title: 'Active Mines June 2025<br />\
-    <img src="styles/legend/ActiveMinesJune2025_3_0.png" /> Copper<br />\
-    <img src="styles/legend/ActiveMinesJune2025_3_1.png" /> Lithium<br />\
-    <img src="styles/legend/ActiveMinesJune2025_3_2.png" /> Nickel<br />' });
+    title: 'Active Mines June 2025' });
 var format_Chile = new ol.format.GeoJSON();
 var features_Chile = format_Chile.readFeatures(json_Chile, 
             {dataProjection: 'EPSG:4326', featureProjection: 'EPSG:3857'})

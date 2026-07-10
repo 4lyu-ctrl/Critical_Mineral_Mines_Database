@@ -417,6 +417,20 @@ var layerSwitcher = new ol.control.LayerSwitcher({
 	collapseTipLabel: 'Close'
     });
 map.addControl(layerSwitcher);
+layerSwitcher.on('rendercomplete', function () {
+    var panel = document.querySelector('.layer-switcher .panel');
+    if (!panel) {
+        return;
+    }
+    var legendList = document.createElement('ul');
+    legendList.className = 'legend-inset';
+    legendList.innerHTML =
+        '<li class="legend-inset-title">Legend</li>' +
+        '<li><span class="legend-swatch" style="background-color:#c17a52"></span>Copper</li>' +
+        '<li><span class="legend-swatch" style="background-color:#a30021"></span>Lithium</li>' +
+        '<li><span class="legend-swatch" style="background-color:#3d85c6"></span>Nickel</li>';
+    panel.insertBefore(legendList, panel.firstChild);
+});
 if (hasTouchScreen || isSmallScreen) {
 	document.addEventListener('DOMContentLoaded', function() {
 		setTimeout(function() {

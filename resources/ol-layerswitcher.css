@@ -13,6 +13,7 @@
   display: none;
   max-height: inherit;
   height: 100%;
+  width: 220px;
   box-sizing: border-box;
   overflow-y: auto;
 }
@@ -76,6 +77,27 @@
   list-style: none;
   margin: 1.6em 0.4em;
   padding-left: 0;
+}
+.layer-switcher .legend-inset {
+  margin: 1.6em 0.4em 0.6em 0.4em;
+  padding-bottom: 0.6em;
+  border-bottom: 1px solid #ddd;
+}
+.layer-switcher .legend-inset-title {
+  font-weight: bold;
+  margin-bottom: 0.3em;
+}
+.layer-switcher .legend-inset li {
+  display: flex;
+  align-items: center;
+  gap: 6px;
+  padding: 2px 0;
+}
+.legend-swatch {
+  width: 12px;
+  height: 12px;
+  border-radius: 50%;
+  display: inline-block;
 }
 .layer-switcher ul ul {
   padding-left: 1.2em;
@@ -176,13 +198,11 @@ li.layer-switcher-base-group > label {
   border-right: 0;
 }
 
-/*layerswitcher on the left*/
-/*
-.layer-switcher.shown.layer-switcher-activation-mode-click {
-  padding-right: 34px;
-}
-.layer-switcher.shown.layer-switcher-activation-mode-click > button {
-  right: 0;
-  border-left: 0;
-}
-*/
+
+
+
+
+
+
+
+
