@@ -1,8 +1,6 @@
 document.addEventListener('DOMContentLoaded', function () {
     var legend = document.getElementById('legend');
     var header = document.getElementById('legend-header');
-    var list = document.getElementById('legend-list');
-    var toggle = document.getElementById('legend-toggle');
 
     function repositionSwitcher() {
         var switcher = document.querySelector('.layer-switcher');
@@ -12,9 +10,7 @@ document.addEventListener('DOMContentLoaded', function () {
     }
 
     header.addEventListener('click', function () {
-        var collapsed = list.style.display === 'none';
-        list.style.display = collapsed ? 'block' : 'none';
-        toggle.textContent = collapsed ? '«' : '»';
+        legend.classList.toggle('collapsed');
         repositionSwitcher();
     });
 
