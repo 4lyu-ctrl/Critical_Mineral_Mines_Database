@@ -1,7 +1,9 @@
+<h1>Critical Mineral Mines Data Compendium</h1>
+
 <p>Welcome to the Critical Mineral Mines Data Compendium! This active database compiles comprehensive geographical, production, emissions, and life cycle impact information about global critical mineral mines for public reference. The accompanying interactive map serves as an accessible visual display of key data from this compendium.<p>
   
 <p>The <a href = 'https://sites.northwestern.edu/dunnresearch/'>Systems Analysis Research Group</a> at Northwestern University initially developed the database to support Trost et al. (<a href ='https://pubs.rsc.org/va/article/5/2/522/1248881/Life-cycle-inventory-data-for-critical-mineral'>2025</a>) “Life cycle inventory data for critical mineral mining: Recommendations and new U.S. data compendium.” The repository has since expanded to include data on 100+ critical mineral mines in the United States, Chile, and Australia.<p>
   
 <p>The underlying data can be accessed in the <a href = 'https://github.com/jenmbdunn/Critical_Mineral_Mines_Database/blob/main/CMDC_AllData_June2025.xlsx'>CMDC_AllData_June2025.xlsx</a> spreadsheet (last updated in June 2025). Data come from a combination of mining company reports, government approval documentation, and publicly-available emissions inventories (TRI, NEI, RETC, and others).<p>
   
-<p> The interactive map may be accessed by clicking , click <a href = "https://rawcdn.githack.com/4lyu-ctrl/Critical_Mineral_Mines_Database/0f8e35ab80559e6537a703aed69d25d49adfb4ed/index.html"> here </a>.</p>
+<p> The interactive map may be accessed by clicking , click <a href = "https://raw.githack.com/4lyu-ctrl/Critical_Mineral_Mines_Database/db1d1d4ef386b34c47314581b0c842436f0dcea4/index.html"> here</a>.</p>
