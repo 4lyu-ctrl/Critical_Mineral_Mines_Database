@@ -23,9 +23,9 @@ var lyr_DisadvantagedTracts_1 = new ol.layer.Vector({
                 declutter: false,
                 source:jsonSource_DisadvantagedTracts_1, 
                 style: style_DisadvantagedTracts_1,
-                popuplayertitle: 'Disadvantaged Tracts',
+                popuplayertitle: 'US Disadvantaged Tracts',
                 interactive: false,
-                title: 'Disadvantaged Tracts'
+                title: 'US Disadvantaged Tracts'
             });
 
 var format_ActiveMinesJune2025_3 = new ol.format.GeoJSON();
@@ -39,9 +39,9 @@ var lyr_ActiveMinesJune2025_3 = new ol.layer.Vector({
                 declutter: false,
                 source:jsonSource_ActiveMinesJune2025_3, 
                 style: style_ActiveMinesJune2025_3,
-                popuplayertitle: 'Active Mines June 2025',
+                popuplayertitle: 'US Mines',
                 interactive: true,
-    title: 'Active Mines June 2025' });
+    title: 'US Mines' });
 var format_Chile = new ol.format.GeoJSON();
 var features_Chile = format_Chile.readFeatures(json_Chile, 
             {dataProjection: 'EPSG:4326', featureProjection: 'EPSG:3857'})
