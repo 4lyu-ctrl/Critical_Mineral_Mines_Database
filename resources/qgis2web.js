@@ -363,7 +363,7 @@ var Title = new ol.control.Control({
     element: (() => {
         var titleElement = document.createElement('div');
         titleElement.className = 'top-left-title ol-control';
-        titleElement.innerHTML = '<h2 class="project-title">U.S. Critical Mineral Data Compendium</h2>';
+        titleElement.innerHTML = '<h2 class="project-title">Critical Mineral Data Compendium</h2>';
         return titleElement;
     })(),
     target: 'top-left-container'

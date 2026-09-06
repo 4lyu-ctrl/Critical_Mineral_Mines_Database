@@ -2,7 +2,6 @@ var wms_layers = [];
 
 
         var lyr_ESRIGraylight_0 = new ol.layer.Tile({
-            'title': 'ESRI Gray (light)',
             'type':'base',
             'opacity': 1.000000,
             
@@ -78,7 +77,7 @@ var lyr_Australia = new ol.layer.Vector({
 });
 
 lyr_ESRIGraylight_0.setVisible(true);lyr_DisadvantagedTracts_1.setVisible(true);lyr_ActiveMinesJune2025_3.setVisible(true);lyr_Chile.setVisible(true);lyr_Australia.setVisible(true);
-var layersList = [lyr_ESRIGraylight_0,lyr_DisadvantagedTracts_1,lyr_ActiveMinesJune2025_3,lyr_Chile,lyr_Australia];
+var layersList = [lyr_ESRIGraylight_0,lyr_DisadvantagedTracts_1,lyr_Chile,lyr_Australia,lyr_ActiveMinesJune2025_3];
 
 lyr_Chile.set('fieldAliases', {'Name': 'Name', 'Operator': 'Operator', 'State': 'State', 'Country': 'Country', 'Commodity': 'Commodity', 'Primary Product': 'Primary Product', 'Primary  Production (kt)': 'Primary  Production (kt)', 'Secondary Product': 'Secondary Product', 'Secondary Production (kt)': 'Secondary Production (kt)', 'Estimated Total Resources (Mt)': 'Estimated Total Resources (Mt)', 'Ore Grade': 'Ore Grade', 'Est. Reserves': 'Est. Reserves', 'Notes': 'Notes'});
 lyr_DisadvantagedTracts_1.set('fieldAliases', {'GEOID10': 'GEOID10', 'SF': 'SF', 'CF': 'CF', 'Area2': 'Area2', });
