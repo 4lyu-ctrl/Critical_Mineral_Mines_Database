@@ -387,6 +387,17 @@ td video {
     max-height: 22px;
 }
 
+.layer-switcher .legend-swatches {
+    display: block;
+    margin-top: 2px;
+    margin-left: 10px;
+    padding-left: 6px;
+    border-left: 2px solid rgba(0, 0, 0, 0.15);
+    font-size: 0.85em;
+    font-style: italic;
+    opacity: 0.8;
+}
+
 
 .ol-attribution {
 	display: none;
