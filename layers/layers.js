@@ -22,9 +22,9 @@ var lyr_DisadvantagedTracts_1 = new ol.layer.Vector({
                 declutter: false,
                 source:jsonSource_DisadvantagedTracts_1, 
                 style: style_DisadvantagedTracts_1,
-                popuplayertitle: 'Disadvantaged Tracts',
+                popuplayertitle: 'US Disadvantaged Tracts',
                 interactive: false,
-                title: '<img src="styles/legend/DisadvantagedTracts_1.png" /> Disadvantaged Tracts'
+                title: 'US Disadvantaged Tracts'
             });
 var format_ActiveMinesJune2025_3 = new ol.format.GeoJSON();
 var features_ActiveMinesJune2025_3 = format_ActiveMinesJune2025_3.readFeatures(json_ActiveMinesJune2025_3, 
@@ -39,10 +39,7 @@ var lyr_ActiveMinesJune2025_3 = new ol.layer.Vector({
                 style: style_ActiveMinesJune2025_3,
                 popuplayertitle: 'US Mines',
                 interactive: true,
-    title: 'US Mines<span class="legend-swatches">\
-    <img src="styles/legend/ActiveMinesJune2025_3_0.png" /> Copper<br />\
-    <img src="styles/legend/ActiveMinesJune2025_3_1.png" /> Lithium<br />\
-    <img src="styles/legend/ActiveMinesJune2025_3_2.png" /> Nickel<br /></span>' });
+    title: 'US Mines' });
 var format_Chile = new ol.format.GeoJSON();
 var features_Chile = format_Chile.readFeatures(json_Chile, 
             {dataProjection: 'EPSG:4326', featureProjection: 'EPSG:3857'})
@@ -75,7 +72,6 @@ var lyr_Australia = new ol.layer.Vector({
     interactive: true,
     title: 'Australia Mines'
 });
-
 lyr_ESRIGraylight_0.setVisible(true);lyr_DisadvantagedTracts_1.setVisible(true);lyr_ActiveMinesJune2025_3.setVisible(true);lyr_Chile.setVisible(true);lyr_Australia.setVisible(true);
 var layersList = [lyr_ESRIGraylight_0,lyr_DisadvantagedTracts_1,lyr_Chile,lyr_Australia,lyr_ActiveMinesJune2025_3];
 

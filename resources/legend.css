@@ -1,0 +1,129 @@
+#legend {
+    position: absolute;
+    top: 0.5em;
+    right: 0.5em;
+    z-index: 1000;
+    font-family: inherit;
+    text-align: left;
+}
+
+#legend-header {
+    width: 220px;
+    box-sizing: border-box;
+    background-color: #f8f8f8;
+    color: #444444;
+    padding: 6px 10px;
+    font-weight: bold;
+    border-radius: 4px;
+    cursor: pointer;
+}
+
+#legend-header:hover,
+#legend-header:focus {
+    background-color: rgba(248, 248, 248, 0.7);
+}
+
+#legend-list {
+    list-style: none;
+    margin: 4px 0 0 0;
+    padding: 6px 10px;
+    width: 220px;
+    box-sizing: border-box;
+    background-color: white;
+}
+
+#legend-list li {
+    display: flex;
+    align-items: center;
+    gap: 6px;
+    padding: 2px 0;
+}
+
+.legend-swatch {
+    width: 12px;
+    height: 12px;
+    border-radius: 50%;
+    display: inline-block;
+}
+
+#legend-header {
+    width: 220px;
+    box-sizing: border-box;
+    background-color: #f8f8f8;
+    color: #444444;
+    padding: 6px 10px;
+    font-weight: bold;
+    border-radius: 4px 4px 0 0;
+    cursor: pointer;
+    box-shadow: 0 3px 14px rgba(0, 0, 0, 0.4);
+}
+
+#legend-list {
+    list-style: none;
+    margin: 0;
+    padding: 6px 10px;
+    width: 220px;
+    box-sizing: border-box;
+    background-color: white;
+    border-radius: 0 0 4px 4px;
+    box-shadow: 0 3px 14px rgba(0, 0, 0, 0.4);
+}
+
+/* --- Layer switcher: matched to legend's look --- */
+ 
+/* Remove the vendor 4px #eee border that was making the switcher panel
+   look visually bigger/heavier than the legend at the same 220px width */
+.layer-switcher .panel {
+    border: none;
+    box-shadow: 0 3px 14px rgba(0, 0, 0, 0.4);
+}
+ 
+/* "Layers" title bar, styled identically to #legend-header */
+.layer-switcher .panel::before {
+    content: "Layers";
+    display: block;
+    width: 220px;
+    box-sizing: border-box;
+    background-color: #f8f8f8;
+    color: #444444;
+    padding: 6px 10px;
+    font-weight: bold;
+    font-family: inherit;
+    border-radius: 4px 4px 0 0;
+    margin: -4px -4px 6px -4px;
+}
+
+#legend-header {
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+}
+
+#legend-header-icon {
+    display: none;
+    width: 22px;
+    height: 22px;
+    background-color: #6562e2;
+    border-radius: 4px;
+    flex-shrink: 0;
+}
+
+#legend.collapsed #legend-header {
+    width: 38px;
+    height: 38px;
+    padding: 0;
+    justify-content: center;
+    border-radius: 4px;
+}
+
+#legend.collapsed .legend-header-text {
+    display: none;
+}
+
+#legend.collapsed #legend-header-icon {
+    display: block;
+}
+
+#legend.collapsed #legend-list {
+    display: none;
+}
