@@ -113,6 +113,7 @@
   padding-right: 1.2em;
   display: inline-block;
   margin-top: 1px;
+  cursor: pointer;
 }
 
 .layer-switcher label.disabled {
