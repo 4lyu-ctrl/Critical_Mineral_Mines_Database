@@ -2,6 +2,10 @@ var wms_layers = [];
 
 
         var lyr_ESRIGraylight_0 = new ol.layer.Tile({
+<<<<<<< HEAD
+=======
+            'title': '',
+>>>>>>> 4c5e314d91a72f213734d87bb06ce50829893219
             'type':'base',
             'opacity': 1.000000,
             
@@ -26,6 +30,7 @@ var lyr_DisadvantagedTracts_1 = new ol.layer.Vector({
                 interactive: false,
                 title: 'US Disadvantaged Tracts'
             });
+
 var format_ActiveMinesJune2025_3 = new ol.format.GeoJSON();
 var features_ActiveMinesJune2025_3 = format_ActiveMinesJune2025_3.readFeatures(json_ActiveMinesJune2025_3, 
             {dataProjection: 'EPSG:4326', featureProjection: 'EPSG:3857'});
@@ -72,8 +77,20 @@ var lyr_Australia = new ol.layer.Vector({
     interactive: true,
     title: 'Australia Mines'
 });
+<<<<<<< HEAD
 lyr_ESRIGraylight_0.setVisible(true);lyr_DisadvantagedTracts_1.setVisible(true);lyr_ActiveMinesJune2025_3.setVisible(true);lyr_Chile.setVisible(true);lyr_Australia.setVisible(true);
 var layersList = [lyr_ESRIGraylight_0,lyr_DisadvantagedTracts_1,lyr_Chile,lyr_Australia,lyr_ActiveMinesJune2025_3];
+=======
+var basemap_positron_labels = new ol.layer.Tile({
+    source: new ol.source.XYZ({
+        url: 'https://cartodb-basemaps-{a-c}.global.ssl.fastly.net/light_only_labels/{z}/{x}/{y}.png',
+        attributions: 'Map tiles by Carto, under CC BY 3.0. Data by OpenStreetMap, under ODbL.'
+    })
+});
+// To add labels to map just add "basemap_positron_labels" to the end of the layer list.
+lyr_ESRIGraylight_0.setVisible(true);lyr_DisadvantagedTracts_1.setVisible(true);lyr_ActiveMinesJune2025_3.setVisible(true);lyr_Chile.setVisible(true);lyr_Australia.setVisible(true);
+var layersList = [lyr_ESRIGraylight_0,lyr_DisadvantagedTracts_1,lyr_ActiveMinesJune2025_3,lyr_Chile,lyr_Australia ];
+>>>>>>> 4c5e314d91a72f213734d87bb06ce50829893219
 
 lyr_Chile.set('fieldAliases', {'Name': 'Name', 'Operator': 'Operator', 'State': 'State', 'Country': 'Country', 'Commodity': 'Commodity', 'Primary Product': 'Primary Product', 'Primary  Production (kt)': 'Primary  Production (kt)', 'Secondary Product': 'Secondary Product', 'Secondary Production (kt)': 'Secondary Production (kt)', 'Estimated Total Resources (Mt)': 'Estimated Total Resources (Mt)', 'Ore Grade': 'Ore Grade', 'Est. Reserves': 'Est. Reserves', 'Notes': 'Notes'});
 lyr_DisadvantagedTracts_1.set('fieldAliases', {'GEOID10': 'GEOID10', 'SF': 'SF', 'CF': 'CF', 'Area2': 'Area2', });
